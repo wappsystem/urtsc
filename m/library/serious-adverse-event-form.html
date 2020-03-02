@@ -1,0 +1,174 @@
+<div id=D__ID>
+    <!--third html start -->
+    <div class="container mt-95 mb-3">
+        <div class="row">
+            <!-- form container start -->
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- form start -->
+                        <form id="F__ID">
+                            <h3>Serious Adverse Event</h3>
+                            <!-- participant part for all tsak forms -------------------->
+                            <div id="participant_div__ID">
+                                <div class="form-group">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Participant</span>
+                                            <input type=text name="Participant" class=form-control id=Participant__ID
+                                                data-id="Participant" />
+                                        </label><br>
+                                        <label><span class="">Participant ID</span>
+                                            <input type=text name="Participant_uid" class=form-control readonly />
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <!-- form group -->
+                            <div class="form-group">
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">SAE number</span>
+                                            <input type=number name="SAE_No" class=form-control />
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="">
+                                        <label style="width:100%"><span class="">Details</span>
+                                            <textarea class="form-control" name="Details" placeholder=""></textarea>
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Onset Date</span>
+                                            <input class="form-control" type="date" name="Onset_Date">
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Name of study drug/device</span>
+                                            <input type=text name="Tx" class=form-control />
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Date of the FIRST administration of Investigational Product|</span>
+                                            <input class="form-control" type="date" name="Date_First_Administration">
+                                        </label><br>
+                                        <label><span class="">Date of the LAST administration of Investigational Product|</span>
+                                            <input class="form-control" type="date" name="Date_Last_Administration">
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Realtionship to study</span>
+                                            <select name="Realtionship" class=form-control>
+                                                <option></option>
+                                                <option>Not Related</option>
+                                                <option>Possibly Related</option>
+                                                <option>Related</option>
+                                            </select>
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">In Case of Hospitalisation (Date of Admission)</span>
+                                            <input class="form-control" type="date" name="Hospitalisation">
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="">
+                                            <label><span class="">In Case of Death autopsy report</span></label>
+                                        <div class="form-control">
+                                            <u style='cursor:pointer' id=link_File_Name__ID></u>
+                                            <br>
+                                            <input type="file" name=File_Name style="margin-top:6px" /> <button type="button" id=x_File_Name__ID>Remove</button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="">
+                                        <label style="width:100%"><span class="">Corrective Treatment/Therapy</span>
+                                            <textarea class="form-control" name="Corrective_Tx" placeholder=""></textarea>
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="">
+                                        <label style="width:100%"><span class="">Previous Concom Medications</span>
+                                            <textarea class="form-control" name="Previous_Concom_Meds" placeholder=""></textarea>
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="">
+                                        <label style="width:100%"><span class="">Action</span>
+                                            <textarea class="form-control" name="Action" placeholder=""></textarea>
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="">
+                                        <label style="width:100%"><span class="">Comments</span>
+                                            <textarea class="form-control" name="Comments" placeholder=""></textarea>
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    VmInclude:__COMPONENT__/m/modal.01.html
+    <script>
+        function F__ID(){
+            //-------------------------------------
+            VmInclude:'__COMPONENT__/f/form.01.js'
+            VmInclude:__CURRENT_PATH__/shared-form.js
+            //-------------------------------------
+            m.old_load=m.load;
+            m.load=function(){
+                m.old_load();
+                m.set_file_link("File_Name");
+            }
+
+        }
+    </script>
+    <style>
+        #D__ID .mt-95 {
+        max-width:600px;
+    }
+        VmInclude:__CURRENT_PATH__/wappsystem-form.css
+    </style>
+</div>

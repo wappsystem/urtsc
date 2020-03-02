@@ -1,0 +1,29 @@
+<section>
+    VmInclude:__CURRENT_PATH__/grid.v1h.html
+</section>
+  <script>
+      function F__ID(){
+          //-------------------------------------
+          VmInclude:__COMPONENT__/g/grid.01.js
+          VmInclude:__CURRENT_PATH__/shared-data.js
+        //-------------------------------------
+        $('#title__ID').text('Rey Auditory Verbal Learning Test');
+          //-------------------------------------
+          var fields="File_Name,recall_1_raw,recall_2_raw,recall_3_raw,recall_4_raw,recall_5_raw,recall_s1_5_raw,recall_b_raw,recall_6_raw,recall_7_raw,recall_7_5_raw,recall_7_6_raw,recall_1_z,recall_2_z,recall_3_z,recall_4_z,recall_5_z,recall_s1_5_z,recall_b_z,,recall_6_z,recall_7_z,recall_7_5_z,recall_7_6_z,recognition_hits_raw,recognition_intrution_raw,recognition_hits_z,recognition_intrution_z";
+          m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+          //-------------------------------------
+          var cell_render=m.cell_render;
+            m.cell_render=function(records,I,field,td){
+                cell_render(records,I,field,td);
+                switch(field){
+                    case 'File_Name':
+                        m.set_file_link(records,I,field,td)
+                        break;
+                }
+            }
+            //-------------------------------------
+      }
+  </script>
+  <style>
+      VmInclude:__CURRENT_PATH__/wappsystem-data.css
+  </style>

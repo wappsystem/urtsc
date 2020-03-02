@@ -1,0 +1,28 @@
+<section>
+  VmInclude:__CURRENT_PATH__/grid.v1h.html
+</section>
+<script>
+  function F__ID(){
+      //-------------------------------------
+      VmInclude:__COMPONENT__/g/grid.01.js
+      VmInclude:__CURRENT_PATH__/shared-data.js
+      //-------------------------------------
+      $('#title__ID').text('PVT Upload and read')
+      //-------------------------------------
+      var fields="File_Name,PVT_Subject_ID,PVT_Trial_No,PVT_Trial_Date_Time,PVT_Study,PVT_Subj_Initials,PVT_Exp_Initials,PVT_ISIMin,PVT_ISIMax,PVT_HandUsed,PVT_TotalLength,PVT_PreVAS,PVT_PostVAS,PVT_GoodRs,PVT_MeanRT,PVT_SDRT,PVT_MedianRT,PVT_MinRT,PVT_MaxRT,PVT_MeanRRT,PVT_SDRRT,PVT_Lapses,PVT_Lap,PVT_TotalErrors,PVT_RTLess100,PVT_WrongKey,PVT_FalseStartsCorrKey,PVT_FalseStartsInCorrKey,PVT_KeyHeld,PVT_NoR30sec,PVT_DistribAsym,PVT_MeanFRT,PVT_SDFRT,PVT_MeanFRRT,PVT_MeanSDFRRT,PVT_MeanSRT,PVT_SDSRT,PVT_MeanSRRT,PVT_SDSRRT,PVT_RRTSlope,PVT_RRTIntcpt,PVT_RRTR2,PVT_CiSlope,PVT_STdErrOfLine,PVT_tVsZeroSlope,PVT_PercentChange";
+      m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+      //-------------------------------------
+      var cell_render=m.cell_render;
+            m.cell_render=function(records,I,field,td){
+                cell_render(records,I,field,td);
+                switch(field){
+                    case 'File_Name':
+                        m.set_file_link(records,I,field,td)
+                        break;
+                }
+            }
+  }
+</script>
+<style>
+  VmInclude:__CURRENT_PATH__/wappsystem-data.css
+</style>

@@ -1,0 +1,251 @@
+<div id=D__ID>
+    <!--third html start -->
+    <div class="container mt-95 mb-3">
+        <div class="row">
+            <!-- form container start -->
+            <div class="col-12 col-lg-12 col-md-11 col-sm-12 mx-auto formbox">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- form start -->
+                        <form id="F__ID">
+                            <h3>Medical History (short)</h3>
+                            <!-- participant part for all task forms -------------------->
+                            <div id="participant_div__ID">
+                                <div class="form-group">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Participant</span>
+                                            <input type=text name="Participant" class=form-control id=Participant__ID
+                                                data-id="Participant" />
+                                        </label><br>
+                                        <label><span class="">Participant ID</span>
+                                            <input type=text name="Participant_uid" class=form-control readonly />
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <!-- form group -->
+                            <div class="form-group">
+                                <div class="questiongroup">
+                                    <h4><b>1. Have you <u>ever</u> had any of these <u>doctor-diagnosed</u> illnesses or
+                                            procedures?</b><br>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>Have you suffered from any of the following symptoms or medical conditions?</h4>
+                                <div class="questiongroup ">
+                                    <fieldset>
+                                        <label class="checkboxes">High blood pressure
+                                            <input type="checkbox" name="hypertension">
+                                            <span class="check_checkmark"></span></label>
+                                    </fieldset>
+                                </div>
+                                <div class="questiongroup">
+                                    <fieldset class="">
+                                        <label class=""><span class="">Other heart condition. Please
+                                                specify:</span></label>
+                                        <input class="form-control" type=text name="heart_other_specify"><br>
+                                    </fieldset>
+                                </div>
+                                <div class="questiongroup ">
+                                    <fieldset>
+                                        <label class="checkboxes">Diabetes – Type 1
+                                            <input type="checkbox" name="diabetes_1">
+                                            <span class="check_checkmark"></span></label>
+                                    </fieldset>
+                                </div>
+                                <div class="questiongroup ">
+                                    <fieldset>
+                                        <label class="checkboxes">Diabetes – Type 2
+                                            <input type="checkbox" name="diabetes_2">
+                                            <span class="check_checkmark"></span></label>
+                                    </fieldset>
+                                </div>
+                                <div class="questiongroup ">
+                                    <fieldset>
+                                        <label class="checkboxes">Broken nose
+                                            <input type="checkbox" name="broken_nose">
+                                            <span class="check_checkmark"></span></label>
+                                    </fieldset>
+                                </div>
+                                <div class="questiongroup ">
+                                    <fieldset>
+                                        <label class="checkboxes">Stroke
+                                            <input type="checkbox" name="stroke">
+                                            <span class="check_checkmark"></span></label>
+                                    </fieldset>
+                                </div>
+                                <div class="questiongroup ">
+                                    <fieldset>
+                                        <label class="checkboxes">Epilepsy / Fits
+                                            <input type="checkbox" name="epilepsy">
+                                            <span class="check_checkmark"></span></label>
+                                    </fieldset>
+                                </div>
+                                <div class="questiongroup ">
+                                    <fieldset>
+                                        <label class="checkboxes">Tonsillitis / recurrent sore throat
+                                            <input type="checkbox" name="tonsillitis">
+                                            <span class="check_checkmark"></span></label>
+                                    </fieldset>
+                                </div>
+                                <div class="questiongroup ">
+                                    <fieldset>
+                                        <label class="checkboxes">Hay fever / sinusitis
+                                            <input type="checkbox" name="sinusitis">
+                                            <span class="check_checkmark"></span></label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>Please list ALL past and present medical conditions not previously listed:</h4>
+                                <div class="questiongroup ">
+                                    <fieldset class="">
+                                        <span class=""></span>
+                                        <textarea class="form-control" type=text name="Other_Medical_Condition"
+                                            placeholder="Other Medical Condition"></textarea>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>Have you ever undergone a surgical procedure?<br>&nbsp;&nbsp;&nbsp;&nbsp;If yes,
+                                    please list <i>(Hospital, Reason and Year)</i></h4>
+                                <div class="questiongroup ">
+                                    <fieldset class="">
+                                        <span class=""></span>
+                                        <textarea class="form-control" type=text name="Surgical_Procedure"
+                                            placeholder="Hospital  Reason  Year"></textarea>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>Are you currently taking any prescription OR non-prescription medication?
+                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;If yes, please list <i>(Name, Reason and Dose)</i></h4>
+                                <div class="questiongroup ">
+                                    <fieldset class="">
+                                        <span class=""></span>
+                                        <textarea class="form-control" type=text name="Medication"
+                                            placeholder="Name Reason Dose"></textarea>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">1. Weight (kg). Type 0 for
+                                                unknown&nbsp;&nbsp;&nbsp;</span>
+                                            <input class="form-control" type="number" min=0 max=300 name="weight"
+                                                placeholder="(kg)" required>
+                                        </label><br>
+                                        <label><span class="">2. Height (cm). Type 0 for unknown</span>
+                                            <input class="form-control" type="number" min=0 max=240 name="height"
+                                                placeholder="(cm)" required>
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>3. Have you ever had a sleep study before?</h4>
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="sleep_study" value="Yes" required>
+                                            <span class="checkmark"></span>Yes</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="sleep_study" value="No">
+                                            <span class="checkmark"></span>No</label><br>
+                                    </fieldset>
+                                </div>
+                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;If yes, please add the details of your most recent sleep
+                                    study:</h4>
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label>
+                                            <span>Date</span>
+                                            <input class="form-control" type="date" name="sleep_study_date"
+                                                placeholder="">
+                                        </label><br>
+                                        <label>
+                                            <span>Location</span>
+                                            <input class="form-control" type="text" name="sleep_study_location"
+                                                placeholder="">
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h4>4. Have you ever used a masked breathing device such a continuous positive airway
+                                    pressure (CPAP)?</h4>
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="cpap" value="Yes" required>
+                                            <span class="checkmark"></span>Yes</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="cpap" value="No">
+                                            <span class="checkmark"></span>No</label><br>
+                                    </fieldset>
+                                </div>
+                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;If yes, please answer:</h4>
+                                <h4>Was it successful/unsuccessful?</h4>
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="cpap_use" id="cpap_use__ID" value="successful">
+                                            <span class="checkmark"></span>Successful</label><br>
+                                        <label class="radiobuttons">
+                                            <input type="radio" name="cpap_use" value="unsuccessful">
+                                            <span class="checkmark"></span>Unsuccessful</label><br>
+                                    </fieldset>
+                                </div>
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label><span>If unsuccessful, why?</span></label>
+                                        <textarea class="form-control" name="cpap_unsuccessful"
+                                            placeholder=""></textarea>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function F__ID() {
+            //-------------------------------------
+            VmInclude: __COMPONENT__/f/form.01.js
+            VmInclude:__CURRENT_PATH__/shared-form.js
+            //-------------------------------------
+            var load2 = m.load;
+            m.load = function () {
+                load2();
+                if ($('input[name=cpap]:checked').val() == 'Yes') {
+                    $('#cpap_use__ID').prop('required', true);
+                }
+                else {
+                    $('#cpap_use__ID').prop('required', false);
+                }
+            }
+            //-------------------------------------
+            $('input[name=cpap]').on('click', function () {
+                if ($('input[name=cpap]:checked').val() == 'Yes') {
+                    $('#cpap_use__ID').prop('required', true);
+                }
+                else {
+                    $('#cpap_use__ID').prop('required', false);
+                }
+            })
+
+        }
+    </script>
+    <style>
+        #D__ID .mt-95 {
+            max-width: 600px;
+        }
+
+        VmInclude:__CURRENT_PATH__/wappsystem-form.css
+    </style>
+</div>

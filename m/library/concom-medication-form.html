@@ -1,0 +1,147 @@
+<div id=D__ID>
+    <!--third html start -->
+    <div class="container mt-95 mb-3">
+        <div class="row">
+            <!-- form container start -->
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- form start -->
+                        <form id="F__ID">
+                            <h3>Concomitant Medication</h3>
+                            <!-- participant part for all tsak forms -------------------->
+                            <div id="participant_div__ID">
+                                <div class="form-group">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Participant</span>
+                                            <input type=text name="Participant" class=form-control id=Participant__ID
+                                                data-id="Participant" />
+                                        </label><br>
+                                        <label><span class="">Participant ID</span>
+                                            <input type=text name="Participant_uid" class=form-control readonly />
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <!-- form group -->
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="">
+                                        <label style="width:100%"><span class="">Medication Name</span>
+                                            <input class="form-control" type="text" name="Medication">
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label style="width:100%"><span class="">Indication</span>
+                                            <input class="form-control" type="text" name="Indication">
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <fieldset class="subquestions">
+                                  <h4>Dose</h4>
+                                </fieldset>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Amount</span>
+                                            <input class="form-control" type="text" name="Amount">
+                                        </label><br>
+                                        <label><span class="">Units</span>
+                                            <input class="form-control" type="text" name="Units">
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Frequency</span>
+                                            <input class="form-control" type="text" name="Frequency">
+                                        </label><br>
+                                        <label><span class="">Route</span>
+                                            <input class="form-control" type="text" name="Route">
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <fieldset class="">
+                                    <div class=row>
+                                    <div class="col-6"><label><span class="">Frequency Codes:<br>
+                                        QD = 1 time daily <br>
+                                        BID = 2 times daily<br>
+                                        TID = 3 times daily <br>
+                                        QID = 4 times daily <br>
+                                        PRN = as needed<br>
+                                        BID/QOM = Twice a day every other month<br>
+                                        w/meal = with meals<br>
+                                        w/snack = with snack<br>
+                                    </span></label></div>
+                                    <div class="col-6"><label><span class="">Route Codes:<br>GT = Gastric<br>IV = Intravenous<br>SQ = subcutaneous
+                                        <br>NG = Nasogastric <br>NAS = Nasal <br>RE = Rectal
+                                        <br>TO = Topical <br>PO = Oral <br>IH = Inhaled
+                                        <br>IM = Intramuscular <br>IN = Intranasal</span></label></div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Start Date</span>
+                                            <input class="form-control" type="date" name="Start_Date">
+                                        </label><br>
+                                        <label><span class="">End Date</span>
+                                            <input class="form-control" type="date" name="End_Date">
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Ongoing?</span>
+                                            <select name="Ongoing" class=form-control>
+                                                <option></option>
+                                                <option>Yes</option>
+                                                <option>No</option>
+                                            </select>
+                                        </label><br>
+                                        <label><span class="">For AE?</span>
+                                            <select name="AE" class=form-control>
+                                                <option></option>
+                                                <option>Yes</option>
+                                                <option>No</option>
+                                            </select>
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function F__ID(){
+            //-------------------------------------
+            VmInclude:'__COMPONENT__/f/form.01.js'
+            VmInclude:__CURRENT_PATH__/shared-form.js
+            //-------------------------------------
+        }
+    </script>
+    <style>
+        #D__ID .mt-95 {
+        max-width:600px;
+    }
+        VmInclude:__CURRENT_PATH__/wappsystem-form.css
+    </style>
+</div>

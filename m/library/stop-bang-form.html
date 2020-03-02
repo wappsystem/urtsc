@@ -1,0 +1,166 @@
+<div id=D__ID>
+  <!--third html start -->
+  <div class="container mt-95 mb-3">
+    <div class="row">
+      <!-- form container start -->
+      <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+        <div class="row">
+          <div class="col-12">
+            <!-- form start -->
+            <form id="F__ID">
+              <h3>STOP-BANG QUESTIONNAIRE</h3>
+              <!-- participant part for all tsak forms -------------------->
+              <div id="participant_div__ID">
+                <div class="form-group">
+                  <fieldset class="subquestions">
+                    <label><span class="">Participant</span>
+                      <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant" />
+                    </label><br>
+                    <label><span class="">Participant ID</span>
+                      <input type=text name="Participant_uid" class=form-control readonly />
+                    </label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="form-group">
+                <h4>Snoring?</h4>
+                <div class="questiongroup ">
+                  <span>Do you <b>snore loudly</b> (loud enough to be heard through closed
+                    doors or your bed-partner elbows you for snoring at night)?</span>
+                  <fieldset class="">
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_1" value="1" required >
+                      <span class="checkmark"></span> Yes</label>
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_1" value="0">
+                      <span class="checkmark"></span> No</label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="form-group">
+                <h4>Tired?</h4>
+                <div class="questiongroup ">
+                  <span>Do you often feel <b>tired, fatigued, or sleepy</b> during the daytime
+                    (such as falling asleep during driving or talking to someone)?</span>
+                  <fieldset class="">
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_2" value="1" required >
+                      <span class="checkmark"></span> Yes</label>
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_2" value="0">
+                      <span class="checkmark"></span> No</label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="form-group">
+                <h4>Observed?</h4>
+                <div class="questiongroup ">
+                  <span>Has anyone <b>observed</b> you <b>stop breathing</b> or <b>choking/gasping</b>
+                    during your sleep?</span>
+                  <fieldset class="">
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_3" value="1" required >
+                      <span class="checkmark"></span> Yes</label>
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_3" value="0">
+                      <span class="checkmark"></span> No</label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="form-group">
+                <h4>Pressure?</h4>
+                <div class="questiongroup ">
+                  <span>Do you have or are being treated for high blood pressure?</span>
+                  <fieldset class="">
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_4" value="1" required >
+                      <span class="checkmark"></span> Yes</label>
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_4" value="0">
+                      <span class="checkmark"></span> No</label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="form-group">
+                <h4>Body Mass Index more than 35 kg/m 2 ?</h4>
+                <div class="questiongroup ">
+                  <fieldset class="">
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_5" value="1" required >
+                      <span class="checkmark"></span> Yes</label>
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_5" value="0">
+                      <span class="checkmark"></span> No</label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="form-group">
+                <h4>Age older than 50?</h4>
+                <div class="questiongroup ">
+                  <fieldset class="">
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_6" value="1" required >
+                      <span class="checkmark"></span> Yes</label>
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_6" value="0">
+                      <span class="checkmark"></span> No</label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="form-group">
+                <h4>Neck size large ? (measured around Adams apple)?</h4>
+                <div class="questiongroup ">
+                  <span>For male, is your shirt collar 17 inches/ 43cm or larger?<br>
+                    For female, is your shirt collar 16 inches/ 41 cm or larger?</span>
+                  <fieldset class="">
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_7" value="1" required >
+                      <span class="checkmark"></span> Yes</label>
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_7" value="0">
+                      <span class="checkmark"></span> No</label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="form-group">
+                <h4>Gender = Male?</h4>
+                <div class="questiongroup ">
+                  <fieldset class="">
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_8" value="1" required >
+                      <span class="checkmark"></span> Yes</label>
+                    <label class="radiobuttons">
+                      <input type="radio" name="SB_8" value="0">
+                      <span class="checkmark"></span> No</label>
+                  </fieldset>
+                </div>
+              </div>
+              <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function F__ID() {
+      //-------------------------------------
+      VmInclude: __COMPONENT__/f/form.01.js
+      VmInclude: __CURRENT_PATH__/shared-form.js
+         //-------------------------------------
+         var before_submit=m.before_submit;
+            m.before_submit=function(data,index){
+              data.SB=(parseInt(data.SB_1)+parseInt(data.SB_2)+parseInt(data.SB_3)+parseInt(data.SB_4)+parseInt(data.SB_5)+parseInt(data.SB_6)+parseInt(data.SB_7)+parseInt(data.SB_8)).toString();
+              return before_submit(data,index);
+          }
+          //-------------------------------------
+    }
+  </script>
+  <style>
+    #D__ID .mt-95 {
+      max-width: 600px;
+    }
+
+    VmInclude:__CURRENT_PATH__/wappsystem-form.css
+  </style>
+</div>

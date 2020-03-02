@@ -1,0 +1,29 @@
+<section>
+    VmInclude:__CURRENT_PATH__/grid.v1h.html
+</section>
+  <script>
+      function F__ID(){
+          //-------------------------------------
+          VmInclude:__COMPONENT__/g/grid.01.js
+          VmInclude:__CURRENT_PATH__/shared-data.js
+        //-------------------------------------
+        $('#title__ID').text('Stroop');
+          //-------------------------------------
+          var fields="File_Name,stroop_c1_total_uncorrected_errors,stroop_c1_total_selfcorrected_errors,stroop_c1_total_complete_time,stroop_c1_time_completion_score,stroop_c2_total_uncorrected_errors,stroop_c2_total_selfcorrected_errors,stroop_c2_total_complete_time,stroop_c2_time_completion_score,stroop_c3_total_uncorrected_errors,stroop_c3_total_selfcorrected_errors,stroop_c3_total_complete_time,stroop_c3_time_completion_score,stroop_c4_total_uncorrected_errors,stroop_c4_total_selfcorrected_errors,stroop_c4_total_complete_time,stroop_c4_time_completion_score";
+          m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+          //-------------------------------------
+          var cell_render=m.cell_render;
+            m.cell_render=function(records,I,field,td){
+                cell_render(records,I,field,td);
+                switch(field){
+                    case 'File_Name':
+                        m.set_file_link(records,I,field,td)
+                        break;
+                }
+            }
+            //-------------------------------------
+      }
+  </script>
+  <style>
+      VmInclude:__CURRENT_PATH__/wappsystem-data.css
+  </style>

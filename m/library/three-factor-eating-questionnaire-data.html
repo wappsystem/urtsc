@@ -1,0 +1,19 @@
+<section>
+  VmInclude:__CURRENT_PATH__/grid.v1h.html
+</section>
+<script>
+  function F__ID(){
+      //-------------------------------------
+      VmInclude:__COMPONENT__/g/grid.01.js
+      VmInclude:__CURRENT_PATH__/shared-data.js
+      //-------------------------------------
+      $('#title__ID').text('Three-Factor Eating Questionnaire (TFEQ-R18)');
+      //-------------------------------------
+      var fields="TFEQ_1,TFEQ_2,TFEQ_3,TFEQ_4,TFEQ_5,TFEQ_6,TFEQ_7,TFEQ_8,TFEQ_9,TFEQ_10,TFEQ_11,TFEQ_12,TFEQ_13,TFEQ_14,TFEQ_15,TFEQ_16,TFEQ_17,TFEQ_18,TFEQ_Uncontrolled,TFEQ_Cognitive_Restraint,TFEQ_Emotional,TFEQ_Total_Score";
+      m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+      //-------------------------------------
+  }
+</script>
+<style>
+  VmInclude:__CURRENT_PATH__/wappsystem-data.css
+</style>

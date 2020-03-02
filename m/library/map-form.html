@@ -1,0 +1,273 @@
+<div id=D__ID>
+
+<!--third html start -->
+    <div class="container mt-95 mb-3">
+      <div class="row" >
+        <!-- form container start -->
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+          <div class="row">
+            <div class="col-12">
+              <!-- form start -->
+              <form id="F__ID">
+                  <h3>Multivariable Apnea Predictor Questionnaire</h3>
+                  <!-- participant name and study id -->
+                  <div id="participant_div__ID">
+                      <div class="form-group">
+                         <fieldset class="subquestions">
+                             <label ><span class="">Participant</span>
+                                 <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant"/>
+                             </label><br>
+                             <label ><span class="">Participant ID</span>
+                                 <input type=text name="Participant_uid" class=form-control readonly />
+                             </label>
+                          </fieldset>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="questiongroup ">
+                        <fieldset class="">
+                            <label ><span class="">Age (years)</span>
+                                <input class="form-control" type="number" min=15 max=100 name="Age" placeholder="" required >
+                            </label>
+                        </fieldset>
+                        <label ><span class="">Gender</span>
+                        </label><br>
+                         <label class="radiobuttons">
+                          <input type="radio" name="gender" value="Male" required >
+                          <span class="checkmark"></span> Male</label>
+                        <label class="radiobuttons">
+                          <input type="radio" name="gender" value="Female">
+                          <span class="checkmark"></span> Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="questiongroup ">
+                      <fieldset class="subquestions">
+                          <label ><span class="">Weight (kg)</span>
+                              <input class="form-control" type="number" min=30 max=250 name="Weight" id=weight__ID placeholder="" required >
+                          </label><br>
+                          <label ><span class="">Height (cm)</span>
+                              <input class="form-control" type="number" name="Height" id=height__ID min=100 max=250 placeholder="" required >
+                          </label><br>
+                        </fieldset>
+                    </div>
+                </div>
+                 <div class="form-group">
+                      <fieldset class="subquestions">
+                          <h4>During the last month, on how many nights or days per week have you been told you had the following? <br>
+                          Show the frequency by clicking the circle. </h4>
+                      </fieldset>
+                  </div>
+                  <div class="form-group sticky-top shadow-sm bg-light">
+                      <div id=legend__ID class="questiongroup " >
+                          <fieldset class="">
+                              <label class="radiobuttons" style='cursor:default!important'>
+                                  <span class="checkmark no-dot">0</span>= Never
+                              </label><br>
+                              <label class="radiobuttons" style='cursor:default!important'>
+                                  <span class="checkmark no-dot">1</span>= Rarely (less than once a week)
+                              </label><br>
+                              <label class="radiobuttons" style='cursor:default!important'>
+                                  <span class="checkmark no-dot">2</span>= Sometimes (1-2 /week)
+                              </label><br>
+                              <label class="radiobuttons" style='cursor:default!important'>
+                                  <span class="checkmark no-dot">3</span>= Frequently (3-4/week)
+                              </label><br>
+                              <label class="radiobuttons" style='cursor:default!important'>
+                                  <span class="checkmark no-dot">4</span>= Always (5-7/week)
+                              </label><br>
+                              <label class="radiobuttons" style='cursor:default!important'>
+                                  <span class="checkmark no-dot">DK</span>= Don’t Know
+                              </label><br>
+                           </fieldset>
+                       </div>
+                       <button type="button" id="btn_legend__ID" class="btn btn-primary mb-1 mt-0 mx-0 p-1">Hide legend</button>
+                  </div>
+                  <div class="form-group">
+                      <h4>1. Snorting or gasping</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Never">
+                                <input type="radio" name="MAP_1" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Rarely (less than once a week)">
+                                <input type="radio" name="MAP_1" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Sometimes (1-2 /week)">
+                                <input type="radio" name="MAP_1" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Frequently (3-4/week)">
+                                <input type="radio" name="MAP_1" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                              <label class="radiobuttons" title="Always (5-7/week)">
+                                <input type="radio" name="MAP_1" value="4">
+                                <span class="checkmark no-dot">4</span></label>
+                              <label class="radiobuttons" title="Don’t Know">
+                                <input type="radio" name="MAP_1" value="DK">
+                                <span class="checkmark no-dot">DK</span></label>
+                          </fieldset>
+                          <label id=MAP_sel_1>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                     <h4>2. Loud snoring</h4>
+                     <div class="questiongroup">
+                         <fieldset>
+                             <label class="radiobuttons" title="Never">
+                               <input type="radio" name="MAP_2" value="0" required>
+                               <span class="checkmark no-dot">0</span></label>
+                             <label class="radiobuttons" title="Rarely (less than once a week)">
+                               <input type="radio" name="MAP_2" value="1">
+                               <span class="checkmark no-dot">1</span></label>
+                             <label class="radiobuttons" title="Sometimes (1-2 /week)">
+                               <input type="radio" name="MAP_2" value="2">
+                               <span class="checkmark no-dot">2</span></label>
+                             <label class="radiobuttons" title="Frequently (3-4/week)">
+                               <input type="radio" name="MAP_2" value="3">
+                               <span class="checkmark no-dot">3</span></label>
+                             <label class="radiobuttons" title="Always (5-7/week)">
+                               <input type="radio" name="MAP_2" value="4">
+                               <span class="checkmark no-dot">4</span></label>
+                             <label class="radiobuttons" title="Don’t Know">
+                               <input type="radio" name="MAP_2" value="DK">
+                               <span class="checkmark no-dot">DK</span></label>
+                         </fieldset>
+                         <label id=MAP_sel_2>&nbsp;</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                     <h4>3. Breathing stops, choke, or struggle for breath</h4>
+                     <div class="questiongroup">
+                        <fieldset>
+                            <label class="radiobuttons" title="Never">
+                              <input type="radio" name="MAP_3" value="0" required>
+                              <span class="checkmark no-dot">0</span></label>
+                            <label class="radiobuttons" title="Rarely (less than once a week)">
+                              <input type="radio" name="MAP_3" value="1">
+                              <span class="checkmark no-dot">1</span></label>
+                            <label class="radiobuttons" title="Sometimes (1-2 /week)">
+                              <input type="radio" name="MAP_3" value="2">
+                              <span class="checkmark no-dot">2</span></label>
+                            <label class="radiobuttons" title="Frequently (3-4/week)">
+                              <input type="radio" name="MAP_3" value="3">
+                              <span class="checkmark no-dot">3</span></label>
+                            <label class="radiobuttons" title="Always (5-7/week)">
+                              <input type="radio" name="MAP_3" value="4">
+                              <span class="checkmark no-dot">4</span></label>
+                            <label class="radiobuttons" title="Don’t Know">
+                              <input type="radio" name="MAP_3" value="DK">
+                              <span class="checkmark no-dot">DK</span></label>
+                        </fieldset>
+                        <label id=MAP_sel_3>&nbsp;</label>
+                     </div>
+                  </div>
+                  <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+              </form>
+            </div>
+         </div>
+        </div>
+      </div>
+  </div>
+  <script>
+      function F__ID(){
+          //-------------------------------------
+          VmInclude:__COMPONENT__/f/form.01.js
+          VmInclude:__CURRENT_PATH__/shared-form.js
+          //-------------------------------------
+          $('#btn_legend__ID').on('click',function(){
+              if($('#btn_legend__ID').text()=='Hide legend'){
+                $('#btn_legend__ID').text('Show legend');
+                $('#legend__ID').hide();
+            }
+            else {
+                $('#btn_legend__ID').text('Hide legend');
+                $('#legend__ID').show();
+            }
+          });
+          $("#D__ID input[name=MAP_1]").on('click',function(){
+              set_selected_text(1)
+          })
+          $("#D__ID input[name=MAP_2]").on('click',function(){
+              set_selected_text(2)
+          })
+          $("#D__ID input[name=MAP_3]").on('click',function(){
+              set_selected_text(3)
+          })
+          //-------------------------------------
+          var load2=m.load;
+              m.load=function(){
+              load2();
+              for(var i=0;i<8;i++){
+                  set_selected_text(i+1)
+              }
+              $('#D__ID').css('overflow','visible');              
+          }
+          //-------------------------------------
+         var set_selected_text=function(i){
+             $("#MAP_sel_"+i+"").css('padding-top','10px').css('color','#EA7859');
+             switch ($("#D__ID input[name=MAP_"+i+"]:checked").val()) {
+                 case '0':
+                     $("#MAP_sel_"+i+"").text("Never");
+                 break;
+                 case '1':
+                     $("#MAP_sel_"+i+"").text("Rarely (less than once a week)");
+                 break;
+                 case '2':
+                     $("#MAP_sel_"+i+"").text("Sometimes (1-2 /week)");
+                 break;
+                 case '3':
+                     $("#MAP_sel_"+i+"").text("Frequently (3-4/week)");
+                 break;
+                 case '4':
+                     $("#MAP_sel_"+i+"").text("Always (5-7/week)");
+                 break;
+                 case 'DK':
+                     $("#MAP_sel_"+i+"").text("Don’t Know");
+                 break;
+                 default:
+                    /*$("#MAP_sel_"+i+"").text("");*/
+                break;
+             }
+         }
+         //-------------------------------------
+         var before_submit=m.before_submit;
+              m.before_submit=function(data,index){
+              var age='';age=$("#D__ID input[name=Age]").val();
+              var height='';height=$("#D__ID input[name=Height]").val();
+              var weight='';weight=$("#D__ID input[name=Weight]").val();
+              var sex=''; sex=$("#D__ID input[name=gender]:checked").val()
+              var answ=0;
+              var v1=0;
+              var v2=0;
+              var v3=0;
+              if($("#D__ID input[name=MAP_1]:checked").val()!=='DK') { v1=parseInt($("#D__ID input[name=MAP_1]:checked").val());answ++;}
+              if($("#D__ID input[name=MAP_2]:checked").val()!=='DK') { v1=parseInt($("#D__ID input[name=MAP_2]:checked").val());answ++;}
+              if($("#D__ID input[name=MAP_3]:checked").val()!=='DK') { v1=parseInt($("#D__ID input[name=MAP_3]:checked").val());answ++;}
+              if(answ>0){
+                  if(sex==='' || height==='' || weight==='' || age===''){
+                      data.MAP="age, sex, height or/and weight is/are missing. Can't calculate MAP Score";
+                  }
+                  else{
+                      if(sex=='Male') sex=1; else sex=0;
+                      age=parseFloat(age);
+                      height=parseFloat(height);
+                      weight=parseFloat(weight);
+                      var map_index=(v1+v2+v3)/answ;
+                      var bmi=weight/height/height*100*100;
+                      var x=-8.160+1.229*map_index+0.163*bmi-0.028*map_index*bmi+0.032*age+1.278*sex;
+    	              data.MAP=(Math.exp(x)/(1+Math.exp(x))).toFixed(2);
+                  }
+              }
+              else data.MAP='DK';
+              return before_submit(data,index);;
+          }
+          //-------------------------------------
+      }
+  </script>
+   <style>
+    #D__ID .mt-95 {
+    max-width:600px;
+}
+    VmInclude:__CURRENT_PATH__/wappsystem-form.css
+</style>
+</div>

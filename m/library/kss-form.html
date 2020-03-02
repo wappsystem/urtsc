@@ -1,0 +1,82 @@
+<div id=D__ID>
+  <!--third html start -->
+  <div class="container mt-95 mb-3">
+    <div class="row">
+      <!-- form container start -->
+      <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+        <div class="row">
+          <div class="col-12">
+            <!-- form start -->
+            <form id="F__ID">
+              <h3>Karolinska Sleepiness Scale (KSS)</h3>
+              <!-- participant part for all tsak forms -------------------->
+              <div id="participant_div__ID">
+                <div class="form-group">
+                  <fieldset class="subquestions">
+                    <label><span class="">Participant</span>
+                      <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant" />
+                    </label><br>
+                    <label><span class="">Participant ID</span>
+                      <input type=text name="Participant_uid" class=form-control readonly />
+                    </label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="form-group">
+                <h4>Please indicate your sleepiness during the last 5 minutes. Give yourself a rating by clicking in the
+                  appropriate box. Remember that you may also use intermediate steps.</h4>
+                <div class="questiongroup">
+                  <fieldset>
+                    <label class="radiobuttons">
+                      <input type="radio" name="KSS" value="1" required>
+                      <span class="checkmark no-dot">1</span> - Very Alert</label><br>
+                    <label class="radiobuttons">
+                      <input type="radio" name="KSS" value="2">
+                      <span class="checkmark no-dot">2</span> -</label><br>
+                    <label class="radiobuttons">
+                      <input type="radio" name="KSS" value="3">
+                      <span class="checkmark no-dot">3</span> - Alert-normal level</label><br>
+                    <label class="radiobuttons">
+                      <input type="radio" name="KSS" value="4">
+                      <span class="checkmark no-dot">4</span> -</label><br>
+                    <label class="radiobuttons">
+                      <input type="radio" name="KSS" value="5">
+                      <span class="checkmark no-dot">5</span> - Neither alert nor sleepy</label><br>
+                    <label class="radiobuttons">
+                      <input type="radio" name="KSS" value="6">
+                      <span class="checkmark no-dot">6</span> -</label><br>
+                    <label class="radiobuttons">
+                      <input type="radio" name="KSS" value="7">
+                      <span class="checkmark no-dot">7</span> - Sleepy-but no effort to stay awake</label><br>
+                    <label class="radiobuttons">
+                      <input type="radio" name="KSS" value="8">
+                      <span class="checkmark no-dot">8</span> -</label><br>
+                    <label class="radiobuttons">
+                      <input type="radio" name="KSS" value="9">
+                      <span class="checkmark no-dot">9</span> - Very sleepy, great effort to keep awake, fighting sleep</label><br>
+                    </fieldset>
+                </div>
+              </div>
+              <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function F__ID() {
+      //-------------------------------------
+      VmInclude: __COMPONENT__/f/form.01.js
+      VmInclude:__CURRENT_PATH__/shared-form.js
+      //-------------------------------------
+    }
+  </script>
+  <style>
+    #D__ID .mt-95 {
+      max-width: 600px;
+    }
+
+    VmInclude:__CURRENT_PATH__/wappsystem-form.css
+  </style>
+</div>

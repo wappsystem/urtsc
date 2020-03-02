@@ -1,0 +1,19 @@
+<section>
+  VmInclude:__CURRENT_PATH__/grid.v1h.html
+</section>
+<script>
+  function F__ID() {
+    //-------------------------------------
+    VmInclude: __COMPONENT__/g/grid.01.js
+    VmInclude: __CURRENT_PATH__/shared-data.js
+    //-------------------------------------
+    $('#title__ID').text('General Self-Efficacy Scale')
+    //-------------------------------------
+    var fields = "gses_1,gses_2,gses_3,gses_4,gses_5,gses_6,gses_7,gses_8,gses_9,gses_10,gses";
+    m.fields = "_Form,_Status,_Notes,_Participant_ID,Participant," + fields + ",Submit_date,Submitted_by,_Delete";
+    //-------------------------------------
+  }
+</script>
+<style>
+  VmInclude:__CURRENT_PATH__/wappsystem-data.css
+</style>

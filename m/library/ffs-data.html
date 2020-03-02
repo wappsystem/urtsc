@@ -1,0 +1,19 @@
+<section>
+    VmInclude:__CURRENT_PATH__/grid.v1h.html
+  </section>
+  <script>
+    function F__ID(){
+        //-------------------------------------
+        VmInclude:__COMPONENT__/g/grid.01.js
+        VmInclude:__CURRENT_PATH__/shared-data.js
+        //-------------------------------------
+        $('#title__ID').text('Flinders Fatigue Scale')
+        //-------------------------------------
+        var fields="FFS_1,FFS_2,FFS_3,FFS_4,FFS_5_em,FFS_5_mm,FFS_5_m,FFS_5_ma,FFS_5_la,FFS_5_ee,FFS_5_le,FFS_6,FFS_7,FFS";
+        m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+        //-------------------------------------
+    }
+  </script>
+  <style>
+    VmInclude:__CURRENT_PATH__/wappsystem-data.css
+  </style>

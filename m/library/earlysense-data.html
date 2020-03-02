@@ -1,0 +1,29 @@
+<section>
+    VmInclude:__CURRENT_PATH__/grid.v1h.html
+</section>
+  <script>
+      function F__ID(){
+          //-------------------------------------
+          VmInclude:__COMPONENT__/g/grid.01.js
+          VmInclude:__CURRENT_PATH__/shared-data.js
+        //-------------------------------------
+        $('#title__ID').text('EarlySense');
+          //-------------------------------------
+          var fields="File_Name,Avg. Heart Rate (bpm)|avg_HR,Avg. Breathing Rate (bpm)|avg_breath,Avg. Stress Level|avg_stress,REM (% of total sleep time)|rem,Light Sleep (% of total sleep time)|light_sleep,Deep Sleep (% of total sleep time)|deep_sleep,Total Sleep Time (min)|total_sleep,Sleep Score (0-100)|sleep_score,Time to Fall Asleep (min)|sleep_onset,Time Awake (min)|time_awake,Total Time in Bed (min)|time_in_bed,Time|time";
+          m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+          //-------------------------------------
+          var cell_render=m.cell_render;
+            m.cell_render=function(records,I,field,td){
+                cell_render(records,I,field,td);
+                switch(field){
+                    case 'File_Name':
+                        m.set_file_link(records,I,field,td)
+                        break;
+                }
+            }
+            //-------------------------------------
+      }
+  </script>
+  <style>
+      VmInclude:__CURRENT_PATH__/wappsystem-data.css
+  </style>

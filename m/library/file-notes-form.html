@@ -1,0 +1,76 @@
+<div id=D__ID>
+    <div class="container mt-95 mb-3">
+      <div class="row" >
+        <!-- form container start -->
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+          <div class="row">
+            <div class="col-12">
+              <!-- form start -->
+              <form id="F__ID">
+                 <h3>Montreal Cognitive Assessment (MoCA)</h3>
+                 <!-- participant part for all tsak forms -------------------->
+                 <div id="participant_div__ID">
+                     <div class="row px-4">
+                         <div class="col-sm-12 col-lg-9 ">
+                             <span class=label__ID>Participant</span><br>
+                             <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant" />
+                         </div>
+                         <div class="col-sm-12 col-lg-3">
+                             <span class=label__ID>Participant ID</span><br>
+                             <input type=text name="Participant_uid" class=form-control readonly />
+                         </div>
+                     </div>
+                     <hr>
+                 </div>
+                 <div class="row px-4">
+                    <div class='col'>
+                       <span>Notes</span>
+                       <div class="form-control">
+                          <textarea class="form-control" name=Notes></textarea>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row px-4">
+                    <div class='col'>
+                       <span>File</span>
+                       <div class="form-control">
+                           <u style='cursor:pointer' id=link_File_Name__ID></u>
+                           <br>
+                           <input type="file" name=File_Name style="margin-top:6px" /> &nbsp&nbsp&nbsp <button type="button" id=x_File_Name__ID>Remove</button>
+                       </div>
+                    </div>
+                </div>
+                <!-- form group -->
+                 <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+                 <hr>
+              </form>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    VmInclude:__COMPONENT__/m/model.01.html
+    <script>
+        //---------------------------------------------
+        function F__ID(){
+            //-------------------------------------
+			VmInclude:'__COMPONENT__/f/form.01.js'
+            VmInclude:__CURRENT_PATH__/shared-form.js
+            //-------------------------------------
+            var load2=m.load;
+            m.load=function(){
+                load2();
+                if(m.input.readonly!=undefined) $('#submit__ID').hide();
+                //render_file_field_v2(m.input.record,'__ID',$('#File_Name__ID'));
+                m.set_file_link("File_Name");
+            }
+        }
+    </script>
+    <style>
+        #D__ID .mt-95 {
+            max-width:800px;
+        }
+        VmInclude:__CURRENT_PATH__/wappsystem-form.css
+    </style>
+</div>

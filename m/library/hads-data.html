@@ -1,0 +1,19 @@
+<section>
+  VmInclude:__CURRENT_PATH__/grid.v1h.html
+</section>
+<script>
+  function F__ID(){
+      //-------------------------------------
+      VmInclude:__COMPONENT__/g/grid.01.js
+      VmInclude:__CURRENT_PATH__/shared-data.js
+      //-------------------------------------
+      $('#title__ID').text('Hospital Anxiety and Depression Scale (HADS) ');
+      //-------------------------------------
+      var fields="HADS_1,HADS_2,HADS_3,HADS_4,HADS_5,HADS_6,HADS_7,HADS_8,HADS_9,HADS_10,HADS_11,HADS_12,HADS_13,HADS_14,HADS_D,HADS_A";
+      m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+      //-------------------------------------
+  }
+</script>
+<style>
+  VmInclude:__CURRENT_PATH__/wappsystem-data.css
+</style>

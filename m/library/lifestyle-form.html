@@ -1,0 +1,428 @@
+<div id=D__ID>
+<!--third html start -->
+    <div class="container mt-95 mb-3">
+      <div class="row" >
+        <!-- form container start -->
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+          <div class="row">
+            <div class="col-12">
+              <!-- form start -->
+              <form id="F__ID">
+                  <h3>Lifestyle</h3>
+                  <!-- participant part for all tsak forms -------------------->
+                  <div id="participant_div__ID">
+                      <div class="form-group">
+                         <fieldset class="subquestions">
+                             <label ><span class="">Participant</span>
+                                 <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant" />
+                             </label><br>
+                             <label ><span class="">Participant ID</span>
+                                 <input type=text name="Participant_uid" class=form-control readonly />
+                             </label>
+                          </fieldset>
+                      </div>
+                  </div>
+                  <h7>General Health</h7>
+                  <div class="form-group">
+                      <h4>How would you describe your general health?</h4>
+      				<div class="questiongroup ">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons">
+                                <input type="radio" name="general_health" value="4" required>
+                                <span class="checkmark"></span> Excellent</label><br>
+                              <label class="radiobuttons">
+                                <input type="radio" name="general_health" value="3">
+                                <span class="checkmark"></span> Very Good</label><br>
+                              <label class="radiobuttons">
+                                <input type="radio" name="general_health" value="2">
+                                <span class="checkmark"></span> Good</label><br>
+                              <label class="radiobuttons">
+                                <input type="radio" name="general_health" value="1">
+                                <span class="checkmark"></span> Fair</label><br>
+                              <label class="radiobuttons">
+                                <input type="radio" name="general_health" value="0">
+                                <span class="checkmark"></span> Poor</label>
+                          </fieldset>
+                     </div>
+                 </div>
+                 <h7>Physical Activity</h7>
+                 <div class="form-group">
+                     <h4>How often, on average, do you do at least 30 minutes of moderate physical activity - like walking?</h4>
+                   <div class="questiongroup ">
+                         <fieldset class="">
+                             <label class="radiobuttons">
+                               <input type="radio" name="physical_activity" value="0" required>
+                               <span class="checkmark"></span> Never</label><br>
+                             <label class="radiobuttons">
+                               <input type="radio" name="physical_activity" value="1">
+                               <span class="checkmark"></span> Sometimes</label><br>
+                             <label class="radiobuttons">
+                               <input type="radio" name="physical_activity" value="2">
+                               <span class="checkmark"></span> A couple of days a week</label><br>
+                             <label class="radiobuttons">
+                               <input type="radio" name="physical_activity" value="3">
+                               <span class="checkmark"></span> Most days a week</label><br>
+                             <label class="radiobuttons">
+                               <input type="radio" name="physical_activity" value="4">
+                               <span class="checkmark"></span> Everyday</label>
+                         </fieldset>
+                    </div>
+                </div>
+                <h7>Smoke</h7>
+                <div class="form-group">
+                    <h4>Have you ever smoked?</h4>
+                  <div class="questiongroup ">
+                        <fieldset class="subquestions">
+                            <label class="radiobuttons">
+                              <input type="radio" name="smoke" id="smoke__ID" value="0" required>
+                              <span class="checkmark"></span> No</label><br>
+                            <label class="radiobuttons">
+                              <input type="radio" name="smoke" value="1">
+                              <span class="checkmark"></span> Yes</label>
+                        </fieldset>
+                   </div>
+               </div>
+               <div id=regular_smoke__ID class="form-group">
+                   <h4>Do you or did you smoke regularly?</h4>
+                   <span class="text-italic small">("No" means less than 20 packs in a lifetime or less than 1 cigarette per day for 1 year).</span>
+                 <div class="questiongroup ">
+                       <fieldset class="subquestions">
+                           <label class="radiobuttons">
+                             <input type="radio" name="smoke_regular" id="smoke_regular__ID" value="0" required>
+                             <span class="checkmark"></span> No</label><br>
+                           <label class="radiobuttons">
+                             <input type="radio" name="smoke_regular" value="1">
+                             <span class="checkmark"></span> Yes</label>
+                       </fieldset>
+                  </div>
+                 </div>
+                 <div id=stopped_smoke__ID class="form-group">
+                     <h4>If you previously smoked but have stopped, in which year did you last smoke?</h4>
+                    <div class="questiongroup ">
+                        <fieldset class="">
+                           <label ><span class=""></span>
+                               <input class="form-control" type="number" min=1930 max=2030 name="smoke_stop" id=smoke_stop__ID placeholder="" >
+                           </label><br>
+                         </fieldset>
+                     </div>
+                 </div>
+                 <div id=first_smoke__ID class="form-group">
+                     <h4>How old were you when you <u>first started regular</u> cigarette smoking?</h4>
+                    <div class="questiongroup ">
+                        <fieldset class="">
+                           <label ><span class=""></span>
+                               <input class="form-control" type="number" name="smoke_age" id="smoke_age__ID" min=5 max=50 placeholder="" >
+                           </label><br>
+                         </fieldset>
+                     </div>
+                 </div>
+                 <div id=number_smoke__ID class="form-group">
+                     <h4>On average, over the entire time you smoked, how many cigarettes did you smoke <u>each day?</u></h4>
+                    <div class="questiongroup ">
+                        <fieldset class="">
+                           <label ><span class=""></span>
+                               <input class="form-control" type="number" name="smoke_per_day" id="smoke_per_day__ID"  min=1 max=100 placeholder="" >
+                           </label><br>
+                         </fieldset>
+                     </div>
+                 </div>
+                 <h7>Alcohol</h7>
+                 <div class="form-group">
+                     <h4><u>In a typical week during the past year</u>, on how many days did you consume an alcoholic drink of any type? Please check the appropriate answer.</h4>
+                   <div class="questiongroup ">
+                         <fieldset class="subquestions">
+                             <label class="radiobuttons">
+                               <input type="radio" name="alcohol" id="alcohol__ID" value="0" required>
+                               <span class="checkmark"></span>0 days / do not drink alcohol
+                             </label><br>
+                             <label class="radiobuttons">
+                               <input type="radio" name="alcohol" value="1">
+                               <span class="checkmark"></span>1 day
+                             </label><br>
+                             <label class="radiobuttons">
+                               <input type="radio" name="alcohol" value="2">
+                               <span class="checkmark"></span>2 days
+                             </label><br>
+                             <label class="radiobuttons">
+                               <input type="radio" name="alcohol" value="3">
+                               <span class="checkmark"></span> 3 days
+                             </label><br>
+                             <label class="radiobuttons">
+                               <input type="radio" name="alcohol" value="4">
+                               <span class="checkmark"></span> 4 days
+                             </label><br>
+                             <label class="radiobuttons">
+                               <input type="radio" name="alcohol" value="5">
+                               <span class="checkmark"></span> 5 days
+                             </label><br>
+                             <label class="radiobuttons">
+                               <input type="radio" name="alcohol" value="6">
+                               <span class="checkmark"></span> 6 days
+                           </label><br>
+                             <label class="radiobuttons">
+                               <input type="radio" name="alcohol" value="7">
+                               <span class="checkmark"></span> 7 days
+                             </label>
+                         </fieldset>
+                    </div>
+                </div>
+                <div id="alcohol_drinks__ID" class="form-group">
+                    <h4>On days <u>when you drink alcohol</u>, how many <u>standard drinks</u> of beer, wine / or other type of alcohol would you have? <i>(<a href="https://cbs.wappsystem.com/users/astn/files/116_Standard_Drinks.png" target="_blank">Click here</a> for list of standard drinks)</i>
+                        <br>Please check the appropriate answer.</h4>
+                  <div class="questiongroup ">
+                      <h4>Workday(s)</h4>
+                        <fieldset class="subquestions">
+                            <label class="radiobuttons">
+                              <input type="radio" name="alcohol_standard_wd" id="alcohol_standard_wd__ID" value="0" required>
+                              <span class="checkmark"></span> None
+                            </label><br>
+                            <label class="radiobuttons">
+                              <input type="radio" name="alcohol_standard_wd" value="1">
+                              <span class="checkmark"></span> 1-2 drinks
+                            </label><br>
+                            <label class="radiobuttons">
+                              <input type="radio" name="alcohol_standard_wd" value="2">
+                              <span class="checkmark"></span> 3-5 drinks
+                            </label><br>
+                            <label class="radiobuttons">
+                              <input type="radio" name="alcohol_standard_wd" value="3">
+                              <span class="checkmark"></span> 6-9 drinks
+                            </label><br>
+                            <label class="radiobuttons">
+                              <input type="radio" name="alcohol_standard_wd" value="4">
+                              <span class="checkmark"></span> 10 or more drinks
+                            </label>
+                        </fieldset>
+                   </div>
+                   <div class="questiongroup ">
+                       <h4>Non-workday(s)</h4>
+                         <fieldset class="subquestions">
+                             <label class="radiobuttons">
+                               <input type="radio" name="alcohol_standard_nwd" id="alcohol_standard_nwd__ID" value="0" required>
+                               <span class="checkmark"></span> None
+                             </label><br>
+                             <label class="radiobuttons">
+                               <input type="radio" name="alcohol_standard_nwd" value="1">
+                               <span class="checkmark"></span> 1-2 drinks
+                             </label><br>
+                             <label class="radiobuttons">
+                               <input type="radio" name="alcohol_standard_nwd" value="2">
+                               <span class="checkmark"></span> 3-5 drinks
+                             </label><br>
+                             <label class="radiobuttons">
+                               <input type="radio" name="alcohol_standard_nwd" value="3">
+                               <span class="checkmark"></span> 6-9 drinks
+                             </label><br>
+                             <label class="radiobuttons">
+                               <input type="radio" name="alcohol_standard_nwd" value="4">
+                               <span class="checkmark"></span> 10 or more drinks
+                             </label>
+                         </fieldset>
+                    </div>
+               </div>
+               <h7>Caffeine</h7>
+               <div class="form-group">
+                   <h4><u>In  a typical day during the past week</u>, how many <u>caffeinated drinks</u> did you have e.g. coffee, tea, coca cola, hot chocolate, energy drinks, soft drinks, ice teas?
+                       <i>(If you’re unsure whether your drink contains caffeine <a href="https://cbs.wappsystem.com/users/astn/files/117_Contain_Caffeine.png" target="_blank">click here</a> to find out.)</i> <br>Please check the appropriate answer.
+                   </h4>
+                   <div class="questiongroup ">
+                         <fieldset class="subquestions">
+                             <label class="checkboxes">
+                               <input type="checkbox" name="caffeine" id="caffeine__ID">
+                               <span class="check_checkmark"></span> 0 drinks / I do not drink caffeine</label><br>
+                             <label class="checkboxes">
+                         </fieldset>
+                    </div>
+                    <div id="caffeine_drinks__ID">
+                         <div class="questiongroup ">
+                             <h4>Workday(s)</h4>
+                               <fieldset class="subquestions">
+                                   <label class="radiobuttons">
+                                     <input type="radio" name="caffeine_wd" id="caffeine_wd__ID" value="0" required>
+                                     <span class="checkmark"></span> None
+                                   </label><br>
+                                   <label class="radiobuttons">
+                                     <input type="radio" name="caffeine_wd" value="1">
+                                     <span class="checkmark"></span> 1-2 drinks
+                                   </label><br>
+                                   <label class="radiobuttons">
+                                     <input type="radio" name="caffeine_wd" value="2">
+                                     <span class="checkmark"></span> 3-5 drinks
+                                   </label><br>
+                                   <label class="radiobuttons">
+                                     <input type="radio" name="caffeine_wd" value="3">
+                                     <span class="checkmark"></span> 6-9 drinks
+                                   </label><br>
+                                   <label class="radiobuttons">
+                                     <input type="radio" name="caffeine_wd" value="4">
+                                     <span class="checkmark"></span> 10 or more drinks
+                                   </label>
+                               </fieldset>
+                          </div>
+                          <div class="questiongroup ">
+                              <h4>Non-workday(s)</h4>
+                                <fieldset class="subquestions">
+                                    <label class="radiobuttons">
+                                      <input type="radio" name="caffeine_nwd" id="caffeine_nwd__ID" value="0" required>
+                                      <span class="checkmark"></span> None
+                                    </label><br>
+                                    <label class="radiobuttons">
+                                      <input type="radio" name="caffeine_nwd" value="1">
+                                      <span class="checkmark"></span> 1-2 drinks
+                                    </label><br>
+                                    <label class="radiobuttons">
+                                      <input type="radio" name="caffeine_nwd" value="2">
+                                      <span class="checkmark"></span> 3-5 drinks
+                                    </label><br>
+                                    <label class="radiobuttons">
+                                      <input type="radio" name="caffeine_nwd" value="3">
+                                      <span class="checkmark"></span> 6-9 drinks
+                                    </label><br>
+                                    <label class="radiobuttons">
+                                      <input type="radio" name="caffeine_nwd" value="4">
+                                      <span class="checkmark"></span> 10 or more drinks
+                                    </label>
+                                </fieldset>
+                           </div>
+                       </div>
+                   </div>
+                   <div id="caffein_bed__ID" class="form-group">
+                       <h4>How many hours before bedtime would you normally have your last drink containing caffeine?</h4>
+       				 <div class="questiongroup ">
+                          <fieldset class="subquestions">
+                             <label ><span class=""> &nbsp;&nbsp;Workday(s)</span>
+                                 <input class="form-control" type="number" min=0 max=20 name="caffeine_bed_wd" id="caffeine_bed_wd__ID" placeholder="" required>
+                             </label><br>
+                             <label ><span class=""> &nbsp;&nbsp;Non-workday(s)</span>
+                                 <input class="form-control" type="number" name="caffeine_bed_nwd" id="caffeine_bed_nwd__ID" min=0 max=24 placeholder="" required>
+                             </label><br>
+                           </fieldset>
+                       </div>
+                   </div>
+                   <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+              </form>
+            </div>
+         </div>
+        </div>
+      </div>
+  </div>
+  <script>
+  function F__ID(){
+      //-------------------------------------
+      VmInclude:__COMPONENT__/f/form.01.js
+      VmInclude:__CURRENT_PATH__/shared-form.js
+      //-------------------------------------
+        var load2=m.load;
+        m.load=function(){
+          load2();
+          if($("input[name='smoke']:checked").val()=='1'){
+              $('#regular_smoke__ID').show() ;
+              $('#stopped_smoke__ID').show() ;
+              $('#smoke_regular__ID').prop('required', true);
+              $('#smoke_stop__ID').prop('required', true);
+              if($("input[name='smoke_regular']:checked").val()=='1'){
+                  $('#first_smoke__ID').show();
+                  $('#number_smoke__ID').show();
+                  $('#smoke_age__ID').prop('required',true);
+                  $('#smoke_per_day__ID').prop('required',true);
+              }
+          }
+          else {
+              $('#regular_smoke__ID').prop('style','display:none!important');
+              $('#stopped_smoke__ID').prop('style','display:none!important');
+              $('#first_smoke__ID').prop('style','display:none!important');
+              $('#number_smoke__ID').prop('style','display:none!important');
+              $('#smoke_regular__ID').prop('required',false);
+              $('#smoke_stop__ID').prop('required',false);
+              $('#smoke_age__ID').prop('required',false);
+              $('#smoke_per_day__ID').prop('required',false);
+          }
+      }
+      //-------------------------------------
+      $("input[name='alcohol']").change(function(){
+          if($("input[name='alcohol']:checked").val()=='0'){
+              $('#alcohol_drinks__ID').prop('style','display:none!important');
+              $('#alcohol_standard_wd__ID').prop('required', false);
+              $('#alcohol_standard_nwd__ID').prop('required', false);
+          }
+          else {
+              $('#alcohol_drinks__ID').show();
+              $('#alcohol_standard_wd__ID').prop('required', true);
+              $('#alcohol_standard_nwd__ID').prop('required', true);
+          }
+      })
+      //-------------------------------------
+      $("input[name='caffeine']").change(function(){
+          if($("input[name='caffeine']:checked").val()=='on'){
+              $('#caffeine_drinks__ID').prop('style','display:none!important');
+              $('#caffein_bed__ID').prop('style','display:none!important');
+              $('#caffeine_wd__ID').prop('required', false);
+              $('#caffeine_nwd__ID').prop('required', false);
+              $('#caffeine_bed_wd__ID').prop('required', false);
+              $('#caffeine_bed_nwd__ID').prop('required', false);
+          }
+          else {
+              $('#caffeine_drinks__ID').show();
+              $('#caffein_bed__ID').show();
+              $('#caffeine_wd__ID').prop('required', true);
+              $('#caffeine_nwd__ID').prop('required', true);
+              $('#caffeine_bed_wd__ID').prop('required', true);
+              $('#caffeine_bed_nwd__ID').prop('required', true);
+          }
+      })
+      //-------------------------------------
+      $("input[name='smoke']").change(function(){
+          if($("input[name='smoke']:checked").val()=='1'){
+              $('#regular_smoke__ID').show() ;
+              $('#stopped_smoke__ID').show() ;
+              $('#smoke_regular__ID').prop('required', true);
+              $('#smoke_stop__ID').prop('required', true);
+              if($("input[name='smoke_regular']:checked").val()=='1'){
+                  $('#first_smoke__ID').show();
+                  $('#number_smoke__ID').show();
+                  $('#smoke_age__ID').prop('required',true);
+                  $('#smoke_per_day__ID').prop('required',true);
+              }
+              else{
+                  $('#first_smoke__ID').prop('style','display:none!important');
+                  $('#number_smoke__ID').prop('style','display:none!important');
+                  $('#smoke_age__ID').prop('required',false);
+                  $('#smoke_per_day__ID').prop('required',false);
+              }
+          }
+          else {
+              $('#regular_smoke__ID').prop('style','display:none!important');
+              $('#stopped_smoke__ID').prop('style','display:none!important');
+              $('#first_smoke__ID').prop('style','display:none!important');
+              $('#number_smoke__ID').prop('style','display:none!important');
+              $('#smoke_regular__ID').prop('required',false);
+              $('#smoke_stop__ID').prop('required',false);
+              $('#smoke_age__ID').prop('required',false);
+              $('#smoke_per_day__ID').prop('required',false);
+          }
+      })
+      $("input[name='smoke_regular']").change(function(){
+          if($("input[name='smoke_regular']:checked").val()=='1'){
+              $('#first_smoke__ID').show();
+              $('#number_smoke__ID').show();
+              $('#smoke_age__ID').prop('required',true);
+              $('#smoke_per_day__ID').prop('required',true);
+          }
+          else{
+              $('#first_smoke__ID').prop('style','display:none!important');
+              $('#number_smoke__ID').prop('style','display:none!important');
+              $('#smoke_age__ID').prop('required',false);
+              $('#smoke_per_day__ID').prop('required',false);
+          }
+      })
+      //-------------------------------------
+
+  }
+  </script>
+  <style>
+    #D__ID .mt-95 {
+        max-width:600px;
+    }
+    VmInclude:__CURRENT_PATH__/wappsystem-form.css
+  </style>
+</div>

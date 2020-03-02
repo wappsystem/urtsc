@@ -1,0 +1,604 @@
+<div id=D__ID>
+    <div class="container mt-95 mb-3">
+        <div class="row">
+            <!-- form container start -->
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- form start -->
+                        <form id="F__ID">
+                            <h3>PSG Extraction</h3>
+                            <div class="row px-4">
+                                <div class='col'>
+                                    <label><span class="">Extraction of data from Compumedics PSG300.</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- participant part for all tsak forms -------------------->
+                            <div id="participant_div__ID">
+                                <div class="row px-4">
+                                    <div class="col-sm-12 col-lg-9 ">
+                                        <span class=label__ID>Participant</span><br>
+                                        <input type=text name="Participant" class=form-control id=Participant__ID
+                                            data-id="Participant" />
+                                    </div>
+                                    <div class="col-sm-12 col-lg-3">
+                                        <span class=label__ID>Participant ID</span><br>
+                                        <input type=text name="Participant_uid" class=form-control readonly />
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <!-- form group -->
+                            <div class="row px-4">
+                                <div class='col'>
+                                    <span>File Upload</span>
+                                    <div class="form-control">
+                                        <u style='cursor:pointer' id=link_File_Name__ID></u>
+                                        <input type="file" name=File_Name style="margin-top:6px" class='btn btn-primary btn-lg' /><br />
+                                        <br />
+                                        <button id=x_File_Name__ID type="button" class='btn btn-primary btn-lg' onClick="this.form.reset()">Remove</button>
+                                        <button id='submit__ID' type='submit' class='btn btn-primary btn-lg'>Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>CMS Patient ID</span> <input type=text class=form-control name=CMS_Patient_ID> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Date of Birth</span> <input type=text class=form-control name=Date_of_Birth> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Sex</span> <input type=text class=form-control name=Sex> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Wt kg</span> <input type=text class=form-control name=Wt_kg> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Ht cm</span> <input type=text class=form-control name=Ht_cm> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>BMI</span> <input type=text class=form-control name=BMI> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Neck circumference cm</span> <input type=text class=form-control name=Neck_circumference__cm> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>ESS</span> <input type=text class=form-control name=ESS> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Study Date</span> <input type=text class=form-control name=Study_Date> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Recording Start Time</span> <input type=text class=form-control name=Recording_Start_Time> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Recording End Time</span> <input type=text class=form-control name=Recording_End_Time> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Lights Out Time</span> <input type=text class=form-control name=Lights_Out_Time> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Lights On Time</span> <input type=text class=form-control name=Lights_On_Time> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Sleep Onset Time</span> <input type=text class=form-control name=Sleep_Onset_Time> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Sleep Offset Time</span> <input type=text class=form-control name=Sleep_Offset_Time> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Time in Bed min</span> <input type=text class=form-control name=Time_in_Bed_min> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Sleep Period Time min</span> <input type=text class=form-control name=Sleep_Period_Time_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Total Sleep Time min</span> <input type=text class=form-control name=Total_Sleep_Time_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Wake After Sleep Onset min</span> <input type=text class=form-control name=Wake_After_Sleep_Onset_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Sleep Efficiency Percent TIB</span> <input type=text class=form-control name=Sleep_Efficiency_Percent_TIB> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Sleep Latency min</span> <input type=text class=form-control name=Sleep_Latency_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Sleep Latency min 10 Mins</span> <input type=text class=form-control name=Sleep_Latency_min_10_Mins> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>REM Latency min</span> <input type=text class=form-control name=REM_Latency_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N1 Latency min</span> <input type=text class=form-control name=N1_Latency_min> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N2 Latency min</span> <input type=text class=form-control name=N2_Latency_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N3 Latency min</span> <input type=text class=form-control name=N3_Latency_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>NREM min</span> <input type=text class=form-control name=NREM_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>NREM Percent TST</span> <input type=text class=form-control name=NREM_Percent_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N1 min</span> <input type=text class=form-control name=N1_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N1 Percent TST</span> <input type=text class=form-control name=N1_Percent_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N2 min</span> <input type=text class=form-control name=N2_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N2 Percent TST</span> <input type=text class=form-control name=N2_Percent_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N3 min</span> <input type=text class=form-control name=N3_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N3 Percent TST</span> <input type=text class=form-control name=N3_Percent_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>REM min</span> <input type=text class=form-control name=REM_min> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>REM Percent TST</span> <input type=text class=form-control name=REM_Percent_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>NREM min Supine TST</span> <input type=text class=form-control name=NREM_min_Supine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>NREM Percent Supine TST</span> <input type=text class=form-control name=NREM_Percent_Supine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N1 Percent Supine TST</span> <input type=text class=form-control name=N1_Percent_Supine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N2 Percent Supine TST</span> <input type=text class=form-control name=N2_Percent_Supine_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N3 Percent Supine TST</span> <input type=text class=form-control name=N3_Percent_Supine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>REM min Supine TST</span> <input type=text class=form-control name=REM_min_Supine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>REM Percent Supine TST</span> <input type=text class=form-control name=REM_Percent_Supine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>NREM min Nonsupine TST</span> <input type=text class=form-control name=NREM_min_Nonsupine_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>NREM Percent Nonsupine TST</span> <input type=text class=form-control name=NREM_Percent_Nonsupine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N1 Percent Nonsupine TST</span> <input type=text class=form-control name=N1_Percent_Nonsupine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N2 Percent Nonsupine TST</span> <input type=text class=form-control name=N2_Percent_Nonsupine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>N3 Percent Nonsupine TST</span> <input type=text class=form-control name=N3_Percent_Nonsupine_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>REM min Nonsupine TST</span> <input type=text class=form-control name=REM_min_Nonsupine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>REM Percent Nonsupine TST</span> <input type=text class=form-control name=REM_Percent_Nonsupine_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Awakenings TST</span> <input type=text class=form-control name=Awakenings_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Arousal Index TST</span> <input type=text class=form-control name=Arousal_Index_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Arousal Index REM</span> <input type=text class=form-control name=Arousal_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Arousal Index NREM</span> <input type=text class=form-control name=Arousal_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Arousal Count TST</span> <input type=text class=form-control name=Arousal_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Arousal Count REM</span> <input type=text class=form-control name=Arousal_Count_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Arousal Count NREM</span> <input type=text class=form-control name=Arousal_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Spon Arousals Index TST</span> <input type=text class=form-control name=Spon_Arousals_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Spon Arousals Index REM</span> <input type=text class=form-control name=Spon_Arousals_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Spon Arousals Index NREM</span> <input type=text class=form-control name=Spon_Arousals_Index_NREM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Spon Arousal Count TST</span> <input type=text class=form-control name=Spon_Arousal_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Spon Arousal Count REM</span> <input type=text class=form-control name=Spon_Arousal_Count_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Spon Arousal Count NREM</span> <input type=text class=form-control name=Spon_Arousal_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Resp Arousals Index TST</span> <input type=text class=form-control name=Resp_Arousals_Index_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Resp Arousals Index REM</span> <input type=text class=form-control name=Resp_Arousals_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Resp Arousals Index NREM</span> <input type=text class=form-control name=Resp_Arousals_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Resp Arousal Count TST</span> <input type=text class=form-control name=Resp_Arousal_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Resp Arousal Count REM</span> <input type=text class=form-control name=Resp_Arousal_Count_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Resp Arousal Count NREM</span> <input type=text class=form-control name=Resp_Arousal_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Arousals Index TST</span> <input type=text class=form-control name=RERA_Arousals_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Arousals Index REM</span> <input type=text class=form-control name=RERA_Arousals_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Arousals Index NREM</span> <input type=text class=form-control name=RERA_Arousals_Index_NREM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Arousal Count TST</span> <input type=text class=form-control name=RERA_Arousal_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Arousal Count REM</span> <input type=text class=form-control name=RERA_Arousal_Count_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Arousal Count NREM</span> <input type=text class=form-control name=RERA_Arousal_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Arousals Index TST</span> <input type=text class=form-control name=Limb_Arousals_Index_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Arousals Index REM</span> <input type=text class=form-control name=Limb_Arousals_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Arousals Index NREM</span> <input type=text class=form-control name=Limb_Arousals_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Arousal Count TST</span> <input type=text class=form-control name=Limb_Arousal_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Arousal Count REM</span> <input type=text class=form-control name=Limb_Arousal_Count_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Arousal Count NREM</span> <input type=text class=form-control name=Limb_Arousal_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count TST</span> <input type=text class=form-control name=Central_Apnea_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index TST</span> <input type=text class=form-control name=Central_Apnea_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count TST</span> <input type=text class=form-control name=Obstructive_Apnea_Count_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index TST</span> <input type=text class=form-control name=Obstructive_Apnea_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count TST</span> <input type=text class=form-control name=Hypopnea_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index TST</span> <input type=text class=form-control name=Hypopnea_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count TST</span> <input type=text class=form-control name=RERA_Count_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index TST</span> <input type=text class=form-control name=RERA_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index TST</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index TST</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count REM</span> <input type=text class=form-control name=Central_Apnea_Count_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index REM</span> <input type=text class=form-control name=Central_Apnea_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count REM</span> <input type=text class=form-control name=Obstructive_Apnea_Count_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index REM</span> <input type=text class=form-control name=Obstructive_Apnea_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count REM</span> <input type=text class=form-control name=Hypopnea_Count_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index REM</span> <input type=text class=form-control name=Hypopnea_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count REM</span> <input type=text class=form-control name=RERA_Count_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index REM</span> <input type=text class=form-control name=RERA_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index REM</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index REM</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count NREM</span> <input type=text class=form-control name=Central_Apnea_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index NREM</span> <input type=text class=form-control name=Central_Apnea_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count NREM</span> <input type=text class=form-control name=Obstructive_Apnea_Count_NREM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index NREM</span> <input type=text class=form-control name=Obstructive_Apnea_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count NREM</span> <input type=text class=form-control name=Hypopnea_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index NREM</span> <input type=text class=form-control name=Hypopnea_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count NREM</span> <input type=text class=form-control name=RERA_Count_NREM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index NREM</span> <input type=text class=form-control name=RERA_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index NREM</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index NREM</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count TST Supine</span> <input type=text class=form-control name=Central_Apnea_Count_TST_Supine> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index TST Supine</span> <input type=text class=form-control name=Central_Apnea_Index_TST_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count TST Supine</span> <input type=text class=form-control name=Obstructive_Apnea_Count_TST_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index TST Supine</span> <input type=text class=form-control name=Obstructive_Apnea_Index_TST_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count TST Supine</span> <input type=text class=form-control name=Hypopnea_Count_TST_Supine> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index TST Supine</span> <input type=text class=form-control name=Hypopnea_Index_TST_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count TST Supine</span> <input type=text class=form-control name=RERA_Count_TST_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index TST Supine</span> <input type=text class=form-control name=RERA_Index_TST_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index TST Supine</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_TST_Supine> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index TST Supine</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_TST_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count REM Supine</span> <input type=text class=form-control name=Central_Apnea_Count_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index REM Supine</span> <input type=text class=form-control name=Central_Apnea_Index_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count REM Supine</span> <input type=text class=form-control name=Obstructive_Apnea_Count_REM_Supine> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index REM Supine</span> <input type=text class=form-control name=Obstructive_Apnea_Index_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count REM Supine</span> <input type=text class=form-control name=Hypopnea_Count_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index REM Supine</span> <input type=text class=form-control name=Hypopnea_Index_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count REM Supine</span> <input type=text class=form-control name=RERA_Count_REM_Supine> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index REM Supine</span> <input type=text class=form-control name=RERA_Index_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index REM Supine</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index REM Supine</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_REM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count NREM Supine</span> <input type=text class=form-control name=Central_Apnea_Count_NREM_Supine> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index NREM Supine</span> <input type=text class=form-control name=Central_Apnea_Index_NREM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count NREM Supine</span> <input type=text class=form-control name=Obstructive_Apnea_Count_NREM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index NREM Supine</span> <input type=text class=form-control name=Obstructive_Apnea_Index_NREM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count NREM Supine</span> <input type=text class=form-control name=Hypopnea_Count_NREM_Supine> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index NREM Supine</span> <input type=text class=form-control name=Hypopnea_Index_NREM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count NREM Supine</span> <input type=text class=form-control name=RERA_Count_NREM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index NREM Supine</span> <input type=text class=form-control name=RERA_Index_NREM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index NREM Supine</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_NREM_Supine> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index NREM Supine</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_NREM_Supine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count TST NonSupine</span> <input type=text class=form-control name=Central_Apnea_Count_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index TST NonSupine</span> <input type=text class=form-control name=Central_Apnea_Index_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count TST NonSupine</span> <input type=text class=form-control name=Obstructive_Apnea_Count_TST_NonSupine> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index TST NonSupine</span> <input type=text class=form-control name=Obstructive_Apnea_Index_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count TST NonSupine</span> <input type=text class=form-control name=Hypopnea_Count_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index TST NonSupine</span> <input type=text class=form-control name=Hypopnea_Index_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count TST NonSupine</span> <input type=text class=form-control name=RERA_Count_TST_NonSupine> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index TST NonSupine</span> <input type=text class=form-control name=RERA_Index_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index TST NonSupine</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index TST NonSupine</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_TST_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count REM NonSupine</span> <input type=text class=form-control name=Central_Apnea_Count_REM_NonSupine> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index REM NonSupine</span> <input type=text class=form-control name=Central_Apnea_Index_REM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count REM NonSupine</span> <input type=text class=form-control name=Obstructive_Apnea_Count_REM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index REM NonSupine</span> <input type=text class=form-control name=Obstructive_Apnea_Index_REM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count REM NonSupine</span> <input type=text class=form-control name=Hypopnea_Count_REM_NonSupine> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index REM NonSupine</span> <input type=text class=form-control name=Hypopnea_Index_REM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count REM NonSupine</span> <input type=text class=form-control name=RERA_Count_REM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index REM NonSupine</span> <input type=text class=form-control name=RERA_Index_REM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index REM NonSupine</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_REM_NonSupine> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index REM NonSupine</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_REM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Count NREM NonSupine</span> <input type=text class=form-control name=Central_Apnea_Count_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Central Apnea Index NREM NonSupine</span> <input type=text class=form-control name=Central_Apnea_Index_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Count NREM NonSupine</span> <input type=text class=form-control name=Obstructive_Apnea_Count_NREM_NonSupine> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Obstructive Apnea Index NREM NonSupine</span> <input type=text class=form-control name=Obstructive_Apnea_Index_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Count NREM NonSupine</span> <input type=text class=form-control name=Hypopnea_Count_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Hypopnea Index NREM NonSupine</span> <input type=text class=form-control name=Hypopnea_Index_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Count NREM NonSupine</span> <input type=text class=form-control name=RERA_Count_NREM_NonSupine> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>RERA Index NREM NonSupine</span> <input type=text class=form-control name=RERA_Index_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Apnea Hypopnea Index NREM NonSupine</span> <input type=text class=form-control name=Apnea_Hypopnea_Index_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Respiratory Disturbance Index NREM NonSupine</span> <input type=text class=form-control name=Respiratory_Disturbance_Index_NREM_NonSupine> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean apnea duration TST</span> <input type=text class=form-control name=Mean_apnea_duration_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Max apnea duration TST</span> <input type=text class=form-control name=Max_apnea_duration_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean apnea duration REM</span> <input type=text class=form-control name=Mean_apnea_duration_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean apnea duration NREM</span> <input type=text class=form-control name=Mean_apnea_duration_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean obstructive apnea duration TST</span> <input type=text class=form-control name=Mean_obstructive_apnea_duration_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean obstructive apnea duration REM</span> <input type=text class=form-control name=Mean_obstructive_apnea_duration_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean obstructive apnea duration NREM</span> <input type=text class=form-control name=Mean_obstructive_apnea_duration_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean central apnea duration TST</span> <input type=text class=form-control name=Mean_central_apnea_duration_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean central apnea duration REM</span> <input type=text class=form-control name=Mean_central_apnea_duration_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean central apnea duration NREM</span> <input type=text class=form-control name=Mean_central_apnea_duration_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean mixed apnea duration TST</span> <input type=text class=form-control name=Mean_mixed_apnea_duration_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean hypopnea duration TST</span> <input type=text class=form-control name=Mean_hypopnea_duration_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Max hypopnea duration TST</span> <input type=text class=form-control name=Max_hypopnea_duration_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 70percent min TST</span> <input type=text class=form-control name=SpO2_lessthan_70percent_min_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 70 to 79 min TST</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_70_to_79_min_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 80percent min TST</span> <input type=text class=form-control name=SpO2_lessthan_80percent_min_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 80 to 89 min TST</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_80_to_89_min_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 90percent min TST</span> <input type=text class=form-control name=SpO2_lessthan_90percent_min_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 90 to 100 min TST</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_90_to_100_min_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 70percent min REM</span> <input type=text class=form-control name=SpO2_lessthan_70percent_min_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 70 to 79 min REM</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_70_to_79_min_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 80percent min REM</span> <input type=text class=form-control name=SpO2_lessthan_80percent_min_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 80 to 89 min REM</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_80_to_89_min_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 90percent min REM</span> <input type=text class=form-control name=SpO2_lessthan_90percent_min_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 90 to 100 min REM</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_90_to_100_min_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 70percent min NREM</span> <input type=text class=form-control name=SpO2_lessthan_70percent_min_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 70 to 79 min NREM</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_70_to_79_min_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 80percent min NREM</span> <input type=text class=form-control name=SpO2_lessthan_80percent_min_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 80 to 89 min NREM</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_80_to_89_min_NREM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 90percent min NREM</span> <input type=text class=form-control name=SpO2_lessthan_90percent_min_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 90 to 100 min NREM</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_90_to_100_min_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 70percent min WAKE</span> <input type=text class=form-control name=SpO2_lessthan_70percent_min_WAKE> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 70 to 79 min WAKE</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_70_to_79_min_WAKE> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 80percent min WAKE</span> <input type=text class=form-control name=SpO2_lessthan_80percent_min_WAKE> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 80 to 89 min WAKE</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_80_to_89_min_WAKE> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 lessthan 90percent min WAKE</span> <input type=text class=form-control name=SpO2_lessthan_90percent_min_WAKE> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>SpO2 Percentage In Range 90 to 100 min WAKE</span> <input type=text class=form-control name=SpO2_Percentage_In_Range_90_to_100_min_WAKE> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean SpO2 percent TIB</span> <input type=text class=form-control name=Mean_SpO2_percent_TIB> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean SpO2 percent TST</span> <input type=text class=form-control name=Mean_SpO2_percent_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean SpO2 percent Wake</span> <input type=text class=form-control name=Mean_SpO2_percent_Wake> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean SpO2 percent REM</span> <input type=text class=form-control name=Mean_SpO2_percent_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean SpO2 percent NREM</span> <input type=text class=form-control name=Mean_SpO2_percent_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Min SpO2 percent TIB</span> <input type=text class=form-control name=Min_SpO2_percent_TIB> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Min SpO2 percent TST</span> <input type=text class=form-control name=Min_SpO2_percent_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Min SpO2 percent REM</span> <input type=text class=form-control name=Min_SpO2_percent_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Min SpO2 percent NREM</span> <input type=text class=form-control name=Min_SpO2_percent_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Index TIB</span> <input type=text class=form-control name=O2_Desat3percent_Index_TIB> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Index TST</span> <input type=text class=form-control name=O2_Desat3percent_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Index REM</span> <input type=text class=form-control name=O2_Desat3percent_Index_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Index NREM</span> <input type=text class=form-control name=O2_Desat3percent_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Index N1</span> <input type=text class=form-control name=O2_Desat3percent_Index_N1> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Index N2</span> <input type=text class=form-control name=O2_Desat3percent_Index_N2> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Index N3</span> <input type=text class=form-control name=O2_Desat3percent_Index_N3> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Count TIB</span> <input type=text class=form-control name=O2_Desat3percent_Count_TIB> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Count TST</span> <input type=text class=form-control name=O2_Desat3percent_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Count REM</span> <input type=text class=form-control name=O2_Desat3percent_Count_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat3percent Count NREM</span> <input type=text class=form-control name=O2_Desat3percent_Count_NREM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Index TIB</span> <input type=text class=form-control name=O2_Desat4percent_Index_TIB> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Index TST</span> <input type=text class=form-control name=O2_Desat4percent_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Index REM</span> <input type=text class=form-control name=O2_Desat4percent_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Index NREM</span> <input type=text class=form-control name=O2_Desat4percent_Index_NREM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Index N1</span> <input type=text class=form-control name=O2_Desat4percent_Index_N1> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Index N2</span> <input type=text class=form-control name=O2_Desat4percent_Index_N2> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Index N3</span> <input type=text class=form-control name=O2_Desat4percent_Index_N3> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Count TIB</span> <input type=text class=form-control name=O2_Desat4percent_Count_TIB> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Count TST</span> <input type=text class=form-control name=O2_Desat4percent_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Count REM</span> <input type=text class=form-control name=O2_Desat4percent_Count_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>O2 Desat4percent Count NREM</span> <input type=text class=form-control name=O2_Desat4percent_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Movement Count TST</span> <input type=text class=form-control name=Limb_Movement_Count_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Movement Index TST</span> <input type=text class=form-control name=Limb_Movement_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Movement Count NREM</span> <input type=text class=form-control name=Limb_Movement_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Movement Index NREM</span> <input type=text class=form-control name=Limb_Movement_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Movement Count REM</span> <input type=text class=form-control name=Limb_Movement_Count_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Limb Movement Index REM</span> <input type=text class=form-control name=Limb_Movement_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PLM Series Count TST</span> <input type=text class=form-control name=PLM_Series_Count_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PLM Series Index TST</span> <input type=text class=form-control name=PLM_Series_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PeriodicLimb Movement Count TST</span> <input type=text class=form-control name=PeriodicLimb_Movement_Count_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PeriodicLimb Movement Index TST</span> <input type=text class=form-control name=PeriodicLimb_Movement_Index_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PeriodicLimb Movement Count NREM</span> <input type=text class=form-control name=PeriodicLimb_Movement_Count_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PeriodicLimb Movement Index NREM</span> <input type=text class=form-control name=PeriodicLimb_Movement_Index_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PeriodicLimb Movement Count REM</span> <input type=text class=form-control name=PeriodicLimb_Movement_Count_REM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>PeriodicLimb Movement Index REM</span> <input type=text class=form-control name=PeriodicLimb_Movement_Index_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean PR TST</span> <input type=text class=form-control name=Mean_PR_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean PR REM</span> <input type=text class=form-control name=Mean_PR_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Mean PR NREM</span> <input type=text class=form-control name=Mean_PR_NREM> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Min PR TST</span> <input type=text class=form-control name=Min_PR_TST> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Min PR REM</span> <input type=text class=form-control name=Min_PR_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Min PR NREM</span> <input type=text class=form-control name=Min_PR_NREM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Max PR TST</span> <input type=text class=form-control name=Max_PR_TST> </label> </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Max PR REM</span> <input type=text class=form-control name=Max_PR_REM> </label> </div>
+                                <div class='col-sm-12 col-lg-3'><label class=''> <span>Max PR NREM</span> <input type=text class=form-control name=Max_PR_NREM> </label> </div> 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    VmInclude:__COMPONENT__/m/model.01.html
+    <script>
+        function F__ID() {
+            //-------------------------------------
+            VmInclude: '__COMPONENT__/f/form.01.js'
+            VmInclude: '__CURRENT_PATH__/shared-form.js'
+            //-------------------------------------
+            $('#F__ID input[name=File_Name]').on('change', function (evt) {
+                if (this.files.length == 1) {
+                    file_process(this.files[0])
+                }
+            });
+            function parseVariableName(str) {
+                if (str == undefined) {
+                    return
+                }
+                str = str.replace(/[^\w\s]/gi, ''); // String may not contain special characters
+                str = str.trim(); // Trim any <space> characters from start or end of string
+                str = str.replace(/^\d+\s*/, ''); // String cannot start with numbers
+                str = str.split(' ').join('_'); // Join any remaining bits of string with underscores
+                return str;
+            }
+            //-------------------------------------
+            // File reader function
+            var file_process = function (file) {
+                // Create a new file reader and on loading a file -> run
+                var reader = new FileReader();
+                reader.onload = (function (e) {
+                    ///////////////////////////////////////////////////////////////////////////////
+                    // MANUAL EDIT REQUIRED HERE 
+                    // Specify whether the variabels are listed as rows (false) or as columns (true)
+                    // Specify the delimiter
+                    var columnWise = false;
+                    var delimiter = '=';
+                    // Get contents
+                    var contents = e.target.result;
+                    // Split the contents into rows based on the new-line character '\n'
+                    var rows = contents.replace(/"/g, '').replace(/\r/, '\n').replace(/\n\n/, '\n').split(
+                        '\n');
+                    // Extract the data
+                    if (columnWise) { // Column-wise
+                        for (var r = 0; r < rows.length; r++) {
+                            // The first row contains all variable names
+                            if (r == 0) {
+                                var varNames = rows[r].split(delimiter);
+                                // Replace any <space> or other special character
+                                for (v = 0; v < varNames.length; v++) {
+                                    varNames[v] = parseVariableName(varNames[v]);
+                                }
+                            } else {
+                                // The subsequent rows contains the values
+                                var varValues = rows[r].split(delimiter);
+                            }
+                        }
+                    } else { // Row-wise
+                        // Initialize the varNames and varValue arrays
+                        var varNames = Array();
+                        var varValues = Array();
+                        // For each row, extract the variable name and value, and store in the form-input field.
+                        for (var r = 0; r < rows.length; r++) {
+                            // Split the variable name and value pair based on the delimiter
+                            var row = rows[r].split(delimiter);
+                            // If it did not find a pair, continue
+                            if (row.length == 1) {
+                                continue
+                            };
+                            varNames.push(parseVariableName(row[0]));
+                            varValues.push(row[1]);
+                        }
+                    }
+                    // Store the value of each variable in the form-input field
+                    for (var v = 0; v < varNames.length; v++) {
+                        $('#F__ID input[name="' + varNames[v] + '"]').val(varValues[v]);
+                    }
+                    console.log(varNames.join());
+                });
+                reader.readAsText(file);
+            }
+            var old_load = m.load;
+            m.load = function () {
+                old_load();
+                m.set_file_link("File_Name");
+            }
+        }
+    </script>
+    <style>
+        #D__ID .mt-95 {
+            max-width: 800px;
+        }
+
+        VmInclude:__CURRENT_PATH__/wappsystem-form.css
+    </style>
+</div>

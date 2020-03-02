@@ -1,0 +1,29 @@
+<section>
+    VmInclude:__CURRENT_PATH__/grid.v1h.html
+</section>
+  <script>
+      function F__ID(){
+          //-------------------------------------
+          VmInclude:__COMPONENT__/g/grid.01.js
+          VmInclude:__CURRENT_PATH__/shared-data.js
+        //-------------------------------------
+        $('#title__ID').text($vm.module_list[$vm.vm['__ID'].name].task_name); //$('#title__ID').text('AusEd Data (60mins)');
+          //-------------------------------------
+          var fields="File_Name,Version,STDVC_F,STDVC_P1,STDVC_P2,STDVC_P3,STDVC_P4,STDVC_P5,STDVC_P6,STDVC_P7,STDVC_P8,STDVC_P9,STDVC_P10,STDVC_P11,STDVC_P12,STDVM_F,STDVM_P1,STDVM_P2,STDVM_P3,STDVM_P4,STDVM_P5,STDVM_P6,STDVM_P7,STDVM_P8,STDVM_P9,STDVM_P10,STDVM_P11,STDVM_P12,SPDEV_F,SPDEV_P1,SPDEV_P2,SPDEV_P3,SPDEV_P4,SPDEV_P5,SPDEV_P6,SPDEV_P7,SPDEV_P8,SPDEV_P9,SPDEV_P10,SPDEV_P11,SPDEV_P12,Number_RT,Mean_RT,Median_RT,StDev_RT,Lapses,Number_Crashes,RT1,RT2,RT3,RT4,RT5";
+          m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+          //-------------------------------------
+          var cell_render=m.cell_render;
+            m.cell_render=function(records,I,field,td){
+                cell_render(records,I,field,td);
+                switch(field){
+                    case 'File_Name':
+                        m.set_file_link(records,I,field,td)
+                        break;
+                }
+            }
+            //-------------------------------------
+      }
+  </script>
+  <style>
+      VmInclude:__CURRENT_PATH__/wappsystem-data.css
+  </style>

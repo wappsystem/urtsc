@@ -1,0 +1,213 @@
+<div id=D__ID>
+    <div>
+        <div id=toolbar__ID class="navbar navbar-default">
+        	<form class="form-inline">
+				<button type=button id=count__ID class='btn btn-secondary'>Count</button> 
+				<span class="small font-italic text-muted mt-1">Shows the number of records<br>Entries for one participant.</span>
+        		<span id=info__ID></span>
+        	</form>
+        	<span id=elapsed__ID style='float:right'></span>
+		</div>
+    </div>
+    <section id=panel__ID>
+       	VmInclude:__CURRENT_PATH__/panel-tasks.html
+    </section>
+    <script>
+    	function F__ID(){
+			//-------------------------------------
+			var m=$vm.module_list['__MODULE__'];
+    		var old_info='';
+    		var participant_record;
+    		var count={}
+    		var participant_info=function(record){ 
+                if($vm.api_type=="sqlserver")   return record.Subject_ID+' '+record.Subject_Initials; 
+                else                            return record.Data.Subject_ID+' '+record.Data.Subject_Initials; 
+			}
+			//DEMO VERSION
+			//if(window.location.toString().indexOf('tb=demo')!=-1){
+				//$('#D__ID').css('background-image','url("m/demo.png")')
+				$('#D__ID').css('background-image','url("m/test.png")')
+			//}			
+			//--------------------------------------------------------
+            $('#panel__ID a').on('click',function(e){
+                e.preventDefault();
+                var href=$(this).attr('href');
+                var app=$(this).attr('app');
+                if(href!=undefined){
+                    href=href.replace('?\/','');
+                    href=href.replace(/\//g,'_');
+                    if(app==undefined) $vm.load_module(href,'',{record:participant_record});
+                    else if($vm.module_list[href]!=undefined) window.open($vm.module_list[href].url);
+                    else alert("The '"+ href +"' is not defined in the module list");
+                }
+            })
+            //--------------------------------------------------------
+            $('#panel__ID a').each(function(){
+                var href=$(this).attr('href');
+                if(href!=undefined){
+                    href=href.replace('?\/','');
+                    href=href.replace(/\//g,'_');
+                    if($vm.module_list[href]!=undefined){
+                        var url=$vm.module_list[href].url;
+                        $(this).attr('title',url);
+                    }
+                }
+            })
+            //--------------------------------------------------------
+    		var set_a_text=function(){
+    		    $('.nav__ID a').each(function(){
+					$(this).attr('data-a_text',$(this).text());
+					//console.log($(this).text())
+    		    })
+    		}
+    		set_a_text();
+    		//---------------------------------------------
+    		var clear_counting=function(){
+    			$('.nav__ID a').each(function(){
+    				var txt=$(this).attr('data-a_text');
+    				if(txt!=undefined){
+    					$(this).text(txt);
+    				}
+    		    })
+    		}
+    		//---------------------------------------------
+    		var set_counting=function(){
+    			$('.nav__ID a').each(function(){
+    				var $a=$(this);
+    				var href=$a.attr('href');
+					href=href.replace('?\/','');
+    				if(count[participant_record.UID.toString()]!==undefined){
+    					var num=$('<div/>').html(count[participant_record.UID.toString()][href]).text();
+    					if(num!=undefined && num!=null && num!=""){
+    			            var txt=$('<div/>').html($a.attr('data-a_text')).text();
+    			            $a.html(txt+" <mark style='background-color:#fff;font-size:9px'>["+num+"]</mark>")
+    					}
+    				}
+    				else clear_counting();
+				})
+    		}
+    		//---------------------------------------------
+    		$('#D__ID').on('load',function(){
+				participant_record=m.input.record;
+    			if(participant_record==undefined){
+    				$('#info__ID').text("No individual participant info was found.");
+    				return;
+    			}
+    			var info="Participant: "+participant_info(participant_record);
+    			if(old_info!=info){
+    				old_info=info;
+    				set_counting();
+    			}
+    			$('#info__ID').text(info);
+    		})
+    		//--------------------------------------------------------
+    		$('#count__ID').on('click',function(){
+    			clear_counting();
+    			var N=0;
+    			$('#panel__ID a').each(function(){
+    				var $a=$(this);
+    				N++;
+   					check_count($a,N);
+    			});
+    		})
+    		//--------------------------------------------------------
+    		var check_count=function($a,N){
+    			//do not send too many requests to the server in a short period
+    			setTimeout(function(){check_count_d($a)}, N*200);
+    		}
+    		//--------------------------------------------------------
+    		var check_count_d=function($a){
+    			var href=$a.attr('href');
+				href=href.replace('?\/','');
+    			if($vm.module_list[href]!=undefined){
+    				var tb=$vm.module_list[href].Table;
+    				if(tb!=undefined){
+						if($vm.api_type=="sqlserver"){
+							var sql="select Num=count(ID) from [TABLE-"+tb+"] where PUID="+participant_record.UID;
+							$VmAPI.request({data:{cmd:'read',qid:$vm.qid,sql:sql},callback:function(res){
+								if(count[participant_record.UID.toString()]==undefined) count[participant_record.UID.toString()]={}
+								count[participant_record.UID.toString()][href]=res.records[0].Num;
+								var txt=$a.attr('data-a_text');
+								txt=$('<div/>').html(txt).text();
+								var num=$('<div/>').html(count[participant_record.UID.toString()][href]).text();
+								$a.html(txt+" <mark style='background-color:#fff;font-size:9px'>["+num+"]</mark>")
+							}})
+						}
+						else{
+							$vm.request({cmd:"count",table:tb,query:{'Data.Participant_uid':participant_record.UID.toString()},options:{}},function(res){
+								if(res.sys.permission==false){
+									return;
+								}
+                                if(count[participant_record.UID.toString()]==undefined) count[participant_record.UID.toString()]={}
+                                count[participant_record.UID.toString()][href]=res.result;
+                                var txt=$a.attr('data-a_text');
+                                txt=$('<div/>').html(txt).text();
+                                var num=$('<div/>').html(count[participant_record.UID.toString()][href]).text();
+                                $a.html(txt+" <mark style='font-size:9px'>["+num+"]</mark>")
+							});
+						}
+    				}
+    			}
+    		}
+			//--------------------------------------------------------
+    	}
+    </script>
+    <style>
+        #toolbar__ID{
+    		background-color:#ccc;
+    		padding-left:10px;
+    		margin-bottom:0px;
+    		overflow:hidden'
+    	}
+        #toolbar__ID .form-inline > * {
+            margin-right:5px;
+        }
+    	@media screen and (max-width:768px){
+    		#toolbar__ID{
+    			padding: 3px 10px;
+    		}
+    		#toolbar__ID div{
+    			padding-left:3px;
+    		}
+    	}
+        #D__ID{
+    		background-color:rgb(255,255,255,0.9);
+    		height:100%;
+    		overflow: auto;
+    		animation: vm_module_fadein 1.0s;
+    	}
+        #panel__ID{
+    		padding:10px 0 0 20px;
+            font-size:14px;
+    	}
+    	#panel__ID a {
+    		text-decoration: none;
+    	}
+    	#panel__ID a:link {
+    		color:#555;
+    	}
+    	#panel__ID a:visited {
+    		color:#555;
+    	}
+    	#panel__ID a:hover {
+    		color:red;
+    	}
+    	#panel__ID a:active {
+    		color:#555;
+    	}
+        .nav__ID{
+	        padding:6px 26px 6px 6px;
+	        float:left;
+	    }
+	    .nav__ID span{
+			color:#283f55;
+			font-weight: bold;
+			margin:3px 10px;
+	    }
+    	@media screen and (max-width:768px){
+    		#panel__ID{
+    			padding:10px 0 0 10px;
+    		}
+    	}
+    </style>
+</div>

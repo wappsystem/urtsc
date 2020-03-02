@@ -1,0 +1,21 @@
+<section>
+  VmInclude:__CURRENT_PATH__/grid.v1h.html
+</section>
+<script>
+  function F__ID(){
+      //-------------------------------------
+      VmInclude:__COMPONENT__/g/grid.01.js
+      VmInclude:__CURRENT_PATH__/shared-data.js
+      //-------------------------------------
+      $('#title__ID').text('Profile of Mood States Questionnaire (POMS)')
+      //-------------------------------------
+      var fields="POMS_1,POMS_2,POMS_3,POMS_4,POMS_5,POMS_6,POMS_7,POMS_8,POMS_9,POMS_10,POMS_11,POMS_12,POMS_13,POMS_14,POMS_15,POMS_16,POMS_17,POMS_18,POMS_19,POMS_20";
+      fields+=",POMS_21,POMS_22,POMS_23,POMS_24,POMS_25,POMS_26,POMS_27,POMS_28,POMS_29,POMS_30,POMS_31,POMS_32,POMS_33,POMS_34,POMS_35,POMS_36,POMS_37,POMS_38,POMS_39,POMS_40";
+      fields+=",POMS_TEN,POMS_ANG,POMS_FAT,POMS_DEP,POMS_ERA,POMS_VIG,POMS_CON,POMS_TMD";
+      m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+      //-------------------------------------
+  }
+</script>
+<style>
+  VmInclude:__CURRENT_PATH__/wappsystem-data.css
+</style>

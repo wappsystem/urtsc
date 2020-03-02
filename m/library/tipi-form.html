@@ -1,0 +1,475 @@
+<div id=D__ID>
+<!--third html start -->
+    <div class="container mt-95 mb-3">
+      <div class="row" >
+        <!-- form container start -->
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+          <div class="row">
+            <div class="col-12">
+              <!-- form start -->
+              <form id="F__ID">
+                  <h3>Ten-Item Personality Inventory (TIPI)</h3>
+                  <!-- participant name and study id -->
+                  <div id="participant_div__ID">
+                      <div class="form-group">
+                         <fieldset class="subquestions">
+                             <label ><span class="">Participant</span>
+                                 <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant"/>
+                             </label><br>
+                             <label ><span class="">Participant ID</span>
+                                 <input type=text name="Participant_uid" class=form-control readonly />
+                             </label>
+                          </fieldset>
+                      </div>
+                  </div>                  
+                  <div class="form-group">
+                    <fieldset class="subquestions">
+                      <h4>Now you see a number of statements about how you see yourself. For each statement, you need to select one of seven statements. Select the option that fits best. <b>I see myself as ...</b></h4>
+                    </fieldset>
+                  </div>
+                  <div class="form-group sticky-top shadow-sm bg-light">
+                    <div id=legend__ID class="questiongroup " >
+                      <fieldset class="">
+                        <label class="radiobuttons" style='cursor:default!important'>
+                            <span class="checkmark no-dot">1</span>= Disagree strongly
+                        </label><br>
+                        <label class="radiobuttons" style='cursor:default!important'>
+                            <span class="checkmark no-dot">2</span>= Disagree moderately
+                        </label><br>
+                        <label class="radiobuttons" style='cursor:default!important'>
+                            <span class="checkmark no-dot">3</span>= Disagree a little
+                        </label><br>
+                        <label class="radiobuttons" style='cursor:default!important'>
+                            <span class="checkmark no-dot">4</span>= Neither agree nor disagree
+                        </label><br>
+                        <label class="radiobuttons" style='cursor:default!important'>
+                            <span class="checkmark no-dot">5</span>= Agree a little
+                        </label><br>
+                        <label class="radiobuttons" style='cursor:default!important'>
+                            <span class="checkmark no-dot">6</span>= Agree moderately
+                        </label><br>
+                        <label class="radiobuttons" style='cursor:default!important'>
+                            <span class="checkmark no-dot">7</span>= Agree strongly
+                        </label><br>
+                      </fieldset>
+                    </div>
+                    <button type="button" id="btn_legend__ID" class="btn btn-primary mb-1 mt-0 mx-0 p-1">Hide legend</button>
+                  </div>
+                  <div class="form-group">
+                    <h4>1. Extroverted, enthusiastic.</h4>
+                    <div class="questiongroup">
+                      <fieldset>
+                        <label id="test1__ID" class="radiobuttons" title="Disagree strongly">
+                          <input type="radio" name="TIPI_1" value="1" required>
+                          <span class="checkmark no-dot">1</span></label>
+                        <label  class="radiobuttons" title="Disagree moderately">
+                          <input type="radio" name="TIPI_1" value="2">
+                          <span class="checkmark no-dot">2</span></label>
+                        <label  class="radiobuttons" title="Disagree a little">
+                          <input type="radio" name="TIPI_1" value="3">
+                          <span class="checkmark no-dot">3</span></label>
+                        <label  class="radiobuttons" title="Neither agree nor disagree">
+                          <input type="radio" name="TIPI_1" value="4">
+                          <span class="checkmark no-dot">4</span></label>
+                        <label  class="radiobuttons" title="Agree a little">
+                          <input type="radio" name="TIPI_1" value="5">
+                          <span class="checkmark no-dot">5</span></label>
+                        <label  class="radiobuttons" title="Agree moderately">
+                          <input type="radio" name="TIPI_1" value="6">
+                          <span class="checkmark no-dot">6</span></label>
+                        <label  class="radiobuttons" title="Agree strongly">
+                          <input type="radio" name="TIPI_1" value="7">
+                          <span class="checkmark no-dot">7</span></label>
+                      </fieldset>
+                      <label id=tipi_sel_1><br>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <h4>2. Critical, quarrelsome.</h4>
+                    <div class="questiongroup">
+                      <fieldset>
+                        <label  class="radiobuttons" title="Disagree strongly">
+                          <input type="radio" name="TIPI_2" value="1" required>
+                          <span class="checkmark no-dot">1</span></label>
+                        <label  class="radiobuttons" title="Disagree moderately">
+                          <input type="radio" name="TIPI_2" value="2">
+                          <span class="checkmark no-dot">2</span></label>
+                        <label  class="radiobuttons" title="Disagree a little">
+                          <input type="radio" name="TIPI_2" value="3">
+                          <span class="checkmark no-dot">3</span></label>
+                        <label  class="radiobuttons" title="Neither agree nor disagree">
+                          <input type="radio" name="TIPI_2" value="4">
+                          <span class="checkmark no-dot">4</span></label>
+                        <label  class="radiobuttons" title="Agree a little">
+                          <input type="radio" name="TIPI_2" value="5">
+                          <span class="checkmark no-dot">5</span></label>
+                        <label  class="radiobuttons" title="Agree moderately">
+                          <input type="radio" name="TIPI_2" value="6">
+                          <span class="checkmark no-dot">6</span></label>
+                        <label  class="radiobuttons" title="Agree strongly">
+                          <input type="radio" name="TIPI_2" value="7">
+                          <span class="checkmark no-dot">7</span></label>
+                      </fieldset>
+                      <label id=tipi_sel_2><br>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <h4>3. Dependable, self-disciplined.</h4>
+                    <div class="questiongroup">
+                      <fieldset>
+                        <label  class="radiobuttons" title="Disagree strongly">
+                          <input type="radio" name="TIPI_3" value="1" required>
+                          <span class="checkmark no-dot">1</span></label>
+                        <label  class="radiobuttons" title="Disagree moderately">
+                          <input type="radio" name="TIPI_3" value="2">
+                          <span class="checkmark no-dot">2</span></label>
+                        <label  class="radiobuttons" title="Disagree a little">
+                          <input type="radio" name="TIPI_3" value="3">
+                          <span class="checkmark no-dot">3</span></label>
+                        <label  class="radiobuttons" title="Neither agree nor disagree">
+                          <input type="radio" name="TIPI_3" value="4">
+                          <span class="checkmark no-dot">4</span></label>
+                        <label  class="radiobuttons" title="Agree a little">
+                          <input type="radio" name="TIPI_3" value="5">
+                          <span class="checkmark no-dot">5</span></label>
+                        <label  class="radiobuttons" title="Agree moderately">
+                          <input type="radio" name="TIPI_3" value="6">
+                          <span class="checkmark no-dot">6</span></label>
+                        <label  class="radiobuttons" title="Agree strongly">
+                          <input type="radio" name="TIPI_3" value="7">
+                          <span class="checkmark no-dot">7</span></label>
+                      </fieldset>
+                      <label id=tipi_sel_3><br>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <h4>4. Anxious, easily upset.</h4>
+                    <div class="questiongroup">
+                      <fieldset>
+                        <label  class="radiobuttons" title="Disagree strongly">
+                          <input type="radio" name="TIPI_4" value="1" required>
+                          <span class="checkmark no-dot">1</span></label>
+                        <label  class="radiobuttons" title="Disagree moderately">
+                          <input type="radio" name="TIPI_4" value="2">
+                          <span class="checkmark no-dot">2</span></label>
+                        <label  class="radiobuttons" title="Disagree a little">
+                          <input type="radio" name="TIPI_4" value="3">
+                          <span class="checkmark no-dot">3</span></label>
+                        <label  class="radiobuttons" title="Neither agree nor disagree">
+                          <input type="radio" name="TIPI_4" value="4">
+                          <span class="checkmark no-dot">4</span></label>
+                        <label  class="radiobuttons" title="Agree a little">
+                          <input type="radio" name="TIPI_4" value="5">
+                          <span class="checkmark no-dot">5</span></label>
+                        <label  class="radiobuttons" title="Agree moderately">
+                          <input type="radio" name="TIPI_4" value="6">
+                          <span class="checkmark no-dot">6</span></label>
+                        <label  class="radiobuttons" title="Agree strongly">
+                          <input type="radio" name="TIPI_4" value="7">
+                          <span class="checkmark no-dot">7</span></label>
+                      </fieldset>
+                      <label id=tipi_sel_4><br>
+                      </label>  
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <h4>5. Open to new experiences, complex.</h4>
+                    <div class="questiongroup">
+                      <fieldset>
+                        <label  class="radiobuttons" title="Disagree strongly">
+                          <input type="radio" name="TIPI_5" value="1" required>
+                          <span class="checkmark no-dot">1</span></label>
+                        <label  class="radiobuttons" title="Disagree moderately">
+                          <input type="radio" name="TIPI_5" value="2">
+                          <span class="checkmark no-dot">2</span></label>
+                        <label  class="radiobuttons" title="Disagree a little">
+                          <input type="radio" name="TIPI_5" value="3">
+                          <span class="checkmark no-dot">3</span></label>
+                        <label  class="radiobuttons" title="Neither agree nor disagree">
+                          <input type="radio" name="TIPI_5" value="4">
+                          <span class="checkmark no-dot">4</span></label>
+                        <label  class="radiobuttons" title="Agree a little">
+                          <input type="radio" name="TIPI_5" value="5">
+                          <span class="checkmark no-dot">5</span></label>
+                        <label  class="radiobuttons" title="Agree moderately">
+                          <input type="radio" name="TIPI_5" value="6">
+                          <span class="checkmark no-dot">6</span></label>
+                        <label  class="radiobuttons" title="Agree strongly">
+                          <input type="radio" name="TIPI_5" value="7">
+                          <span class="checkmark no-dot">7</span></label>
+                      </fieldset>
+                      <label id=tipi_sel_5><br>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <h4>6. Reserved, quiet.</h4>
+                    <div class="questiongroup">
+                      <fieldset>
+                        <label  class="radiobuttons" title="Disagree strongly">
+                          <input type="radio" name="TIPI_6" value="1" required>
+                          <span class="checkmark no-dot">1</span></label>
+                        <label  class="radiobuttons" title="Disagree moderately">
+                          <input type="radio" name="TIPI_6" value="2">
+                          <span class="checkmark no-dot">2</span></label>
+                        <label  class="radiobuttons" title="Disagree a little">
+                          <input type="radio" name="TIPI_6" value="3">
+                          <span class="checkmark no-dot">3</span></label>
+                        <label  class="radiobuttons" title="Neither agree nor disagree">
+                          <input type="radio" name="TIPI_6" value="4">
+                          <span class="checkmark no-dot">4</span></label>
+                        <label  class="radiobuttons" title="Agree a little">
+                          <input type="radio" name="TIPI_6" value="5">
+                          <span class="checkmark no-dot">5</span></label>
+                        <label  class="radiobuttons" title="Agree moderately">
+                          <input type="radio" name="TIPI_6" value="6">
+                          <span class="checkmark no-dot">6</span></label>
+                        <label  class="radiobuttons" title="Agree strongly">
+                          <input type="radio" name="TIPI_6" value="7">
+                          <span class="checkmark no-dot">7</span></label>
+                      </fieldset>
+                      <label id=tipi_sel_6><br>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <h4>7. Sympathetic, warm.</h4>
+                    <div class="questiongroup">
+                      <fieldset>
+                        <label  class="radiobuttons" title="Disagree strongly">
+                          <input type="radio" name="TIPI_7" value="1" required>
+                          <span class="checkmark no-dot">1</span></label>
+                        <label  class="radiobuttons" title="Disagree moderately">
+                          <input type="radio" name="TIPI_7" value="2">
+                          <span class="checkmark no-dot">2</span></label>
+                        <label  class="radiobuttons" title="Disagree a little">
+                          <input type="radio" name="TIPI_7" value="3">
+                          <span class="checkmark no-dot">3</span></label>
+                        <label  class="radiobuttons" title="Neither agree nor disagree">
+                          <input type="radio" name="TIPI_7" value="4">
+                          <span class="checkmark no-dot">4</span></label>
+                        <label  class="radiobuttons" title="Agree a little">
+                          <input type="radio" name="TIPI_7" value="5">
+                          <span class="checkmark no-dot">5</span></label>
+                        <label  class="radiobuttons" title="Agree moderately">
+                          <input type="radio" name="TIPI_7" value="6">
+                          <span class="checkmark no-dot">6</span></label>
+                        <label  class="radiobuttons" title="Agree strongly">
+                          <input type="radio" name="TIPI_7" value="7">
+                          <span class="checkmark no-dot">7</span></label>
+                      </fieldset>
+                      <label id=tipi_sel_7><br>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <h4>8. Disorganized, careless.</h4>
+                    <div class="questiongroup">
+                      <fieldset>
+                        <label  class="radiobuttons" title="Disagree strongly">
+                          <input type="radio" name="TIPI_8" value="1" required>
+                          <span class="checkmark no-dot">1</span></label>
+                        <label  class="radiobuttons" title="Disagree moderately">
+                          <input type="radio" name="TIPI_8" value="2">
+                          <span class="checkmark no-dot">2</span></label>
+                        <label  class="radiobuttons" title="Disagree a little">
+                          <input type="radio" name="TIPI_8" value="3">
+                          <span class="checkmark no-dot">3</span></label>
+                        <label  class="radiobuttons" title="Neither agree nor disagree">
+                          <input type="radio" name="TIPI_8" value="4">
+                          <span class="checkmark no-dot">4</span></label>
+                        <label  class="radiobuttons" title="Agree a little">
+                          <input type="radio" name="TIPI_8" value="5">
+                          <span class="checkmark no-dot">5</span></label>
+                        <label  class="radiobuttons" title="Agree moderately">
+                          <input type="radio" name="TIPI_8" value="6">
+                          <span class="checkmark no-dot">6</span></label>
+                        <label  class="radiobuttons" title="Agree strongly">
+                          <input type="radio" name="TIPI_8" value="7">
+                          <span class="checkmark no-dot">7</span></label>
+                      </fieldset>
+                      <label id=tipi_sel_8><br>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <h4>9. Calm, emotionally stable</h4>
+                    <div class="questiongroup">
+                      <fieldset>
+                        <label  class="radiobuttons" title="Disagree strongly">
+                          <input type="radio" name="TIPI_9" value="1" required>
+                          <span class="checkmark no-dot">1</span></label>
+                        <label  class="radiobuttons" title="Disagree moderately">
+                          <input type="radio" name="TIPI_9" value="2">
+                          <span class="checkmark no-dot">2</span></label>
+                        <label  class="radiobuttons" title="Disagree a little">
+                          <input type="radio" name="TIPI_9" value="3">
+                          <span class="checkmark no-dot">3</span></label>
+                        <label  class="radiobuttons" title="Neither agree nor disagree">
+                          <input type="radio" name="TIPI_9" value="4">
+                          <span class="checkmark no-dot">4</span></label>
+                        <label  class="radiobuttons" title="Agree a little">
+                          <input type="radio" name="TIPI_9" value="5">
+                          <span class="checkmark no-dot">5</span></label>
+                        <label  class="radiobuttons" title="Agree moderately">
+                          <input type="radio" name="TIPI_9" value="6">
+                          <span class="checkmark no-dot">6</span></label>
+                        <label  class="radiobuttons" title="Agree strongly">
+                          <input type="radio" name="TIPI_9" value="7">
+                          <span class="checkmark no-dot">7</span></label>
+                      </fieldset>
+                      <label id=tipi_sel_9><br>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <h4>10. Conventional, uncreative.</h4>
+                    <div class="questiongroup">
+                      <fieldset>
+                        <label  class="radiobuttons" title="Disagree strongly">
+                          <input type="radio" name="TIPI_10" value="1" required>
+                          <span class="checkmark no-dot">1</span></label>
+                        <label  class="radiobuttons" title="Disagree moderately">
+                          <input type="radio" name="TIPI_10" value="2">
+                          <span class="checkmark no-dot">2</span></label>
+                        <label  class="radiobuttons" title="Disagree a little">
+                          <input type="radio" name="TIPI_10" value="3">
+                          <span class="checkmark no-dot">3</span></label>
+                        <label  class="radiobuttons" title="Neither agree nor disagree">
+                          <input type="radio" name="TIPI_10" value="4">
+                          <span class="checkmark no-dot">4</span></label>
+                        <label  class="radiobuttons" title="Agree a little">
+                          <input type="radio" name="TIPI_10" value="5">
+                          <span class="checkmark no-dot">5</span></label>
+                        <label  class="radiobuttons" title="Agree moderately">
+                          <input type="radio" name="TIPI_10" value="6">
+                          <span class="checkmark no-dot">6</span></label>
+                        <label  class="radiobuttons" title="Agree strongly">
+                          <input type="radio" name="TIPI_10" value="7">
+                          <span class="checkmark no-dot">7</span></label>
+                      </fieldset>
+                      <label id=tipi_sel_10><br>
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+      function F__ID(){
+            //-------------------------------------
+            VmInclude:__COMPONENT__/f/form.01.js
+            VmInclude:__CURRENT_PATH__/shared-form.js
+            //-------------------------------------
+          $('#btn_legend__ID').on('click',function(){
+              if($('#btn_legend__ID').text()=='Hide legend'){
+                $('#btn_legend__ID').text('Show legend');
+                $('#legend__ID').hide();
+            }
+            else {
+                $('#btn_legend__ID').text('Hide legend');
+                $('#legend__ID').show();
+            }
+          });
+
+          $("#D__ID input[name=TIPI_1]").on('click',function(){
+              set_selected_text(1)
+          })
+          $("#D__ID input[name=TIPI_2]").on('click',function(){
+              set_selected_text(2)
+          })
+          $("#D__ID input[name=TIPI_3]").on('click',function(){
+              set_selected_text(3)
+          })
+          $("#D__ID input[name=TIPI_4]").on('click',function(){
+              set_selected_text(4)
+          })
+          $("#D__ID input[name=TIPI_5]").on('click',function(){
+              set_selected_text(5)
+          })
+          $("#D__ID input[name=TIPI_6]").on('click',function(){
+              set_selected_text(6)
+          })
+          $("#D__ID input[name=TIPI_7]").on('click',function(){
+              set_selected_text(7)
+          })
+          $("#D__ID input[name=TIPI_8]").on('click',function(){
+              set_selected_text(8)
+          })
+          $("#D__ID input[name=TIPI_9]").on('click',function(){
+              set_selected_text(9)
+          })
+          $("#D__ID input[name=TIPI_10]").on('click',function(){
+              set_selected_text(10)
+          })
+          //-------------------------------------
+          var load2=m.load;
+              m.load=function(){
+              load2();
+              for(var i=0;i<10;i++){
+                  set_selected_text(i+1)
+              }
+              $('#D__ID').css('overflow','visible');              
+          }
+          //-------------------------------------
+         var set_selected_text=function(i){
+             $("#tipi_sel_"+i+"").css('padding-top','10px').css('color','#EA7859');
+              switch ($("#D__ID input[name=TIPI_"+i+"]:checked").val()) {
+                  case '1':
+                      $("#tipi_sel_"+i+"").text("Disagree strongly");
+                  break;
+                  case '2':
+                      $("#tipi_sel_"+i+"").text("Disagree moderately");
+                  break;
+                  case '3':
+                      $("#tipi_sel_"+i+"").text("Disagree a little");
+                  break;
+                  case '4':
+                      $("#tipi_sel_"+i+"").text("Neither agree nor disagree");
+                  break;
+                  case '5':
+                      $("#tipi_sel_"+i+"").text("Agree a little");
+                  break;
+                  case '6':
+                      $("#tipi_sel_"+i+"").text("Agree moderately");
+                  break;
+                  case '7':
+                      $("#tipi_sel_"+i+"").text("Agree strongly");
+                  break;
+                  default:
+                      $("#tipi_sel_"+i+"").html("<br>");
+                  break;
+            }
+         }
+         //-------------------------------------
+         var before_submit=m.before_submit;
+          m.before_submit=function(data,index){
+              var R_TIPI_2 = 8-parseFloat(data.TIPI_2);
+              var R_TIPI_4 = 8-parseFloat(data.TIPI_4);
+              var R_TIPI_6 = 8-parseFloat(data.TIPI_6);
+              var R_TIPI_8 = 8-parseFloat(data.TIPI_8);
+              var R_TIPI_10 = 8-parseFloat(data.TIPI_10);
+              data.Extraversion = ((parseFloat(data.TIPI_1) + R_TIPI_6)/2).toFixed(1);
+              data.Agreeableness = ((R_TIPI_2 + parseFloat(data.TIPI_7))/2).toFixed(1);
+              data.Conscientiousness = ((parseFloat(data.TIPI_3) + R_TIPI_8)/2).toFixed(1);
+              data.Emotional_stability = ((R_TIPI_4 + parseFloat(data.TIPI_9))/2).toFixed(1);
+              data.Openness_to_experience = ((parseFloat(data.TIPI_5) + R_TIPI_10)/2).toFixed(1);
+            return before_submit(data,index); 
+          }
+          //-------------------------------------
+      }
+  </script>
+   <style>
+    #D__ID .mt-95 {
+    max-width:600px;
+}
+    VmInclude:__CURRENT_PATH__/wappsystem-form.css
+</style>
+</div>

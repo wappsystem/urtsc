@@ -1,0 +1,222 @@
+<div id=D__ID>
+    <!--third html start -->
+    <div class="container mt-95 mb-3">
+        <div class="row">
+            <!-- form container start -->
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- form start -->
+                        <form id="F__ID">
+                            <h3>Online questionnaire setup - Check to enable</h3>
+                            <div class="row">
+                                <table id=table_form__ID>
+                                    <tr id=tr_table_grid__ID><td colspan=2><table id=table_grid__ID></table></td></tr>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <textarea name="List" class=form-control readonly style='margin-top:16px'></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=col>
+                                    <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function F__ID(){
+            //-------------------------------------
+            VmInclude:__COMPONENT__/f/form.01.js
+			//-------------------------------------
+            var q_list={
+                "Patient Data":[
+					"urtsc-ethnicity-form",
+                    "urtsc-lifestyle-form",
+                    "urtsc-education-form",
+                    "urtsc-medical-history-form",
+                ],
+                "Questionnaires":[
+                    "urtsc-ess-form",
+                    "urtsc-isi-form",
+                    "urtsc-hads-form",
+                    "urtsc-psqi-form",
+                ],
+            }
+            //-------------------------------------
+            var load=m.load;
+			m.load=function(){
+				load();
+				if(m.input.record!=undefined){
+                    set_check_list();
+				}
+			}
+			//-------------------------------------
+            m.before_submit=function(data){
+                data['List']=$('#F__ID textarea[name=List]').val();
+                $vm.module_list['participant-data'].change_status=1;                
+			}
+			//-------------------------------------
+            var set_check_list=function(){
+                var tab="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+                var dot='&#8226;&nbsp;';
+                var txtA="";
+                var txt="<tr><th style='width:30px'>No.</th><th>Table ID</th><th>Task</th><th style='width:20px'></th></tr>";
+                var No=0;
+                for(visit in q_list){
+                    No++;
+                    var task=visit;
+                    var pid="";
+                    txt+="<tr><td>"+No+"</td><td></td><td><label style='cursor:pointer' for="+No+"__ID >"+task+"</label></td><td><label class='checkboxes'><input id="+No+"__ID data-visit='"+task+"' type=checkbox class=visit__ID ><span class='check_checkmark'></span></label></td></tr>";
+
+//                    txt+="<tr><td>"+No+"</td><td></td><td><label style='cursor:pointer' for="+task+"__ID >"+task+"</label></td><td><label class='checkboxes'><input id="+task+"__ID data-visit='"+task+"' type=checkbox class=visit__ID ><span class='check_checkmark'></span></label></td></tr>";
+                    var visit_array=q_list[visit];
+                    for(k in visit_array){
+                        No++;
+                        pid=visit_array[k];
+                        var mm=$vm.module_list[pid];
+                        task="not found";
+                        if(mm!=undefined) task=$vm.module_list[pid].task_name;
+                        txt+="<tr id=label__ID"+pid+"><td>"+No+"</td><td>"+pid+"</td><td><label style='cursor:pointer' for=task__ID"+pid+" >"+tab+dot+task+"</label></td><td><label class='checkboxes'><input id=task__ID"+pid+" type=checkbox class=item__ID ><span class='check_checkmark'></span></label></td></tr>";
+                    }
+                }
+                $('#table_grid__ID').html(txt);
+                $('#table_grid__ID th:nth-child(2)').hide();$('#table_grid__ID td:nth-child(2)').hide();
+                set_box();
+                //check and uncheck group checkbox
+                $('.visit__ID').on('click',function(){
+                    var data_visit=$(this).attr('data-visit');
+                    var visit_array=q_list[data_visit];
+                    if( $(this).prop('checked')==true){
+                        for(k in visit_array){
+                            var pid=visit_array[k];
+                            $("#task__ID"+pid).prop('checked',true);
+                            $("#label__ID"+pid).css('font-weight','600').css('background-color','#FDEE30');;
+                        }
+                    }
+                    else{
+                        for(k in visit_array){
+                            var pid=visit_array[k];
+                            $("#task__ID"+pid).prop('checked',false);
+                            $("#label__ID"+pid).css('font-weight','400').css('background-color','');
+                        }
+                    }
+                    set_list();
+                });
+                $('.item__ID').on('click',function(){
+                    set_list();
+                })
+            }
+            //---------------------------------------------
+            var set_box=function(){
+                var list_val=$('#F__ID textarea[name=List]').val();
+                var lines=list_val.split(',');
+                for(var i=0;i<lines.length;i++){
+                    var L=lines[i].length;
+                    if(L>1){
+                        var key=lines[i];
+                        set_check(key);
+                    }
+                }
+            }
+            //---------------------------------------------
+            var set_check=function(key){
+                $('#table_grid__ID tr').each(function(index){
+                    if(index>0){
+                        var k=$(this).children('td').eq(1).html().trim();
+                        if(k==key){
+                            $(this).css('font-weight','600').css('background-color','#FDEE30');
+                            $(this).children('td').eq(3).find(">:first-child input").attr('checked','checked');
+                        }
+                    }
+                })
+            }
+            //---------------------------------------------
+            var set_list=function(){
+                var txt="";
+                $('#table_grid__ID tr').each(function(index){
+                    if(index>0){
+                        var key=$(this).children('td').eq(1).html();
+                        if(key!==""){
+                            var ro=$(this).children('td').eq(3).find(">:first-child input").prop('checked');
+                            if(ro===true){
+                                $(this).css('font-weight','600').css('background-color','#FDEE30');
+                                if(txt!='') txt+=",";
+                                txt+=key.trim();
+                            }
+                            else {
+                                $(this).css('font-weight','400').css('background-color','');
+                            }
+                        }
+                    }
+                });
+                $('#F__ID textarea[name=List]').val(txt);
+            }
+            //---------------------------------------------
+        }
+    </script>
+    <style>
+    	#table_form__ID {width:100%;font-size:10pt; font-family:'Nunito Sans'; margin-left:25px; margin-right:25px; border: 0px #B8BDBF solid; border-spacing:0; border-collapse: collapse; table-layout: automatic;}
+    	#table_form__ID td{ border: 1px #B8BDBF solid; color: #333333; border-collapse: collapse; text-align: left; padding: 1px;padding-right:4px; vertical-align:top;}
+    	#table_form__ID td:first-child{padding:3px;}
+    	#table_form__ID label{margin-bottom: 0;font-style: normal}
+    	#table_form__ID input,textarea, select{ font-size:10pt!Important; font-family:'Nunito Sans'!Important;}
+    	#table_form__ID input[type=text],textarea{ margin:1px;padding:1px; border-style:inset; border-width:0px; width:100%;overflow:hidden;}
+    	#table_fomn__ID input[type=checkbox]{margin:3px!Important;}
+    	#table_form__ID textarea{height:36px;}
+    	#table_form__ID td:first-child{padding-left:5px;}
+    	#table_form__ID td:nth-child(2){vertical-align:middle;}
+
+    	#table_grid__ID{	width:100%;  border: 1px #aaaaaa solid; font-size:10pt; font-family:'Nunito Sans'; border-spacing: 0px;border-collapse: collapse;}
+    	#table_grid__ID th{ border: 1px solid #ddd; padding:2px; margin:1px; text-align:left; background-color:#eee;/*#9ab6da;*/ white-space: nowrap;}
+    	#table_grid__ID td{ border: 1px solid #ddd; padding:2px; margin:0px; }
+        #table_grid__ID tr:hover {background-color: #ddd;}
+        #table_grid__ID tr{font-weight: 400}
+
+    	.header__ID {background-color:#B8BDBF;color:#000;text-align:center!Important;font-size:22px;padding:12px!Important;}
+
+        VmInclude:__CURRENT_PATH__/library/wappsystem-form.css
+
+        #D__ID{
+    		height:100%;
+    		overflow:auto;
+    		animation: vm_module_fadein 1.0s;
+            /*background-color: #fff;*/
+    	}
+        #D__ID .check_checkmark {
+            position: absolute;
+            top: -13px;
+            left: 0;
+            height: 22px;
+            width: 22px;
+            background-color: #C9C9C9;
+            border-radius: 0%;
+        }
+        #D__ID .checkboxes:hover input ~ .check_checkmark {
+            background-color: #506A88;
+        }
+        #D__ID .checkboxes input:checked ~ .check_checkmark {
+            background-color: rgb(5, 5, 5);
+        }
+        #D__ID .check_checkmark:after {
+            content: "";
+            position: absolute !important;
+            display: none;
+        }
+        #D__ID .checkboxes input:checked ~ .check_checkmark:after {
+            display: block !important;
+        }
+        #D__ID .container .check_checkmark:after {
+            top: 0px;
+            left: 6px;
+            color:#FDEE30;
+            content:"✔";
+        }
+    </style>
+</div>

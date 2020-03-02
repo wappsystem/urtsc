@@ -1,0 +1,29 @@
+<section>
+    VmInclude:__CURRENT_PATH__/grid.v1h.html
+</section>
+  <script>
+      function F__ID(){
+          //-------------------------------------
+          VmInclude:__COMPONENT__/g/grid.01.js
+          VmInclude:__CURRENT_PATH__/shared-data.js
+        //-------------------------------------
+        $('#title__ID').text('Actiwatch Extraction');
+          //-------------------------------------
+          var fields="File_Name,Serial_No,Epoch,aTRT,aExcl,Bedtime_min,Bedtime_max,Risetime_min,Risetime_max,aTIB,aTIB_std,aTIB_min,aTIB_max,aTST_aTIB,aTST_aTIB_std,aTST_aTIB_min,aTST_aTIB_max,aTST,aTST_std,aTST_min,aTST_max,aSOL,aSOL_std,aSOL_min,aSOL_max,aWASO,aWASO_std,aWASO_min,aWASO_max,aSE,aSE_std,aSE_min,aSE_max,Naps_no,Naps,Naps_std,Naps_min,Naps_max,SB,SB_std,SB_min,SB_max,WB,WB_std,WB_min,WB_max,WAC,WAC_std,WAC_min,WAC_max,SAC,SAC_std,SAC_min,SAC_max,FI,FI_std,FI_min,FI_max,d_ST_24,d_ST_24_STD,AC 24 Ac/min|AC_24,AC 24 STD Ac/min|AC_24_STD,Bedtime_1,Risetime_1,aTIB_1,aTST_aTIB_1,aTST_1,aSOL_1,aWASO_1,FI_1,d_ST_24_1,AC_24_1,Dur_24_1,Bedtime_2,Risetime_2,aTIB_2,aTST_aTIB_2,aTST_2,aSOL_2,aWASO_2,FI_2,d_ST_24_2,AC_24_2,Dur_24_2,Bedtime_3,Risetime_3,aTIB_3,aTST_aTIB_3,aTST_3,aSOL_3,aWASO_3,FI_3,d_ST_24_3,AC_24_3,Dur_24_3,Bedtime_4,Risetime_4,aTIB_4,aTST_aTIB_4,aTST_4,aSOL_4,aWASO_4,FI_4,d_ST_24_4,AC_24_4,Dur_24_4,Bedtime_5,Risetime_5,aTIB_5,aTST_aTIB_5,aTST_5,aSOL_5,aWASO_5,FI_5,d_ST_24_5,AC_24_5,Dur_24_5,Bedtime_6,Risetime_6,aTIB_6,aTST_aTIB_6,aTST_6,aSOL_6,aWASO_6,FI_6,d_ST_24_6,AC_24_6,Dur_24_6,Bedtime_7,Risetime_7,aTIB_7,aTST_aTIB_7,aTST_7,aSOL_7,aWASO_7,FI_7,d_ST_24_7,AC_24_7,Dur_24_7";
+          m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+          //-------------------------------------
+          var cell_render=m.cell_render;
+            m.cell_render=function(records,I,field,td){
+                cell_render(records,I,field,td);
+                switch(field){
+                    case 'File_Name':
+                        m.set_file_link(records,I,field,td)
+                        break;
+                }
+            }
+            //-------------------------------------
+      }
+  </script>
+  <style>
+      VmInclude:__CURRENT_PATH__/wappsystem-data.css
+  </style>

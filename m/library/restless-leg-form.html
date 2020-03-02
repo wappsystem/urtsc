@@ -1,0 +1,162 @@
+<div id=D__ID>
+<!--third html start -->
+    <div class="container mt-95 mb-3">
+      <div class="row" >
+        <!-- form container start -->
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+          <div class="row">
+            <div class="col-12">
+              <!-- form start -->
+              <form id="F__ID">
+                  <h3>Restless Legs</h3>
+                  <!-- participant part for all tsak forms -------------------->
+                  <div id="participant_div__ID">
+                      <div class="form-group">
+                         <fieldset class="subquestions">
+                             <label ><span class="">Participant</span>
+                                 <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant"/>
+                             </label><br>
+                             <label ><span class="">Participant ID</span>
+                                 <input type=text name="Participant_uid" class=form-control readonly />
+                             </label>
+                          </fieldset>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                     <h4>1. Do you have unpleasant sensations (such as creepy-crawly, electric shocks, pain, burning or tightness) in your legs combined with an urge or need to move your legs?</h4>
+     				 <div class="questiongroup ">
+                         <fieldset class="">
+                             <label class="radiobuttons">
+                               <input type="radio" name="RLS_1" value="1" required>
+                               <span class="checkmark"></span> Yes</label>
+                             <label class="radiobuttons">
+                               <input type="radio" name="RLS_1" value="0">
+                               <span class="checkmark"></span> No</label>
+                         </fieldset>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                    <h4>2. Do these feelings occur mainly or only at rest and do they improve with movement?</h4>
+                    <div class="questiongroup ">
+                        <fieldset class="">
+                            <label class="radiobuttons">
+                              <input type="radio" name="RLS_2" value="1" required>
+                              <span class="checkmark"></span> Yes</label>
+                            <label class="radiobuttons">
+                              <input type="radio" name="RLS_2" value="0">
+                              <span class="checkmark"></span> No</label>
+                        </fieldset>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <h4>3. Are these feelings worse in the evening or night than in the morning?</h4>
+                    <div class="questiongroup ">
+                       <fieldset class="">
+                           <label class="radiobuttons">
+                             <input type="radio" name="RLS_3" value="1" required>
+                             <span class="checkmark"></span> Yes</label>
+                           <label class="radiobuttons">
+                             <input type="radio" name="RLS_3" value="0">
+                             <span class="checkmark"></span> No</label>
+                       </fieldset>
+                    </div>
+                 </div>
+                 <div id=forth_question__ID>
+                     <div  class="form-group">
+                         <h4>4. If yes to all of the above, How often do these feelings occur?</h4>
+         				          <div class="questiongroup">
+                             <fieldset>
+                                 <label class="radiobuttons">
+                                   <input type="radio" name="RLS_4" id=RLS_4__ID value="0" >
+                                   <span class="checkmark"></span> Less than one time a year</label><br>
+                                 <label class="radiobuttons">
+                                   <input type="radio" name="RLS_4" value="1">
+                                   <span class="checkmark"></span> At least one time per year but less than one time per month</label><br>
+                                 <label class="radiobuttons">
+                                   <input type="radio" name="RLS_4" value="2">
+                                   <span class="checkmark"></span> One time per month</label><br>
+                                 <label class="radiobuttons">
+                                   <input type="radio" name="RLS_4" value="3">
+                                   <span class="checkmark"></span> 2–4 times per month </label><br>
+                                 <label class="radiobuttons">
+                                   <input type="radio" name="RLS_4" value="4">
+                                   <span class="checkmark"></span> 2–3 times per week</label><br>
+                                 <label class="radiobuttons">
+                                   <input type="radio" name="RLS_4" value="5">
+                                   <span class="checkmark"></span> 4–5 times per week</label><br>
+                                 <label class="radiobuttons">
+                                   <input type="radio" name="RLS_4" value="6">
+                                   <span class="checkmark"></span> 6–7 times per week</label><br>
+                             </fieldset>
+                        </div>
+         		     </div>
+                 </div>
+                 <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+              </form>
+            </div>
+         </div>
+        </div>
+      </div>
+  </div>
+  <script>
+  function F__ID(){
+      //-------------------------------------
+      VmInclude:__COMPONENT__/f/form.01.js
+      VmInclude:__CURRENT_PATH__/shared-form.js
+      //-------------------------------------
+      var load2=m.load;
+      m.load=function(){
+          load2();
+          if($("input[name='RLS_1']:checked").val()=='1' && $("input[name='RLS_2']:checked").val()=='1' && $("input[name='RLS_3']:checked").val()=='1' ){
+              $("#forth_question__ID").show();
+              $('#RLS_4__ID').prop('required', true);
+          }
+          else{
+              $("#forth_question__ID").hide();
+              $('#RLS_4__ID').prop('required',false);
+              $("input[name='RLS_4']").prop('checked',false);
+          }
+      }
+      //-------------------------------------
+      $("input[name='RLS_1']").on('click', function(){
+          if($("input[name='RLS_1']:checked").val()=='1' && $("input[name='RLS_2']:checked").val()=='1' && $("input[name='RLS_3']:checked").val()=='1' ){
+              $("#forth_question__ID").show();
+              $('#RLS_4__ID').prop('required',true);
+          }
+          else{
+              $("#forth_question__ID").hide();
+              $('#RLS_4__ID').prop('required',false);
+              $("input[name='RLS_4']").prop('checked',false);
+          }
+      });
+      $("input[name='RLS_2']").on('click', function(){
+          if($("input[name='RLS_1']:checked").val()=='1' && $("input[name='RLS_2']:checked").val()=='1' && $("input[name='RLS_3']:checked").val()=='1' ){
+              $("#forth_question__ID").show();
+              $('#RLS_4__ID').prop('required', true);
+          }
+          else{
+              $("#forth_question__ID").hide();
+              $('#RLS_4__ID').prop('required',false);
+              $("input[name='RLS_4']").prop('checked',false);
+          }
+      });
+      $("input[name='RLS_3']").on('click', function(){
+          if($("input[name='RLS_1']:checked").val()=='1' && $("input[name='RLS_2']:checked").val()=='1' && $("input[name='RLS_3']:checked").val()=='1' ){
+              $("#forth_question__ID").show();
+              $('#RLS_4__ID').prop('required',true);
+          }
+          else{
+              $("#forth_question__ID").hide();
+              $('#RLS_4__ID').prop('required',false);
+              $("input[name='RLS_4']").prop('checked',false);
+          }
+      });
+  }
+  </script>
+    <style>
+      #D__ID .mt-95 {
+      max-width:600px;
+  }
+      VmInclude:__CURRENT_PATH__/wappsystem-form.css
+  </style>
+</div>

@@ -1,0 +1,29 @@
+<section>
+    VmInclude:__CURRENT_PATH__/grid.v1h.html
+</section>
+  <script>
+      function F__ID(){
+          //-------------------------------------
+          VmInclude:__COMPONENT__/g/grid.01.js
+          VmInclude:__CURRENT_PATH__/shared-data.js
+        //-------------------------------------
+        $('#title__ID').text('WristOx');
+          //-------------------------------------
+          var fields="File_Name,Duration Analysed|duration_analysed,Total Events|total_events,Time in Events (min)|time_in_event,Avg. Event Dur (sec)|avg_dur,ODI (1/hr)|odi,% Artifact|artifact,Adjusted Index (1/hr)|adjusted_index,%SpO2 Data|spo2,Basal SpO2(%)|basal_spo2,Time (min) < 88%|time_below_88,Events < 88%|event_below_88,Max Single Time < 88%|max_single_time_below_88,Minimum SpO2 (%)|min_spo2,Avg. Low SpO2 (%)|avg_low_spo2,Avg. Low SpO2 < 88%|avg_spo2_88,%SP02 Level 99-95|spo2_99_95,%SP02 Level 94 - 90|spo2_94_90,%SP02 Level 89 - 85|spo2_89_85,%SP02 Level 84 - 80|spo2_84_80,%SP02 Level 79 - 75|spo2_79_75,%SP02 Level 74 - 70|spo2_74_70,Time Below 100%|time_below_100,Time Below 95%|time_below_95,Time Below 90%|time_below_90,Time Below 85%|time_below_85,Time Below 80%|time_below_80,Time Below 75%|time_below_75,Time Below 70%|time_below_70";
+          m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+          //-------------------------------------
+          var cell_render=m.cell_render;
+            m.cell_render=function(records,I,field,td){
+                cell_render(records,I,field,td);
+                switch(field){
+                    case 'File_Name':
+                        m.set_file_link(records,I,field,td)
+                        break;
+                }
+            }
+            //-------------------------------------
+      }
+  </script>
+  <style>
+      VmInclude:__CURRENT_PATH__/wappsystem-data.css
+  </style>

@@ -1,0 +1,19 @@
+<section>
+  VmInclude:__CURRENT_PATH__/grid.v1h.html
+</section>
+<script>
+  function F__ID(){
+      //-------------------------------------
+      VmInclude:__COMPONENT__/g/grid.01.js
+      VmInclude:__CURRENT_PATH__/shared-data.js
+      //-------------------------------------
+      $('#title__ID').text('Geriatric Depression Scale');
+      //-------------------------------------
+      var fields="GDS_1,GDS_2,GDS_3,GDS_4,GDS_5,GDS_6,GDS_7,GDS_8,GDS_9,GDS_10,GDS_11,GDS_12,GDS_13,GDS_14,GDS_15,GDS";
+      m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+      //-------------------------------------
+  }
+</script>
+<style>
+  VmInclude:__CURRENT_PATH__/wappsystem-data.css
+</style>

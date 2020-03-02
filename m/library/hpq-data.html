@@ -1,0 +1,19 @@
+<section>
+    VmInclude:__CURRENT_PATH__/grid.v1h.html
+  </section>
+  <script>
+    function F__ID(){
+        //-------------------------------------
+        VmInclude:__COMPONENT__/g/grid.01.js
+        VmInclude:__CURRENT_PATH__/shared-data.js
+        //-------------------------------------
+        $('#title__ID').text('Health and Work Performance Questionnaire (HPQ)')
+        //-------------------------------------
+        var fields="hpq_1,hpq_2,hpq_3,hpq_4,hpq_4a";
+        m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+        //-------------------------------------
+    }
+  </script>
+  <style>
+    VmInclude:__CURRENT_PATH__/wappsystem-data.css
+  </style>

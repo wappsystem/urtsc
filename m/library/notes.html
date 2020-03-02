@@ -1,0 +1,74 @@
+<div id=D__ID>
+    <section id=form_container__ID>
+    	<div id=header__ID>
+    		Notes
+    	</div>
+    	<form id=F__ID>
+    		<div class="container">
+    			<div class="row row__ID">
+    				<div class=col>
+    					<span>New notes</span>
+    					<textarea class="form-control" id=new_notes__ID ></textarea>
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class=col style='padding-left:20px;'>
+    					<button id=submit__ID type="button" class="btn btn-secondary">Submit</button>
+    				</div>
+    			</div>
+    			<br>
+                <hr style="border-top: 1px solid #888;width: 100%;margin:10px 0">
+    			<div class="row row__ID">
+    				<div class=col>
+    					<span>Notes</span>
+    					<span class="form-control" id=notes__ID ></span>
+    				</div>
+    			</div>
+    		</div>
+    	</form>
+    </section>
+    <script>
+    	function F__ID(){
+    		//-------------------------------------
+            VmInclude:__COMPONENT__/f/form.01.js
+            //-------------------------------------
+            var load2=m.load;
+            m.load=function(){
+                load2();
+                var txt=m.input.record.Notes;
+                if(txt==undefined) txt="";
+                txt=txt.replace(/{\n}/g,'<hr>');
+                txt=txt.replace(/\n/g,'<br>');
+                $('#notes__ID').html(txt);
+            }
+            $('#submit__ID').on('click',function(){
+                var old_notes=m.input.record.Notes; if(old_notes==undefined) old_notes="";
+                var new_notes=$vm.text($('#new_notes__ID').val());
+                if(new_notes!=''){
+                    var txt=new_notes+"\n";
+                    txt=txt+"<span class=notes_signature__ID>Submiited by "+$vm.user_name+" on "+new Date().toLocaleString()+"</span>{\n}";
+                    txt=txt+old_notes;
+                    $vm.request({cmd:"insert-notes",table:m.input.record.Table,id:m.input.record._id,Notes:txt},function(res){
+                        if(res.sys.permission==false){
+                            alert("No permission to insert notes.");
+                        }
+                        $vm.refresh=1;
+                        window.history.go(-1);
+                    });
+                }
+            })
+            //-------------------------------------
+    	}
+    </script>
+    <style>
+        #form_container__ID{
+            max-width:700px;
+        }
+        VmInclude:__COMPONENT__/f/form.01.css
+        .notes_signature__ID{
+            float:right;
+            color:#888;
+            font-size:10px;
+        }
+    </style>
+</div>

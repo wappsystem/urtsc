@@ -1,0 +1,405 @@
+<div id=D__ID>
+    <!--third html start -->
+    <div class="container mt-95 mb-3">
+        <div class="row">
+            <!-- form container start -->
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- form start -->
+                        <form id="F__ID">
+                            <h3>PC-PVT Upload and Read</h3>
+                            <!-- participant part for all tsak forms -------------------->
+                            <div id="participant_div__ID">
+                                <div class="form-group">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Participant</span>
+                                            <input type=text name="Participant" class=form-control id=Participant__ID
+                                                data-id="Participant" />
+                                        </label><br>
+                                        <label><span class="">Participant ID</span>
+                                            <input type=text name="Participant_uid" class=form-control readonly />
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <!-- form group -->
+                            <div class="row px-4">
+                                <div class='col'>
+                                    <label><span class="">Select a file</span></label>
+                                    <div class="form-control">
+                                        <u style='cursor:pointer' id=link_File_Name__ID></u>
+                                        <br>
+                                        <input type="file" name=File_Name style="margin-top:6px" /> <button
+                                            type="button" id=x_File_Name__ID>Remove</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+                            <div class='row px-4'>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Trial Date</span>
+                                        <input class="form-control" type="text" name="PVTDate" />
+                                    </label>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Trial Time</span>
+                                        <input class="form-control" type="text" name="PVTTime" />
+                                    </label>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class='row px-4'>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Minimum inter-stimulus interval</span>
+                                        <input class="form-control" type="text" name="ISIMin" />
+                                    </label>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Maximum inter-stimulus interval </span>
+                                        <input class="form-control" type="text" name="ISIMax" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class='row px-4'>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Duration of trial </span>
+                                        <input class="form-control" type="text" name="DUR" />
+                                    </label>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Define Lapse</span>
+                                        <input class="form-control" type="text" name="Lapse" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class='row px-4'>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Mouse button used </span>
+                                        <input class="form-control" type="text" name="Mouse_Button" />
+                                    </label>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Software Version</span>
+                                        <input class="form-control" type="text" name="Software" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class='row px-4'>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Mood scale rating before trial (1 – 10)</span>
+                                        <input class="form-control" type="text" name="MOODPre" />
+                                    </label>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Mood scale rating after trial (1 – 10)</span>
+                                        <input class="form-control" type="text" name="MOODPost" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class='row px-4'>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>"Correct" responses (Good R’s)</span>
+                                        <input class="form-control" type="text" name="CORR" />
+                                    </label>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Mean Reaction Time = Average reaction time for correct response</span>
+                                        <input class="form-control" type="text" name="MRT" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class='row px-4'>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Standard Deviation of Good R’s (correct responses)</span>
+                                        <input class="form-control" type="text" name="SDRT" />
+                                    </label>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Median of correct RT’s</span>
+                                        <input class="form-control" type="text" name="MedRT" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class='row px-4'>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Shortest correct RT</span>
+                                        <input class="form-control" type="text" name="MinRT" />
+                                    </label>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Longest correct RT</span>
+                                        <input class="form-control" type="text" name="MaxRT" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class='row px-4'>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Average Reciprocal Reaction time (1/RT)</span>
+                                        <input class="form-control" type="text" name="MRRT" />
+                                    </label>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Standard Deviation of Reciprocal Reaction Time</span>
+                                        <input class="form-control" type="text" name="SDRRT" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class='row px-4'>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Number of Lapses greater than criterion (500ms) – Errors of omission.</span>
+                                        <input class="form-control" type="text" name="LAPS" />
+                                    </label>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Total Time of Lapses</span>
+                                        <input class="form-control" type="text" name="TTLAPS" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class='row px-4'>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Total “incorrect” responses i.e. all those over 500ms?</span>
+                                        <input class="form-control" type="text" name="TE" />
+                                    </label>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>RT &lt; 100 ms Coincident “false” response</span>
+                                        <input class="form-control" type="text" name="RTLT100" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class='row px-4'>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Number of False Starts (FS) i.e. key struck before stopwatch presentation (trigger happy or errors of commission)</span>
+                                        <input class="form-control" type="text" name="FS" />
+                                    </label>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Number of times key held for greater than 3 seconds</span>
+                                        <input class="form-control" type="text" name="KHGT3" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class='row px-4'>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Number of times the response took longer than 30 sec’s. The number of times the participant falls asleep during the task for at least 30s, and must be awakened by a computer-timed audible alert </span>
+                                        <input class="form-control" type="text" name="RTGT30" />
+                                    </label>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Nonparametric Distribution Asymmetry.
+                                        (Mean RT – Median RT) / RT Standard Deviation
+                                        </span>
+                                        <input class="form-control" type="text" name="Distrib_Asym" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class='row px-4'>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Average of fastest 10% of RT’s</span>
+                                        <input class="form-control" type="text" name="MeanFRT" />
+                                    </label>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Std. Dev. of fastest 10% of RT's</span>
+                                        <input class="form-control" type="text" name="SDFRT" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class='row px-4'>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Average of slowest 10% of RT’s</span>
+                                        <input class="form-control" type="text" name="MeanSRT" />
+                                    </label>
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <label class=''><span class=''>Std. Dev. of slowest 10% of RT's</span>
+                                        <input class="form-control" type="text" name="SDSRT" />
+                                    </label>
+                                </div>
+                            </div>
+                            <hr>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    VmInclude:__COMPONENT__/m/model.01.html
+    <script>
+        //---------------------------------------------
+        function F__ID() {
+            //-------------------------------------
+            //-------------------------------------
+            VmInclude: __COMPONENT__/f/form.01.js
+            VmInclude:__CURRENT_PATH__/shared-form.js
+            //-------------------------------------
+            m.old_load = m.load;
+            m.load = function () {
+                m.old_load();
+                m.set_file_link("File_Name");
+            }
+            //-------------------------------------
+            $('input[name=File_Name]').on('change', function (evt) {
+                if (this.files.length == 1) {
+                    file_process(this.files[0])
+                }
+            })
+            //-------------------------------------
+            var file_process = function (file) {
+                var reader = new FileReader();
+                reader.onload = (function (e) {
+                    var headercount=10;
+                    var contents = e.target.result;
+                    var lines=contents.replace(/"/g,'').replace(/\r/g,'\n').replace(/\r/g,'\n').replace(/\n\n/g,'\n').split('\n');
+                    if(lines.length>=2){
+                        for(i=0;i<headercount;i++){
+                            var header=lines[i].split(',');
+                            var row=header[1];
+                            switch(header[0]) {
+                                case "TRIAL DATE:":$('input[name="PVTDate"]').val(row);break;
+                                case "TRIAL TIME:": $('input[name="PVTTime"]').val(row);break;
+                                case "ISI MIN (ms):": $('input[name="ISIMin"]').val(row);break;
+                                case "ISI MAX (ms):": $('input[name="ISIMax"]').val(row);break;
+                                case "TRIAL LENGTH (s):": $('input[name="DUR"]').val(row);break;
+                                case "Lapse:": $('input[name="Lapse"]').val(row);break;
+                                case "SLEEPY PRE:": $('input[name="MOODPre"]').val(row);break;
+                                case "SLEEPY POST:": $('input[name="MOODPost"]').val(row);break;
+                                case "MOUSE BUTTON:": $('input[name="Mouse_Button"]').val(row);break;
+                                case "Sofware Version:": $('input[name="Software"]').val(row);break;
+                            }
+                        }
+                        var correctRT=[];
+                        var reciprocalRT=[];
+                        var fs=0;
+                        var lapse=0;
+                        var short_rt=0;
+                        var sleep=0;
+                        var total_lapse_time=0;
+                        var lapse_time=parseInt($('input[name="Lapse"]').val());
+                        if(lapse_time=="" || lapse_time==undefined || isNaN(lapse_time)){
+                            lapse_time=500;
+                            $('input[name="Lapse"]').val(500)
+                        }
+                        //console.log(lapse_time);
+                        for(i=headercount-1;i<lines.length;i++){
+                            var rt=lines[i].split(',');
+                            if(rt[0]==Number(rt[0]) && rt[0]!=""){
+                                if(rt[0] >= 100  &&  rt[0]< lapse_time) {
+                                    //console.log("push"+rt[0])
+                                    correctRT.push(parseInt(rt[0]));
+                                    reciprocalRT.push(1/parseFloat(rt[0]))
+                                }
+                                else{
+                                    //console.log("-"+rt[0])
+                                    if(rt[0]>=lapse_time)  {lapse++;total_lapse_time+= parseInt(rt[0]);}                       
+                                    if(rt[0]<100)  short_rt++;
+                                    if(rt[0]>=30000) sleep++;
+                                }
+                            }
+                            else{ 
+                                if(rt[0]=="FS")  fs++;                          
+                            }
+                        }
+                        //console.log(correctRT);
+                        var max=correctRT.reduce(function(a,b){
+                            return Math.max(a,b)
+                        })
+                        var min=correctRT.reduce(function(a,b){
+                            return Math.min(a,b)
+                        })
+               			//-------------------------------------
+                        function median(values){
+                            if(values.length ===0) return 0;
+                            values.sort(function(a,b){
+                                return a-b;
+                            });
+                            var half = Math.floor(values.length / 2);
+                            if (values.length % 2)
+                                return values[half];
+                            return (values[half - 1] + values[half]) / 2.0;
+                        }            
+                        //-------------------------------------
+                        function standardDeviation(values){
+                            var avg = average(values);              
+                            var squareDiffs = values.map(function(value){
+                                var diff = value - avg;
+                                var sqrDiff = diff * diff;
+                                return sqrDiff;
+                            });
+                            var avgSquareDiff = average(squareDiffs)*values.length/(values.length-1);
+                            var stdDev = Math.sqrt(avgSquareDiff);
+                            return stdDev;
+                        }
+                        //-------------------------------------
+                        function average(data){
+                            var sum = data.reduce(function(sum, value){
+                                return sum + Math.abs(value);
+                            }, 0);
+                            var avg = sum / data.length;
+                            return avg;
+                        }
+                        var ten_percent=Math.floor(correctRT.length/10);
+                        var fast_rt=correctRT.sort();
+                        fast_rt=fast_rt.slice(0,ten_percent);
+                        console.log(fast_rt)
+                        var slow_rt=correctRT.reverse();
+                        console.log(slow_rt)
+                        slow_rt=slow_rt.slice(0,ten_percent);
+                        console.log(slow_rt)
+                        // "Good RT's" 
+                        $('input[name="CORR"]').val(correctRT.length);
+                        // "Mean RT"
+                        $('input[name="MRT"]').val(average(correctRT).toFixed(1));
+                        // "SD RT" 
+                        $('input[name="SDRT"]').val(standardDeviation(correctRT).toFixed(1));
+                        // "Median RT" 
+                        $('input[name="MedRT"]').val(median(correctRT).toFixed(1));
+                        // "Minimum RT"
+                        $('input[name="MinRT"]').val(min);
+                        // "Maximum RT" 
+                        $('input[name="MaxRT"]').val(max);
+                        // "Average Reciprocal Reaction time (1/RT)"
+                        $('input[name="MRRT"]').val(average(reciprocalRT).toFixed(5));
+                        // "Standard Deviation of Reciprocal Reaction Time" 
+                        $('input[name="SDRRT"]').val(standardDeviation(reciprocalRT).toFixed(5));
+                        // "Lapses (RT > 500ms)" 
+                        $('input[name="LAPS"]').val(lapse);
+                        // "Total Time of Lapses" 
+                        $('input[name="TTLAPS"]').val(total_lapse_time);
+                        // "Total “incorrect” responses i.e. all those over 500ms?" 
+                        $('input[name="TE"]').val(lapse);
+                        // "RT < 100 ms" 
+                        $('input[name="RTLT100"]').val(short_rt);
+                        // "Number of False Starts" 
+                        $('input[name="FS"]').val(fs);
+                        // "Key Held > 3 s" //
+                        $('input[name="KHGT3"]').val();
+                        // "No R for 30s" //
+                        $('input[name="RTGT30"]').val(sleep);
+                        // "Distrib. Asym." 
+                        $('input[name="Distrib_Asym"]').val(((average(correctRT)-median(correctRT))/standardDeviation(correctRT)).toFixed(3));
+                        // "Mean F RT" 
+                        $('input[name="MeanFRT"]').val(average(fast_rt).toFixed(1));
+                        // "SD F RT" 
+                        $('input[name="SDFRT"]').val(standardDeviation(fast_rt).toFixed(1));
+                        // "Mean S RT" 
+                        $('input[name="MeanSRT"]').val(average(slow_rt).toFixed(1));
+                        // "SD S RT" 
+                        $('input[name="SDSRT"]').val(standardDeviation(slow_rt).toFixed(1));
+                    }
+                });
+                reader.readAsText(file);
+            }
+        }
+    </script>
+    <style>
+        #D__ID .mt-95 {
+            max-width: 600px;
+        }
+
+        VmInclude:__CURRENT_PATH__/wappsystem-form.css
+    </style>
+</div>

@@ -1,0 +1,50 @@
+<section>
+    VmInclude:__COMPONENT__/g/grid.01.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+        VmInclude:__COMPONENT__/g/grid.01.js
+        //-------------------------------------
+        var fields="Task_name,_Record_ID,Participant_ID,Title,Details";
+        m.fields="_Form,"+fields+",Submit_date,Submitted_by,_Delete";
+        //-------------------------------------
+        $('#new__ID').off('click').on('click',function(){
+            //transfer the parameters from task to note from
+            $vm.load_module(m.form_module,'',{task_name:m.input.task_name,task_uid:m.input.task_uid,participant_uid:m.input.participant_uid,goback:1});
+        })
+        //-------------------------------------
+        var old_load=m.load;
+        m.load=function(){
+            if(old_load!=undefined) old_load();
+            $('#new__ID').show();
+            if(m.input.task_uid==undefined) $('#new__ID').hide(); //Should create a note from a task module!
+        }
+        //-------------------------------------
+        m.cell_render=function(records,I,field,td){
+            switch(field){
+                case 'Title':
+                    td.html("<span style='color:"+records[I].Data.Color+"'>"+records[I].Data.Title+"</span>");
+                    break;
+                case '_Record_ID':
+                    td.html(records[I].I3);
+                    break;
+                case 'Participant_ID':
+                    td.html(records[I].I4);
+                    break;
+            }
+        }
+        //-------------------------------------
+        m.set_req=function(){
+            m.query={};
+            if(m.input.task_uid!=undefined){
+                //if from a task, then only show the notes for the task
+                m.query={I2:m.input.task_name,I3:m.input.task_uid};
+            }   
+        };
+        //-------------------------------------
+    }
+</script>
+<style>
+    VmInclude:__CURRENT_PATH__/wappsystem-data.css
+</style>

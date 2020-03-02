@@ -1,0 +1,157 @@
+<div id=D__ID>
+    <!--third html start -->
+    <div class="container mt-95 mb-3">
+      <div class="row" >
+        <!-- form container start -->
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+          <div class="row">
+            <div class="col-12">
+              <!-- form start -->
+              <form id="F__ID">
+                 <h3>Ethnicity</h3>
+                 <!-- participant part for all tsak forms -------------------->
+                 <div id="participant_div__ID">
+                     <div class="form-group">
+                        <fieldset class="subquestions">
+                            <label ><span class="">Participant</span>
+                                <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant" />
+                            </label><br>
+                            <label ><span class="">Participant ID</span>
+                                <input type=text name="Participant_uid" class=form-control readonly/>
+                            </label>
+                         </fieldset>
+                     </div>
+                 </div>
+                 <!-- form group -->
+                 <div class="form-group" >
+                     <fieldset class="subquestions">
+                         <label><span class="font-italic">We are interested in your ancestry and ethnicity because we have observed that some sleep conditions are more common in people from certain parts of the world. Therefore, we would be grateful if you answer these questions as specifically as possible. If you do not know this information, just tick the option "Don't Know". If you do not wish to complete this section that is ok and will not influence your care.
+                         </label></span>
+                     </fieldset>
+                 </div>
+                 <div class="form-group" >
+                     <fieldset class="subquestions">
+                         <label><span class="font-italic">Please select which group best describes your ancestry/ethnicity (based on a mixture of culture, religion, skin colour and language). If you come from a background of multiple ethnic ancestries please tick all the groups that best apply to you.
+                         </label></span>
+                     </fieldset>
+                 </div>
+                 <div class="form-group">
+                     <h4>Ethnicity Selection - Select for YOURSELF</h4>
+     				<div class="questiongroup">
+                         <fieldset>
+                             <label class="checkboxes">
+                               <input type="checkbox" name="ethnicity_0" id="ethnicity_0__ID">
+                               <span class="check_checkmark"></span> A. Caucasian -  <span class="font-italic small">Australia/NZ (Anglo European), Europe (includes Russia Central and West Asia) &amp; North Mediterranean, America, Canada, South Africa &amp; Zimbabwe.</span></label><br>
+                             <label class="checkboxes">
+                               <input type="checkbox" name="ethnicity_1" id="ethnicity_1__ID">
+                               <span class="check_checkmark"></span> B. Indigenous Australian - <span class="font-italic small">Aboriginal, Torres Strait Islands.</span></label><br>
+                             <label class="checkboxes">
+                               <input type="checkbox" name="ethnicity_2" id="ethnicity_2__ID">
+                               <span class="check_checkmark"></span> C. Pacific Islander - <span class="font-italic small">New Zealand Maori or Pacific Islands, Hawaii, New Guinea.</span></label><br>
+                             <label class="checkboxes">
+                               <input type="checkbox" name="ethnicity_3" id="ethnicity_3__ID">
+                               <span class="check_checkmark"></span> D. South-East Asian - <span class="font-italic small">Brunei, Cambodia, Indonesia, Laos, Malaysia, Myanmar/Burma, Philippines,Singapore, Thailand, Vietnam.</span></label><br>
+                             <label class="checkboxes">
+                               <input type="checkbox" name="ethnicity_4" id="ethnicity_4__ID">
+                               <span class="check_checkmark"></span> E. South Asian - <span class="font-italic small">Afghanistan, Bangladesh, Bhutan, India, Maldives, Nepal, Pakistan, Sri Lanka.</span></label><br>
+                             <label class="checkboxes">
+                                 <input type="checkbox" name="ethnicity_5" id="ethnicity_5__ID">
+                                 <span class="check_checkmark"></span> F. North East Asian - <span class="font-italic small">China, Hong Kong, Japan, Korea, Macau, Taiwan. </span></label><br>
+                             <label class="checkboxes">
+                               <input type="checkbox" name="ethnicity_6" id="ethnicity_6__ID">
+                               <span class="check_checkmark"></span> G. North Asian - <span class="font-italic small">Mongolia, Siberia.</span></label><br>
+                             <label class="checkboxes">
+                                 <input type="checkbox" name="ethnicity_7" id="ethnicity_7__ID">
+                                 <span class="check_checkmark"></span> H. Middle Eastern, Northern African, Somali Peninsular - <span class="font-italic small">Algeria, Bahrain, Djibouti, Eritrea, Ethiopia, Egypt, Israel, Iran, Iraq, Jordan, Kuwait, Lebanon, Libya, Oman, Palestinian Territories, Turkey, Turkish Cypriots, Qatar, Saudi Arabia, Somalia, Syria, Tunisia, United Arab Emirates, Yemen.</span></label><br>
+                             <label class="checkboxes">
+                                   <input type="checkbox" name="ethnicity_8" id="ethnicity_7__ID">
+                                   <span class="check_checkmark"></span> I. Sub-Saharan African - <span class="font-italic small">Indigenous African, African American.</span></label><br>
+                             <label class="checkboxes">
+                                     <input type="checkbox" name="ethnicity_9" id="ethnicity_9__ID">
+                                     <span class="check_checkmark"></span> J. Central/South American - <span class="font-italic small">Central/South America</span></label><br>
+                             <label class="checkboxes">
+                                       <input type="checkbox" name="ethnicity_10" id="ethnicity_10__ID">
+                                       <span class="check_checkmark"></span> K. Other</label><br>
+                           <div id=specify__ID>
+                               <label for="firstName">(please specify)</label>
+                               <input type="text" class="form-control" name="ethnicity_other" id="ethnicity_other__ID"  required >
+                           </div>
+                             <label class="checkboxes">
+                                     <input type="checkbox" name="ethnicity_11" id="ethnicity_11__ID">
+                                     <span class="check_checkmark"></span> L. Don't Know</label><br>
+                         </fieldset>
+                    </div>
+     		     </div>
+                 <div class="form-group">
+                     <h4>Country of Birth</h4>
+                    <fieldset class="">
+                        <label ><span class="">In which country were you born?</span>
+                            <input type=text name="COB" class=form-control required />
+                        </label><br>
+                     </fieldset>
+                 </div>
+                 <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+              </form>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        function F__ID(){
+            //-------------------------------------
+            VmInclude:__COMPONENT__/f/form.01.js
+            VmInclude:__CURRENT_PATH__/shared-form.js
+            //-------------------------------------
+            var load2=m.load;
+            m.load=function(){
+                load2();
+                if($('#ethnicity_10__ID').is(":checked")==true ){
+                    $('#specify__ID').show() ;
+                    $('#ethnicity_other__ID').prop('required', true);
+                }
+                else {
+                    $('#ethnicity_other__ID').prop('required',false);
+                    $('#specify__ID').hide();
+                }
+            }
+            //-------------------------------------
+            $('#ethnicity_10__ID').on('click', function(){
+                if($('#ethnicity_10__ID').is(":checked")==true ){
+                    $('#specify__ID').show() ;
+                    $('#ethnicity_other__ID').prop('required', true);
+                }
+                else {
+                    $('#ethnicity_other__ID').prop('required',false);
+                    $('#specify__ID').hide();
+                }
+            })
+            //-------------------------------------
+            var before_submit=m.before_submit;
+            m.before_submit=function(data,index){
+                if($('#ethnicity_0__ID').is(":checked")!==true &&
+                    $('#ethnicity_1__ID').is(":checked")!==true &&
+                    $('#ethnicity_2__ID').is(":checked")!==true &&
+                    $('#ethnicity_3__ID').is(":checked")!==true &&
+                    $('#ethnicity_4__ID').is(":checked")!==true &&
+                    $('#ethnicity_5__ID').is(":checked")!==true &&
+                    $('#ethnicity_6__ID').is(":checked")!==true &&
+                    $('#ethnicity_7__ID').is(":checked")!==true &&
+                    $('#ethnicity_8__ID').is(":checked")!==true &&
+                    $('#ethnicity_9__ID').is(":checked")!==true &&
+                    $('#ethnicity_10__ID').is(":checked")!==true &&
+                    $('#ethnicity_11__ID').is(":checked")!==true){
+                        $vm.alert("Please select at least on of 'your ancestry/ethnicity'"); return false;
+                }
+                else return before_submit(data,index); 
+                
+            }
+       }
+    </script>
+    <style>
+        #D__ID .mt-95 {
+        max-width:600px;
+    }
+        VmInclude:__CURRENT_PATH__/wappsystem-form.css
+    </style>
+</div>

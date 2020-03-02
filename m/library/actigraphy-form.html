@@ -1,0 +1,1517 @@
+<div id=D__ID>
+    <div class="container mt-95 mb-3">
+      <div class="row" >
+        <!-- form container start -->
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+          <div class="row">
+            <div class="col-12">
+              <!-- form start -->
+              <form id="F__ID">
+                 <h3>Actigraphy Extraction</h3>
+                 <div class="row px-4">
+                     <div class='col'>
+                         <label ><span class="">Extraction of data from Philips/Respironics Actiwatch analysis.</span>
+                        </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <!-- participant part for all tsak forms -------------------->
+                 <div id="participant_div__ID">
+                     <div class="row px-4">
+                         <div class="col-sm-12 col-lg-9 ">
+                             <span class=label__ID>Participant</span><br>
+                             <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant" />
+                         </div>
+                         <div class="col-sm-12 col-lg-3">
+                             <span class=label__ID>Participant ID</span><br>
+                             <input type=text name="Participant_uid" class=form-control readonly />
+                         </div>
+                     </div>
+                     <hr>
+                 </div>
+                 <!-- form group -->
+                 <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+                 <hr>
+                 <div class="row px-4">
+                     <div class='col'>
+    					<span>File</span>
+                        <div class="form-control">
+                            <u style='cursor:pointer' id=link_File_Name__ID></u>
+                            <br>
+                            <input type="file" name=File_Name style="margin-top:6px" /> &nbsp&nbsp&nbsp <button type="button" id=x_File_Name__ID>Remove</button>
+                        </div>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Serial Number</span>
+                             <input class="form-control" type="text" name="Serial_No" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Epoch Length</span>
+                             <input class="form-control" type="text" name="Epoch" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Total Recording Time (aTRT) (Days)</span>
+                             <input class="form-control" type="text" name="aTRT" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Total Excluded time (Days)</span>
+                             <input class="form-control" type="text" name="aExcl" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Bedtime (In Bed) Min</span>
+                             <input class="form-control" type="text" name="Bedtime_min" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Bedtime (In Bed) Max</span>
+                             <input class="form-control" type="text" name="Bedtime_max" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Rise time (Out of Bed) Min</span>
+                             <input class="form-control" type="text" name="Risetime_min" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Rise time (Out of Bed) Max</span>
+                             <input class="form-control" type="text" name="Risetime_max" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col">
+                         <label class=''>
+                             <span class='' >Time In Bed (aTIB) <i>(mins)</i>
+                             </span>
+                         </label>
+                     </div>
+                 </div>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Mean</span>
+                             <input class="form-control" type="text" name="aTIB" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Std</span>
+                             <input class="form-control" type="text" name="aTIB_std" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Min</span>
+                             <input class="form-control" type="text" name="aTIB_min" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Max</span>
+                             <input class="form-control" type="text" name="aTIB_max" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col">
+                         <label class=''>
+                             <span class='' >aTST during aTIB  <i>(mins)</i>
+                             </span>
+                         </label>
+                     </div>
+                 </div>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Mean</span>
+                             <input class="form-control" type="text" name="aTST_aTIB" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Std</span>
+                             <input class="form-control" type="text" name="aTST_aTIB_std" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Min</span>
+                             <input class="form-control" type="text" name="aTST_aTIB_min" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Max</span>
+                             <input class="form-control" type="text" name="aTST_aTIB_max" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col">
+                         <label class=''>
+                             <span class='' >Total Sleep Time (aTST) <i>(mins)</i>
+                             </span>
+                         </label>
+                     </div>
+                 </div>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Mean</span>
+                             <input class="form-control" type="text" name="aTST" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Std</span>
+                             <input class="form-control" type="text" name="aTST_std" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Min</span>
+                             <input class="form-control" type="text" name="aTST_min" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Max</span>
+                             <input class="form-control" type="text" name="aTST_max" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col">
+                         <label class=''>
+                             <span class='' >Sleep Onset Latency (aSOL) <i>(mins)</i>
+                             </span>
+                         </label>
+                     </div>
+                 </div>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Mean</span>
+                             <input class="form-control" type="text" name="aSOL" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Std</span>
+                             <input class="form-control" type="text" name="aSOL_std" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Min</span>
+                             <input class="form-control" type="text" name="aSOL_min" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Max</span>
+                             <input class="form-control" type="text" name="aSOL_max" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col">
+                         <label class=''>
+                             <span class='' >Wake After Sleep Onset (aWASO) <i>(mins)</i>
+                             </span>
+                         </label>
+                     </div>
+                 </div>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Mean</span>
+                             <input class="form-control" type="text" name="aWASO" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Std</span>
+                             <input class="form-control" type="text" name="aWASO_std" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Min</span>
+                             <input class="form-control" type="text" name="aWASO_min" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Max</span>
+                             <input class="form-control" type="text" name="aWASO_max" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col">
+                         <label class=''>
+                             <span class='' >Sleep Efficiency (aSE) <i>%</i>
+                             </span>
+                         </label>
+                     </div>
+                 </div>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Mean</span>
+                             <input class="form-control" type="text" name="aSE" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Std</span>
+                             <input class="form-control" type="text" name="aSE_std" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Min</span>
+                             <input class="form-control" type="text" name="aSE_min" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Max</span>
+                             <input class="form-control" type="text" name="aSE_max" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''>
+                             <span class='' >Naps (aTST) <i>(mins)</i>
+                             </span>
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3 text-lg-right">
+                         <label class=''>
+                             <span class='' >Number:
+                             </span>
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <input class="form-control" type="text" name="Naps_no" />
+                     </div>
+                 </div>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Mean</span>
+                             <input class="form-control" type="text" name="Naps" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Std</span>
+                             <input class="form-control" type="text" name="Naps_std" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Min</span>
+                             <input class="form-control" type="text" name="Naps_min" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Max</span>
+                             <input class="form-control" type="text" name="Naps_max" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col">
+                         <label class=''>
+                             <span class='' >Sleep Bouts <i>(mins)</i>
+                             </span>
+                         </label>
+                     </div>
+                 </div>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Mean</span>
+                             <input class="form-control" type="text" name="SB" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Std</span>
+                             <input class="form-control" type="text" name="SB_std" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Min</span>
+                             <input class="form-control" type="text" name="SB_min" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Max</span>
+                             <input class="form-control" type="text" name="SB_max" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col">
+                         <label class=''>
+                             <span class='' >Wake Bouts <i>(mins)</i>
+                             </span>
+                         </label>
+                     </div>
+                 </div>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Mean</span>
+                             <input class="form-control" type="text" name="WB" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Std</span>
+                             <input class="form-control" type="text" name="WB_std" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Min</span>
+                             <input class="form-control" type="text" name="WB_min" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Max</span>
+                             <input class="form-control" type="text" name="WB_max" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col">
+                         <label class=''>
+                             <span class='' >Wake Activity Count (AC)
+                             </span>
+                         </label>
+                     </div>
+                 </div>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Mean</span>
+                             <input class="form-control" type="text" name="WAC" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Std</span>
+                             <input class="form-control" type="text" name="WAC_std" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Min</span>
+                             <input class="form-control" type="text" name="WAC_min" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Max</span>
+                             <input class="form-control" type="text" name="WAC_max" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col">
+                         <label class=''>
+                             <span class='' >Sleep Activity Count (AC)
+                             </span>
+                         </label>
+                     </div>
+                 </div>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Mean</span>
+                             <input class="form-control" type="text" name="SAC" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Std</span>
+                             <input class="form-control" type="text" name="SAC_std" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Min</span>
+                             <input class="form-control" type="text" name="SAC_min" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Max</span>
+                             <input class="form-control" type="text" name="SAC_max" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col">
+                         <label class=''>
+                             <span class='' >Fragmentation Index
+                             </span>
+                         </label>
+                     </div>
+                 </div>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Mean</span>
+                             <input class="form-control" type="text" name="FI" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Std</span>
+                             <input class="form-control" type="text" name="FI_std" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Min</span>
+                             <input class="form-control" type="text" name="FI_min" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Max</span>
+                             <input class="form-control" type="text" name="FI_max" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <h3 class='' >24hrs (12pm -12pm)
+                 </h3>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >"Daily" Sleep Time Mean</span>
+                             <input class="form-control" type="text" name="d_ST_24" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >"Daily" Sleep Time Std</span>
+                             <input class="form-control" type="text" name="d_ST_24_STD" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Activity Count Mean</span>
+                             <input class="form-control" type="text" name="AC_24" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Activity Count Std</span>
+                             <input class="form-control" type="text" name="AC_24_STD" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <h3 class='' >Day 1
+                 </h3>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Bedtime (In Bed)</span>
+                             <input class="form-control" type="text" name="Bedtime_1" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Rise time (Out of Bed)</span>
+                             <input class="form-control" type="text" name="Risetime_1" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Time In Bed (aTIB)</span>
+                             <input class="form-control" type="text" name="aTIB_1" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >aTST during aTIB</span>
+                             <input class="form-control" type="text" name="aTST_aTIB_1" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Total Sleep Time (aTST)</span>
+                             <input class="form-control" type="text" name="aTST_1" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Sleep Onset Latency (aSOL)</span>
+                             <input class="form-control" type="text" name="aSOL_1" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Wake After Sleep Onset (aWASO)</span>
+                             <input class="form-control" type="text" name="aWASO_1" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Fragmentation Index</span>
+                             <input class="form-control" type="text" name="FI_1" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <h3 class='' >Day 1 24hrs (12pm -12pm)
+                 </h3>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-4">
+                         <label class=''><span class='' >"Daily" Sleep Time</span>
+                             <input class="form-control" type="text" name="d_ST_24_1" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Activity Count</span>
+                             <input class="form-control" type="text" name="AC_24_1" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Duration</span>
+                             <input class="form-control" type="text" name="Dur_24_1" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-2">
+                     </div>
+                 </div>
+                 <hr>
+                 <h3 class='' >Day 2
+                 </h3>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Bedtime (In Bed)</span>
+                             <input class="form-control" type="text" name="Bedtime_2" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Rise time (Out of Bed)</span>
+                             <input class="form-control" type="text" name="Risetime_2" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Time In Bed (aTIB)</span>
+                             <input class="form-control" type="text" name="aTIB_2" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >aTST during aTIB</span>
+                             <input class="form-control" type="text" name="aTST_aTIB_2" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Total Sleep Time (aTST)</span>
+                             <input class="form-control" type="text" name="aTST_2" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Sleep Onset Latency (aSOL)</span>
+                             <input class="form-control" type="text" name="aSOL_2" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Wake After Sleep Onset (aWASO)</span>
+                             <input class="form-control" type="text" name="aWASO_2" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Fragmentation Index</span>
+                             <input class="form-control" type="text" name="FI_2" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <h3 class='' >Day 2 24hrs (12pm -12pm)
+                 </h3>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-4">
+                         <label class=''><span class='' >"Daily" Sleep Time</span>
+                             <input class="form-control" type="text" name="d_ST_24_2" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Activity Count</span>
+                             <input class="form-control" type="text" name="AC_24_2" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Duration</span>
+                             <input class="form-control" type="text" name="Dur_24_2" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-2">
+                     </div>
+                 </div>
+                 <hr>
+                 <h3 class='' >Day 3
+                 </h3>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Bedtime (In Bed)</span>
+                             <input class="form-control" type="text" name="Bedtime_3" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Rise time (Out of Bed)</span>
+                             <input class="form-control" type="text" name="Risetime_3" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Time In Bed (aTIB)</span>
+                             <input class="form-control" type="text" name="aTIB_3" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >aTST during aTIB</span>
+                             <input class="form-control" type="text" name="aTST_aTIB_3" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Total Sleep Time (aTST)</span>
+                             <input class="form-control" type="text" name="aTST_3" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Sleep Onset Latency (aSOL)</span>
+                             <input class="form-control" type="text" name="aSOL_3" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Wake After Sleep Onset (aWASO)</span>
+                             <input class="form-control" type="text" name="aWASO_3" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Fragmentation Index</span>
+                             <input class="form-control" type="text" name="FI_3" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <h3 class='' >Day 3 24hrs (12pm -12pm)
+                 </h3>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-4">
+                         <label class=''><span class='' >"Daily" Sleep Time</span>
+                             <input class="form-control" type="text" name="d_ST_24_3" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Activity Count</span>
+                             <input class="form-control" type="text" name="AC_24_3" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Duration</span>
+                             <input class="form-control" type="text" name="Dur_24_3" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-2">
+                     </div>
+                 </div>
+                 <hr>
+                 <h3 class='' >Day 4
+                 </h3>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Bedtime (In Bed)</span>
+                             <input class="form-control" type="text" name="Bedtime_4" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Rise time (Out of Bed)</span>
+                             <input class="form-control" type="text" name="Risetime_4" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Time In Bed (aTIB)</span>
+                             <input class="form-control" type="text" name="aTIB_4" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >aTST during aTIB</span>
+                             <input class="form-control" type="text" name="aTST_aTIB_4" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Total Sleep Time (aTST)</span>
+                             <input class="form-control" type="text" name="aTST_4" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Sleep Onset Latency (aSOL)</span>
+                             <input class="form-control" type="text" name="aSOL_4" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Wake After Sleep Onset (aWASO)</span>
+                             <input class="form-control" type="text" name="aWASO_4" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Fragmentation Index</span>
+                             <input class="form-control" type="text" name="FI_4" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <h3 class='' >Day 4 24hrs (12pm -12pm)
+                 </h3>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-4">
+                         <label class=''><span class='' >"Daily" Sleep Time</span>
+                             <input class="form-control" type="text" name="d_ST_24_4" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Activity Count</span>
+                             <input class="form-control" type="text" name="AC_24_4" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Duration</span>
+                             <input class="form-control" type="text" name="Dur_24_4" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-2">
+                     </div>
+                 </div>
+                 <hr>
+                 <h3 class='' >Day 5
+                 </h3>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Bedtime (In Bed)</span>
+                             <input class="form-control" type="text" name="Bedtime_5" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Rise time (Out of Bed)</span>
+                             <input class="form-control" type="text" name="Risetime_5" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Time In Bed (aTIB)</span>
+                             <input class="form-control" type="text" name="aTIB_5" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >aTST during aTIB</span>
+                             <input class="form-control" type="text" name="aTST_aTIB_5" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Total Sleep Time (aTST)</span>
+                             <input class="form-control" type="text" name="aTST_5" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Sleep Onset Latency (aSOL)</span>
+                             <input class="form-control" type="text" name="aSOL_5" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Wake After Sleep Onset (aWASO)</span>
+                             <input class="form-control" type="text" name="aWASO_5" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Fragmentation Index</span>
+                             <input class="form-control" type="text" name="FI_5" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <h3 class='' >Day 5 24hrs (12pm -12pm)
+                 </h3>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-4">
+                         <label class=''><span class='' >"Daily" Sleep Time</span>
+                             <input class="form-control" type="text" name="d_ST_24_5" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Activity Count</span>
+                             <input class="form-control" type="text" name="AC_24_5" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Duration</span>
+                             <input class="form-control" type="text" name="Dur_24_5" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-2">
+                     </div>
+                 </div>
+                 <hr>
+                 <h3 class='' >Day 6
+                 </h3>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Bedtime (In Bed)</span>
+                             <input class="form-control" type="text" name="Bedtime_6" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Rise time (Out of Bed)</span>
+                             <input class="form-control" type="text" name="Risetime_6" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Time In Bed (aTIB)</span>
+                             <input class="form-control" type="text" name="aTIB_6" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >aTST during aTIB</span>
+                             <input class="form-control" type="text" name="aTST_aTIB_6" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Total Sleep Time (aTST)</span>
+                             <input class="form-control" type="text" name="aTST_6" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Sleep Onset Latency (aSOL)</span>
+                             <input class="form-control" type="text" name="aSOL_6" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Wake After Sleep Onset (aWASO)</span>
+                             <input class="form-control" type="text" name="aWASO_6" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Fragmentation Index</span>
+                             <input class="form-control" type="text" name="FI_6" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <h3 class='' >Day 6 24hrs (12pm -12pm)
+                 </h3>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-4">
+                         <label class=''><span class='' >"Daily" Sleep Time</span>
+                             <input class="form-control" type="text" name="d_ST_24_6" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Activity Count</span>
+                             <input class="form-control" type="text" name="AC_24_6" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Duration</span>
+                             <input class="form-control" type="text" name="Dur_24_6" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-2">
+                     </div>
+                 </div>
+                 <hr>
+                 <h3 class='' >Day 7
+                 </h3>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Bedtime (In Bed)</span>
+                             <input class="form-control" type="text" name="Bedtime_7" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Rise time (Out of Bed)</span>
+                             <input class="form-control" type="text" name="Risetime_7" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Time In Bed (aTIB)</span>
+                             <input class="form-control" type="text" name="aTIB_7" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >aTST during aTIB</span>
+                             <input class="form-control" type="text" name="aTST_aTIB_7" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Total Sleep Time (aTST)</span>
+                             <input class="form-control" type="text" name="aTST_7" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Sleep Onset Latency (aSOL)</span>
+                             <input class="form-control" type="text" name="aSOL_7" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Wake After Sleep Onset (aWASO)</span>
+                             <input class="form-control" type="text" name="aWASO_7" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-6">
+                         <label class=''><span class='' >Fragmentation Index</span>
+                             <input class="form-control" type="text" name="FI_7" />
+                         </label>
+                     </div>
+                 </div>
+                 <hr>
+                 <h3 class='' >Day 7 24hrs (12pm -12pm)
+                 </h3>
+                 <div class='row px-4'>
+                     <div class="col-sm-12 col-lg-4">
+                         <label class=''><span class='' >"Daily" Sleep Time</span>
+                             <input class="form-control" type="text" name="d_ST_24_7" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Activity Count</span>
+                             <input class="form-control" type="text" name="AC_24_7" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-3">
+                         <label class=''><span class='' >Duration</span>
+                             <input class="form-control" type="text" name="Dur_24_7" />
+                         </label>
+                     </div>
+                     <div class="col-sm-12 col-lg-2">
+                     </div>
+                 </div>
+                 <hr>
+              </form>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    VmInclude:__COMPONENT__/m/model.01.html
+    <script>
+        //---------------------------------------------
+        function F__ID(){
+            //-------------------------------------
+			VmInclude:'__COMPONENT__/f/form.01.js'
+            VmInclude:__CURRENT_PATH__/shared-form.js
+            //-------------------------------------
+            var load2=m.load;
+            m.load=function(){
+                load2();
+                if(m.input.readonly!=undefined) $('#submit__ID').hide();
+                //render_file_field_v2(m.input.record,'__ID',$('#File_Name__ID'));
+                m.set_file_link("File_Name");
+            }
+            //-------------------------------------
+            $('#F__ID input[name=File_Name]').on('change',function(evt){
+                if(this.files.length==1){
+                    file_process(this.files[0])
+                }
+            })
+            //-------------------------------------
+            var file_process=function(file){
+                var reader = new FileReader();
+                reader.onload = (function(e) {
+                    var contents = e.target.result;
+                    var lines=contents.replace(/"/g,'').replace(/\r/,'\n').replace(/\n\n/,'\n').split('\n');
+                    var startdate=0;
+                    var starttime=0;
+                    var enddate=0;
+                    var endtime=0;
+                    var sleeptime=0;
+                    var onsetlatency=0;
+                    var waso=0;
+                    var efficiency=0;
+                    var duration=0;
+                    var ac_average=0;
+                    var sleepbouts=0;
+                    var wakebouts=0;
+                    var activitycount=0;
+                    var stdactivitycount=0;
+                    var fragmentation=0;
+                    var realdaysStartDate=[];
+                    var realdaysStartTime=[];
+                    var days=[];
+                    var ac_count=[];
+                    var wac_count=[];
+                    var sleep_time=[];
+                    var exclude_start=[];
+                    var exclude_end=[];
+                    var exclude=[];
+                    var start_date;
+                    var start_time;
+                    var end_date;
+                    var end_time;
+                    var daily_start=[];
+                    var daily_end=[];
+                    var duration_min=[];
+                    var bedtimemin=0;
+                    var bedtimeminstr='';
+                    var bedtimemax=0;
+                    var bedtimemaxstr='';
+                    var bedtimeavg=0;
+                    var bedtimecount=0;
+                    var bedtime=0;
+                    var risetimeavg=0;
+                    var risetimecount=0;
+                    var risetime=0;
+                    var risetimemin=0;
+                    var risetimeminstr='';
+                    var risetimemax=0;
+                    var risetimemaxstr='';
+                    var totalexcluded=0;
+                    if(lines.length>0){
+                        for(var i=0;i<200;i++){
+                            var line=lines[i].split(',');
+                            if(line.length==1) line=lines[i].split('\t');
+                            switch(line[0]){
+                            case "Initials:":
+                                break;
+                            case "Number of Days:":
+      //                            $('input[name="aTRT"]').val(line[1];
+                                break;
+                            case "Actiwatch Serial Number:":
+                                $('input[name="Serial_No"]').val(line[1]);
+                                    break;
+                            case "Epoch Length:":
+                                $('input[name="Epoch"]').val(line[1]);
+                                break;
+                            case "Data Collection Start Date:":
+                                start_date=line[1];
+                                break;
+                            case "Data Collection Start Time:":
+                                start_time=line[1];
+                                break;
+                            case "Data Collection End Date:":
+                                end_date=line[1];
+                                break;
+                            case "Data Collection End Time:":
+                                end_time=line[1];
+                                $('input[name="aTRT"]').val(((date_time_to_ticks(end_date,end_time)-date_time_to_ticks(start_date,start_time))/24/60/60/1000).toFixed(1));
+                                 break;
+                            case "Full Name:":
+                                break;
+                            case "Date of Birth:":
+                                break;
+                            case "Interval Type":
+                                for(var j=0;j<line.length;j++){
+                                  switch(line[j]){
+                                    case "Start Date":
+                                      startdate=j;
+                                      break;
+                                    case "Start Time":
+                                      starttime=j;
+                                      break;
+                                    case "End Date":
+                                      enddate=j;
+                                      break;
+                                    case "End Time":
+                                      endtime=j;
+                                      break;
+                                    case "Sleep Time":
+                                      sleeptime=j;
+                                      break;
+                                    case "Onset Latency":
+                                      onsetlatency=j;
+                                      break;
+                                    case "WASO":
+                                      waso=j;
+                                      break;
+                                    case "Efficiency":
+                                      efficiency=j;
+                                      break;
+                                    case "Duration":
+                                      duration=j;
+                                      break;
+                                    case "Avg AC/min":
+                                      ac_average=j;
+                                      break;
+                                    case "#Sleep Bouts":
+                                      sleepbouts=j;
+                                      break;
+                                    case "#Wake Bouts":
+                                      wakebouts=j;
+                                      break;
+                                    case "Total AC":
+                                      activitycount=j;
+                                      break;
+                                    case "Std AC":
+                                      stdactivitycount=j;
+                                      break;
+                                    case "Fragmentation":
+                                      fragmentation=j;
+                                      break;
+                                    }
+                                }
+                            break;
+                            case "Rest Summary":
+                                switch(line[1]){
+                                  case "Average(n)":
+                                    if(duration>0) $('input[name="aTIB"]').val(line[duration].trim());
+                                    if(sleeptime>0) $('input[name="aTST_aTIB"]').val(line[sleeptime].trim());
+                                    if(activitycount>0) $('input[name="SAC"]').val(line[activitycount].trim());
+                                    break;
+                                  case "Std Dev(n-1)":
+                                    if(duration>0) $('input[name="aTIB_std"]').val(line[duration].trim());
+                                    if(sleeptime>0) $('input[name="aTST_aTIB_std"]').val(line[sleeptime].trim());
+                                    if(activitycount>0) $('input[name="SAC_std"]').val(line[activitycount].trim());
+                                    break;
+                                  case "Minimum(n)":
+                                    if(duration>0) $('input[name="aTIB_min"]').val(line[duration].trim());
+                                    if(sleeptime>0) $('input[name="aTST_aTIB_min"]').val(line[sleeptime].trim());
+                                    if(activitycount>0) $('input[name="SAC_min"]').val(line[activitycount].trim());
+                                    break;
+                                  case "Maximum(n)":
+                                    if(duration>0) $('input[name="aTIB_max"]').val(line[duration].trim());
+                                    if(sleeptime>0) $('input[name="aTST_aTIB_max"]').val(line[sleeptime].trim());
+                                    if(activitycount>0) $('input[name="SAC_max"]').val(line[activitycount].trim());
+                                    break;
+                                }
+                            break;
+                            //                    $('input[name="d_ST_24"]').val(mean.toFixed(2);
+                            //                    $('input[name="d_ST_24_STD"]').val(Math.sqrt(sqrs/(days.length-1)).toFixed(2);
+                            //                    $('input[name="AC_24"]').val(meanac.toFixed(0);
+                            //                    $('input[name="AC_24_STD"]').val(Math.sqrt(sqrsac/(days.length-1)).toFixed(0);
+
+                            case "Daily Summary":
+                                switch(line[1]){
+                                  case "Average(n)":
+                                    if(ac_average>0) $('input[name="AC_24"]').val(line[ac_average].trim());
+                                    if(sleeptime>0) $('input[name="d_ST_24"]').val(line[sleeptime].trim());
+                                    break;
+                                  case "Std Dev(n-1)":
+                                    if(ac_average>0) $('input[name="AC_24_STD"]').val(line[ac_average].trim());
+                                    if(sleeptime>0) $('input[name="d_ST_24_STD"]').val(line[sleeptime].trim());
+                                    break;
+                                }
+                            break;
+                            case "Sleep Summary":
+                                switch(line[1]){
+                                  case "Average(n)":
+                                    if(sleeptime>0) $('input[name="aTST"]').val(line[sleeptime].trim());
+                                    if(onsetlatency>0) $('input[name="aSOL"]').val(line[onsetlatency].trim());
+                                    if(waso>0) $('input[name="aWASO"]').val(line[waso].trim());
+                                    if(efficiency>0) $('input[name="aSE"]').val(line[efficiency].trim());
+                                    if(sleepbouts>0) $('input[name="SB"]').val(line[sleepbouts].trim());
+                                    if(wakebouts>0) $('input[name="WB"]').val(line[wakebouts].trim());
+                                    if(stdactivitycount>0) $('input[name="SAC_STD"]').val(line[stdactivitycount].trim());
+                                    if(fragmentation>0) $('input[name="FI"]').val(line[fragmentation].trim());
+                                    break;
+                                  case "Std Dev(n-1)":
+                                    if(sleeptime>0) $('input[name="aTST_std"]').val(line[sleeptime].trim());
+                                    if(onsetlatency>0) $('input[name="aSOL_std"]').val(line[onsetlatency].trim());
+                                    if(waso>0) $('input[name="aWASO_std"]').val(line[waso].trim());
+                                    if(efficiency>0) $('input[name="aSE_std"]').val(line[efficiency].trim());
+                                    if(sleepbouts>0) $('input[name="SB_std"]').val(line[sleepbouts].trim());
+                                    if(wakebouts>0) $('input[name="WB_std"]').val(line[wakebouts].trim());
+                                    if(stdactivitycount>0) $('input[name="SAC_STD_std"]').val(line[stdactivitycount].trim());
+                                    if(fragmentation>0) $('input[name="FI_std"]').val(line[fragmentation].trim());
+                                    break;
+                                  case "Minimum(n)":
+                                    if(sleeptime>0) $('input[name="aTST_min"]').val(line[sleeptime].trim());
+                                    if(onsetlatency>0) $('input[name="aSOL_min"]').val(line[onsetlatency].trim());
+                                    if(waso>0) $('input[name="aWASO_min"]').val(line[waso].trim());
+                                    if(efficiency>0) $('input[name="aSE_min"]').val(line[efficiency].trim());
+                                    if(sleepbouts>0) $('input[name="SB_min"]').val(line[sleepbouts].trim());
+                                    if(wakebouts>0) $('input[name="WB_min"]').val(line[wakebouts].trim());
+                                    if(stdactivitycount>0) $('input[name="SAC_STD_min"]').val(line[stdactivitycount].trim());
+                                    if(fragmentation>0) $('input[name="FI_min"]').val(line[fragmentation].trim());
+                                    break;
+                                  case "Maximum(n)":
+                                    if(sleeptime>0) $('input[name="aTST_max"]').val(line[sleeptime].trim());
+                                    if(onsetlatency>0) $('input[name="aSOL_max"]').val(line[onsetlatency].trim());
+                                    if(waso>0) $('input[name="aWASO_max"]').val(line[waso].trim());
+                                    if(efficiency>0) $('input[name="aSE_max"]').val(line[efficiency].trim());
+                                    if(sleepbouts>0) $('input[name="SB_max"]').val(line[sleepbouts].trim());
+                                    if(wakebouts>0) $('input[name="WB_max"]').val(line[wakebouts].trim());
+                                    if(stdactivitycount>0) $('input[name="SAC_STD_max"]').val(line[stdactivitycount].trim());
+                                    if(fragmentation>0) $('input[name="FI_max"]').val(line[fragmentation].trim());
+                                    break;
+                                }
+                            break;
+                            case "Custom Summary":
+                                switch(line[1]){
+                                  case "n":
+                                    if(duration>0 && line[duration].trim()!=='NaN') $('input[name="Naps_no"]').val(line[duration].trim());
+                                    break;
+                                  case "Average(n)":
+                                    if(duration>0 && line[duration].trim()!=='NaN') $('input[name="Naps"]').val(line[duration].trim());
+                                    break;
+                                  case "Std Dev(n-1)":
+                                    if(duration>0 && line[duration].trim()!=='NaN') $('input[name="Naps_std"]').val(line[duration].trim());
+                                    break;
+                                  case "Minimum(n)":
+                                    if(duration>0 && line[duration].trim()!=='NaN') $('input[name="Naps_min"]').val(line[duration].trim());
+                                    break;
+                                  case "Maximum(n)":
+                                    if(duration>0 && line[duration].trim()!=='NaN') $('input[name="Naps_max"]').val(line[duration].trim());
+                                    break;
+                                }
+                            break;
+                            case "Active Summary":
+                                switch(line[1]){
+                                  case "Average(n)":
+                                    if(activitycount>0) $('input[name="WAC"]').val(line[activitycount].trim());
+                                    if(stdactivitycount>0) $('input[name="WAC_STD"]').val(line[stdactivitycount].trim());
+                                    break;
+                                  case "Std Dev(n-1)":
+                                    if(activitycount>0) $('input[name="WAC_std"]').val(line[activitycount].trim());
+                                    if(stdactivitycount>0) $('input[name="WAC_STD_std"]').val(line[stdactivitycount].trim());
+                                    break;
+                                  case "Minimum(n)":
+                                    if(activitycount>0) $('input[name="WAC_min"]').val(line[activitycount].trim());
+                                    if(stdactivitycount>0) $('input[name="WAC_STD_min"]').val(line[stdactivitycount].trim());
+                                    break;
+                                  case "Maximum(n)":
+                                    if(activitycount>0) $('input[name="WAC_max"]').val(line[activitycount].trim());
+                                    if(stdactivitycount>0) $('input[name="WAC_STD_max"]').val(line[stdactivitycount].trim());
+                                    break;
+                                }
+                            break;
+                            case "REST":
+                                    if(line[1]=="1" || line[1]=="2" || line[1]=="3" || line[1]=="4" || line[1]=="5"
+                                    || line[1]=="6"|| line[1]=="7"|| line[1]=="8"|| line[1]=="9"|| line[1]=="10"
+                                    || line[1]=="11"|| line[1]=="12"|| line[1]=="13"|| line[1]=="14"|| line[1]=="15"){
+                                        if(startdate>0 && line[startdate].trim()!=='NaN') $('input[name="Date_Rest_'+line[1]+'"]').val(line[startdate].trim());
+                                        if(activitycount>0 && line[activitycount].trim()!=='NaN') $('input[name="SAC_'+line[1]+'"]').val(line[activitycount].trim());
+                                        if(starttime>0) $('input[name="Bedtime_'+line[1]+'"]').val(line[starttime].trim());
+                                        if(endtime>0) $('input[name="Risetime_'+line[1]+'"]').val(line[endtime].trim());
+                                        if(duration>0) $('input[name="aTIB_'+line[1]+'"]').val(line[duration].trim());
+                                        if(sleeptime>0) $('input[name="aTST_aTIB_'+line[1]+'"]').val(line[sleeptime].trim());
+                                        var sd='01/01/2011 ';
+                                        var sdr='01/01/2011 ';
+                                        if(starttime>0 && endtime>0){
+                                            var a=line[starttime].trim();
+                                            var ar=line[endtime].trim();
+                                            var t24='';
+                                            var t24r='';
+                                            if (a.indexOf("PM") > -1)
+                                            {
+                                                var pos=a.indexOf(":");
+                                                var pos2=a.indexOf("PM");
+                                                var b=parseInt(a.substring(0,pos))
+                                                b=b+12;
+                                                t24 = [b.toString(),a.slice(pos,pos2)].join('');
+                                            }
+                                            else
+                                            {
+                                                sd='01/02/2011 ';
+                                                var pos=a.indexOf(":");
+                                                var pos2=a.indexOf("AM");
+                                                var b=parseInt(a.substring(0,pos))
+                                                if(b==12) {b=0;t24 = [b.toString(),a.slice(pos,pos2)].join('');}
+                                                else t24=a.substring(0,a.indexOf("AM"))
+                                            }
+                                            if (ar.indexOf("PM") > -1)
+                                            {
+                                                var posr=ar.indexOf(":");
+                                                var pos2r=ar.indexOf("PM");
+                                                var br=parseInt(ar.substring(0,pos))
+                                                br=br+12;
+                                                t24r = [br.toString(),ar.slice(pos,pos2)].join('');
+                                            }
+                                            else
+                                            {
+                                                sdr='01/02/2011 ';
+                                                var posr=ar.indexOf(":");
+                                                var pos2r=ar.indexOf("AM");
+                                                var br=parseInt(ar.substring(0,pos))
+                                                if(br==12) {br=0;t24r = [br.toString(),ar.slice(pos,pos2)].join('');}
+                                                else t24r=ar.substring(0,ar.indexOf("AM"))
+                                            }
+                                            var d=Date.parse(sd+t24);
+                                            var dd=Date.parse('01/02/2011 0:00:00')
+                                            var dr=Date.parse(sdr+t24r);
+                                            var ddr=Date.parse('01/02/2011 0:00:00')
+                                            var diffMs = (d-dd); // milliseconds between now & Christmas
+                                            var diffMsr = (dr-ddr); // milliseconds between now & Christmas
+                                            bedtime+=diffMs;
+                                            risetime+=diffMsr;
+                                            bedtimecount++;
+                                            risetimecount++;
+                                            var diffcount=bedtime/bedtimecount;
+                                            if(diffcount<0) diffcount=24*60*60*1000+diffcount;
+                                            var bedtimeavg=Math.round(diffcount/1000);
+                                            var bedtimeavg=toHHMMSS(bedtimeavg)
+                                            if(bedtimemin==0) {bedtimemin=d;bedtimeminstr=a;}
+                                            if(bedtimemax==0) {bedtimemax=d;bedtimemaxstr=a;}
+                                            if(bedtimemin>d) {bedtimemin=d;bedtimeminstr=a;}
+                                            if(bedtimemax<d) {bedtimemax=d;bedtimemaxstr=a;}
+
+                                            var diffcountr=risetime/risetimecount;
+                                            if(diffcountr<0) diffcountr=24*60*60*1000+diffcountr;
+                                            var risetimeavg=Math.round(diffcountr/1000);
+                                            var risetimeavg=toHHMMSS(risetimeavg)
+                                            if(risetimemin==0) {risetimemin=dr;risetimeminstr=ar;}
+                                            if(risetimemax==0) {risetimemax=dr;risetimemaxstr=ar;}
+                                            if(risetimemin>dr) {risetimemin=dr;risetimeminstr=ar;}
+                                            if(risetimemax<dr) {risetimemax=dr;risetimemaxstr=ar;}
+                                         }
+                                    }
+                            break;
+                            case "ACTIVE":
+                                    if(line[1]=="1" || line[1]=="2" || line[1]=="3" || line[1]=="4" || line[1]=="5"
+                                    || line[1]=="6"|| line[1]=="7"|| line[1]=="8"|| line[1]=="9"|| line[1]=="10"
+                                    || line[1]=="11"|| line[1]=="12"|| line[1]=="13"|| line[1]=="14"|| line[1]=="15"){
+                                        if(startdate>0 && line[startdate].trim()!=='NaN') $('input[name="Date_Active_'+line[1]+'"]').val(line[startdate].trim());
+                                        if(activitycount>0 && line[activitycount].trim()!=='NaN') $('input[name="WAC_'+line[1]+'"]').val(line[activitycount].trim());
+                                        if(activitycount>0 && line[activitycount].trim()!=='NaN' && ac_average>0 && line[ac_average].trim()!=='NaN') $('input[name="Dur_Active_'+line[1]+'"]').val((parseFloat(line[activitycount].trim())/parseFloat(line[ac_average].trim())).toFixed(1));
+                                    }
+                            break;
+                            case "SLEEP*":
+                            case "SLEEP":
+                                    if(line[1]=="1" || line[1]=="2" || line[1]=="3" || line[1]=="4" || line[1]=="5"
+                                    || line[1]=="6"|| line[1]=="7"|| line[1]=="8"|| line[1]=="9"|| line[1]=="10"
+                                    || line[1]=="11"|| line[1]=="12"|| line[1]=="13"|| line[1]=="14"|| line[1]=="15"){
+                                        if(startdate>0 && line[startdate].trim()!=='NaN') $('input[name="Date_Sleep_'+line[1]+'"]').val(line[startdate].trim());
+                                        if(sleeptime>0 && line[sleeptime].trim()!=='NaN') $('input[name="aTST_'+line[1]+'"]').val(line[sleeptime].trim());
+                                        if(onsetlatency>0 && line[onsetlatency].trim()!=='NaN') $('input[name="aSOL_'+line[1]+'"]').val(line[onsetlatency].trim());
+                                        if(waso>0 && line[waso].trim()!=='NaN') $('input[name="aWASO_'+line[1]+'"]').val(line[waso].trim());
+                                        if(fragmentation>0 && line[fragmentation].trim()!=='NaN') $('input[name="FI_'+line[1]+'"]').val(line[fragmentation].trim());
+                                    }
+                            break;
+                            case "DAILY":
+                                    if(line[1]=="1" || line[1]=="2" || line[1]=="3" || line[1]=="4" || line[1]=="5"
+                                    || line[1]=="6"|| line[1]=="7"|| line[1]=="8"|| line[1]=="9"|| line[1]=="10"
+                                    || line[1]=="11"|| line[1]=="12"|| line[1]=="13"|| line[1]=="14"|| line[1]=="15"){
+                                        if(startdate>0 && line[startdate].trim()!=='NaN') $('input[name="Date_Daily_'+line[1]+'"]').val(line[startdate].trim());
+                                        if(activitycount>0 && line[activitycount].trim()!=='NaN') $('input[name="AC_24_'+line[1]+'"]').val(line[activitycount].trim());
+                                        if(sleeptime>0 && line[sleeptime].trim()!=='NaN') {
+                                            $('input[name="d_ST_24_'+line[1]+'"]').val(line[sleeptime].trim());
+                                            if(line[activitycount]!=='0' && line[ac_average]!=='0'){
+                                                sleep_time[sleep_time.length]=parseFloat(line[sleeptime].trim())/(parseFloat(line[activitycount].trim())/parseFloat(line[ac_average].trim()))*1440;
+                                            }
+                                            else sleep_time[sleep_time.length]=0;
+                                        }
+                                        if(activitycount>0 && line[activitycount].trim()!=='NaN' && line[activitycount].trim()!=='0' && ac_average>0 && line[ac_average].trim()!=='NaN' && line[ac_average].trim()!=='0') $('input[name="Dur_24_'+line[1]+'"]').val((parseFloat(line[activitycount].trim())/parseFloat(line[ac_average].trim())).toFixed(1));
+                                        //else $('input[name="Dur_24_'+line[1]]='0';
+
+                                    }
+                            break;
+                            case "EXCLUDED":
+                                    if(line[1]!==""){
+                                        var sd=date_time_to_ticks(line[startdate].trim(),line[starttime].trim())
+                                        var ed=date_time_to_ticks(line[enddate].trim(),line[endtime].trim())
+                                        totalexcluded+=ed-sd;
+                                   }
+                            break;
+                            }
+                        }
+                        $('input[name="aBedtime"]').val(bedtimeavg);
+                        $('input[name="aRisetime"]').val(risetimeavg);
+                        $('input[name="aExcl"]').val((totalexcluded/24/60/60/1000).toFixed(2));
+                        $('input[name="Bedtime_min"]').val(bedtimeminstr);
+                        $('input[name="Bedtime_max"]').val(bedtimemaxstr);
+                        $('input[name="Risetime_min"]').val(risetimeminstr);
+                        $('input[name="Risetime_max"]').val(risetimemaxstr);
+
+                        var total=0;
+                        for (var i = 0; i < sleep_time.length; i++) {
+                            total += sleep_time[i];
+                        }
+                        var mean=total/sleep_time.length;
+                        var sqrs=0;
+                        for (var i = 0; i < sleep_time.length; i++) {
+                            sqrs += Math.pow(sleep_time[i]-mean,2);
+                        }
+                        $('input[name="d_ST_24"]').val(mean.toFixed(2));
+                        $('input[name="d_ST_24_STD"]').val(Math.sqrt(sqrs/(sleep_time.length-1)).toFixed(2));
+                  }
+                });
+                reader.readAsText(file);
+            }
+            //-------------------------------------
+            var date_time_to_ticks=function(date_str,time_str){
+                var st24='';
+                if (time_str.indexOf("PM") > -1)
+                {
+                    var pos=time_str.indexOf(":");
+                    var pos2=time_str.indexOf("PM");
+                    var b=parseInt(time_str.substring(0,pos))
+                    if(b<12) b=b+12;
+                    st24 = [b.toString(),time_str.slice(pos,pos2)].join('');
+                }
+                else
+                {
+                    st24=time_str.substring(0,time_str.indexOf("AM"))
+                }
+                var sdateparts=date_str.split('/');
+                var stimeparts=st24.split(':');
+                return new Date(sdateparts[2], parseInt(sdateparts[1], 10) - 1, sdateparts[0], stimeparts[0], stimeparts[1]);
+            }
+            //-------------------------------------
+            var toHHMMSS = function (sec_num) {
+                var ampm='AM'
+                var hours   = Math.floor(sec_num / 3600);
+                var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+                var seconds = sec_num - (hours * 3600) - (minutes * 60);
+                if(hours>12) {hours=hours-12;ampm='PM';}
+                if (hours   < 10) {hours   = "0"+hours;}
+                if (minutes < 10) {minutes = "0"+minutes;}
+                if (seconds < 10) {seconds = "0"+seconds;}
+                return hours+':'+minutes+':'+seconds+' '+ampm;
+            }
+        }
+    </script>
+    <style>
+        #D__ID .mt-95 {
+            max-width:800px;
+        }
+        VmInclude:__CURRENT_PATH__/wappsystem-form.css
+    </style>
+</div>

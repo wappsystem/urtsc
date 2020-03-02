@@ -1,0 +1,85 @@
+<div id=D__ID>
+  <!--third html start -->
+  <div class="container mt-95 mb-3">
+    <div class="row">
+      <!-- form container start -->
+      <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+        <div class="row">
+          <div class="col-12">
+            <!-- form start -->
+            <form id="F__ID">
+              <h3>Stanford Sleepiness Scale</h3>
+              <!-- participant part for all tsak forms -------------------->
+              <div id="participant_div__ID">
+                <div class="form-group">
+                  <fieldset class="subquestions">
+                    <label><span class="">Participant</span>
+                      <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant" />
+                    </label><br>
+                    <label><span class="">Participant ID</span>
+                      <input type=text name="Participant_uid" class=form-control readonly />
+                    </label>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="form-group">
+                <h4>Using the 7-point scale below pick what best represents how you are feeling now</h4>
+                <div class="questiongroup">
+                  <fieldset>
+                    <label class="radiobuttons">
+                      <input type="radio" name="SSS" value="1" required>
+                      <span class="checkmark no-dot">1</span> Feeling active, vital, alert, or wide awake </label><br>
+                    <label class="radiobuttons">
+                      <input type="radio" name="SSS" value="2">
+                      <span class="checkmark no-dot">2</span> Functioning at high levels, but not fully alert
+                    </label><br>
+                    <label class="radiobuttons">
+                      <input type="radio" name="SSS" value="3">
+                      <span class="checkmark no-dot">3</span> Awake, but relaxed; responsive but not fully alert
+                    </label><br>
+                    <label class="radiobuttons">
+                      <input type="radio" name="SSS" value="4">
+                      <span class="checkmark no-dot">4</span> Somewhat foggy, let down </label><br>
+                    <label class="radiobuttons">
+                      <input type="radio" name="SSS" value="5">
+                      <span class="checkmark no-dot">5</span> Foggy; losing interest in remaining awake; slowed down
+                    </label><br>
+                    <label class="radiobuttons">
+                      <input type="radio" name="SSS" value="6">
+                      <span class="checkmark no-dot">6</span> Sleepy, woozy, fighting sleep; prefer to lie down
+                    </label><br>
+                    <label class="radiobuttons">
+                      <input type="radio" name="SSS" value="7">
+                      <span class="checkmark no-dot">7</span> No longer fighting sleep, sleep onset soon; having
+                      dream-like thoughts </label><br>
+                  </fieldset>
+                </div>
+              </div>
+              <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function F__ID() {
+      //-------------------------------------
+      VmInclude: __COMPONENT__/f/form.01.js
+      VmInclude:__CURRENT_PATH__/shared-form.js
+      //-------------------------------------
+      /*      var before_submit=m.before_submit;
+                m.before_submit=function(data,index){
+                return before_submit(data,index); 
+            }
+        */    //-------------------------------------
+    }
+  </script>
+  <style>
+    #D__ID .mt-95 {
+      max-width: 600px;
+    }
+
+    VmInclude:__CURRENT_PATH__/wappsystem-form.css
+  </style>
+</div>

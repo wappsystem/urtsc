@@ -1,0 +1,135 @@
+<div id=D__ID>
+    <div class="container mt-95 mb-3">
+      <div class="row" >
+        <!-- form container start -->
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+          <div class="row">
+            <div class="col-12">
+              <!-- form start -->
+              <form id="F__ID">
+                 <h3>Rey Auditory Verbal Learning Test (RAVLT)</h3>
+                 <!-- participant part for all tsak forms -------------------->
+                 <div id="participant_div__ID">
+                     <div class="row px-4">
+                         <div class="col-sm-12 col-lg-9 ">
+                             <span class=label__ID>Participant</span><br>
+                             <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant" />
+                         </div>
+                         <div class="col-sm-12 col-lg-3">
+                             <span class=label__ID>Participant ID</span><br>
+                             <input type=text name="Participant_uid" class=form-control readonly />
+                         </div>
+                     </div>
+                     <hr>
+                 </div>
+                 <div class="row px-4">
+                    <div class='col'>
+                       <span>File</span>
+                       <div class="form-control">
+                           <u style='cursor:pointer' id=link_File_Name__ID></u>
+                           <br>
+                           <input type="file" name=File_Name style="margin-top:6px" /> &nbsp&nbsp&nbsp <button type="button" id=x_File_Name__ID>Remove</button>
+                       </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <div class="questiongroup ">
+                        <fieldset class="">Recall Raw Score
+                            <div class=row>
+                                <div class="col-sm-3"><label><span class="">1</span><input type=number step=0.01 class=form-control name=recall_1_raw></label></div>
+                                <div class="col-sm-3"><label><span class="">2</span><input type=number step=0.01 class=form-control name=recall_2_raw></label></div>
+                                <div class="col-sm-3"><label><span class="">3</span><input type=number step=0.01 class=form-control name=recall_3_raw></label></div>
+                                <div class="col-sm-3"><label><span class="">4</span><input type=number step=0.01 class=form-control name=recall_4_raw></label></div>
+                            </div>
+                            <div class=row>
+                                <div class="col-sm-3"><label><span class="">5</span><input type=number step=0.01 class=form-control name=recall_5_raw></label></div>
+                                <div class="col-sm-3"><label><span class="">S1-5</span><input type=number step=0.01 class=form-control name=recall_s1_5_raw></label></div>
+                                <div class="col-sm-3"><label><span class="">B</span><input type=number step=0.01 class=form-control name=recall_b_raw></label></div>
+                                <div class="col-sm-3"><label><span class="">6</span><input type=number step=0.01 class=form-control name=recall_6_raw></label></div>
+                            </div>
+                            <div class=row>
+                                <div class="col-sm-3"><label><span class="">7</span><input type=number step=0.01 class=form-control name=recall_7_raw></label></div>
+                                <div class="col-sm-3"><label><span class="">%7/5</span><input type=number step=0.01 class=form-control name=recall_7_5_raw></label></div>
+                                <div class="col-sm-3"><label><span class="">%7/6</span><input type=number step=0.01 class=form-control name=recall_7_6_raw></label></div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="questiongroup ">
+                        <fieldset class="">Recall Z-Score
+                            <div class=row>
+                                <div class="col-sm-3"><label><span class="">1</span><input type=number step=0.01 class=form-control name=recall_1_z></label></div>
+                                <div class="col-sm-3"><label><span class="">2</span><input type=number step=0.01 class=form-control name=recall_2_z></label></div>
+                                <div class="col-sm-3"><label><span class="">3</span><input type=number step=0.01 class=form-control name=recall_3_z></label></div>
+                                <div class="col-sm-3"><label><span class="">4</span><input type=number step=0.01 class=form-control name=recall_4_z></label></div>
+                            </div>
+                            <div class=row>
+                                <div class="col-sm-3"><label><span class="">5</span><input type=number step=0.01 class=form-control name=recall_5_z></label></div>
+                                <div class="col-sm-3"><label><span class="">S1-5</span><input type=number step=0.01 class=form-control name=recall_s1_5_z></label></div>
+                                <div class="col-sm-3"><label><span class="">B</span><input type=number step=0.01 class=form-control name=recall_b_z></label></div>
+                                <div class="col-sm-3"><label><span class="">6</span><input type=number step=0.01 class=form-control name=recall_6_z></label></div>
+                            </div>
+                            <div class=row>
+                                <div class="col-sm-3"><label><span class="">7</span><input type=number step=0.01 class=form-control name=recall_7_z></label></div>
+                                <div class="col-sm-3"><label><span class="">%7/5</span><input type=number step=0.01 class=form-control name=recall_7_5_z></label></div>
+                                <div class="col-sm-3"><label><span class="">%7/6</span><input type=number step=0.01 class=form-control name=recall_7_6_z></label></div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="questiongroup ">
+                        <fieldset class="">Recognition Raw Score
+                            <div class=row>
+                                <div class="col-sm-3"><label><span class="">Hits</span><input type=number step=0.01 class=form-control name=recognition_hits_raw></label></div>
+                                <div class="col-sm-3"><label><span class="">Intrusions</span><input type=number step=0.01 class=form-control name=recognition_intrution_raw></label></div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="questiongroup ">
+                        <fieldset class="">Recognition Z-Score
+                            <div class=row>
+                                <div class="col-sm-3"><label><span class="">Hits</span><input type=number step=0.01 class=form-control name=recognition_hits_z></label></div>
+                                <div class="col-sm-3"><label><span class="">Intrusions</span><input type=number step=0.01 class=form-control name=recognition_intrution_z></label></div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <!-- form group -->
+                 <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+                 <hr>
+              </form>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    VmInclude:__COMPONENT__/m/model.01.html
+    <script>
+        //---------------------------------------------
+        function F__ID(){
+            //-------------------------------------
+			VmInclude:'__COMPONENT__/f/form.01.js'
+            VmInclude:__CURRENT_PATH__/shared-form.js
+            //-------------------------------------
+            var load2=m.load;
+            m.load=function(){
+                load2();
+                if(m.input.readonly!=undefined) $('#submit__ID').hide();
+                //render_file_field_v2(m.input.record,'__ID',$('#File_Name__ID'));
+                m.set_file_link("File_Name");
+            }
+        }
+    </script>
+    <style>
+        #D__ID .mt-95 {
+            max-width:800px;
+        }
+        VmInclude:__CURRENT_PATH__/wappsystem-form.css
+    </style>
+</div>

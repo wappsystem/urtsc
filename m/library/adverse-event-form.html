@@ -1,0 +1,170 @@
+<div id=D__ID>
+    <!--third html start -->
+    <div class="container mt-95 mb-3">
+        <div class="row">
+            <!-- form container start -->
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- form start -->
+                        <form id="F__ID">
+                            <h3>Adverse Event</h3>
+                            <!-- participant part for all tsak forms -------------------->
+                            <div id="participant_div__ID">
+                                <div class="form-group">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Participant</span>
+                                            <input type=text name="Participant" class=form-control id=Participant__ID
+                                                data-id="Participant" />
+                                        </label><br>
+                                        <label><span class="">Participant ID</span>
+                                            <input type=text name="Participant_uid" class=form-control readonly />
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <!-- form group -->
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="">
+                                        <label style="width:100%"><span class="">Adverse Event</span>
+                                            <input type=text class="form-control" name="Adverse_Event" placeholder="">
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Onset Time</span>
+                                            <input class="form-control" type="time" name="Onset_Time">
+                                        </label><br>
+                                        <label><span class="">Onset Date</span>
+                                            <input class="form-control" type="date" name="Onset_Date">
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup ">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Resolution Time</span>
+                                            <input class="form-control" type="time" name="Resolution_Time">
+                                        </label><br>
+                                        <label><span class="">Resolution Date</span>
+                                            <input class="form-control" type="date" name="Resolution_Date">
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Was AE Serious?</span>
+                                            <select name="Serious_AE" class=form-control>
+                                                <option></option>
+                                                <option>Yes</option>
+                                                <option>No</option>
+                                            </select>
+                                        </label><br>
+                                        <label><span class="">Frequency</span>
+                                            <select name="Frequency" class=form-control>
+                                                <option></option>
+                                                <option>Single episode</option>
+                                                <option>Intermittent</option>
+                                                <option>Continuous</option>
+                                            </select>
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Intensity</span>
+                                            <select name="Intensity" class=form-control>
+                                                <option></option>
+                                                <option>Mild</option>
+                                                <option>Moderate</option>
+                                                <option>Severe</option>
+                                            </select>
+                                        </label><br>
+                                        <label><span class="">Realtionship to study</span>
+                                            <select name="Realtionship" class=form-control>
+                                                <option></option>
+                                                <option>Not Related</option>
+                                                <option>Possibly Related</option>
+                                                <option>Related</option>
+                                            </select>
+                                        </label><br>
+                                        <label><span class="">Study Agent Action</span>
+                                            <select name="Study_Agent_Action" class=form-control>
+                                                <option></option>
+                                                <option>None</option>
+                                                <option>Dosage decrease</option>
+                                                <option>Interrupted</option>
+                                                <option>Patient withdrawn</option>
+                                                <option>Drug discontinued</option>
+                                                <option>Not applicable</option>
+                                            </select>
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Treatment Required</span>
+                                            <select name="Treatment_Required" class=form-control>
+                                                <option></option>
+                                                <option>None</option>
+                                                <option>Concomitant Medication</option>
+                                                <option>Non-drug Tx</option>
+                                                <option>Hospitalization</option>
+                                                <option>Other (specify)</option>
+                                            </select>
+                                        </label><br>
+                                        <label><span class="">Other</span>
+                                            <input type=text name="Other_Treatment" class=form-control />
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="questiongroup">
+                                    <fieldset class="subquestions">
+                                        <label><span class="">Outcome</span>
+                                            <select name="Outcome" class=form-control>
+                                                <option></option>
+                                                <option>Resolved with no Sequelae</option>
+                                                <option>Resolved with Sequelae</option>
+                                                <option>Continuing</option>
+                                                <option>Fatal</option>
+                                                <option>Unknown</option>
+                                            </select>
+                                        </label><br>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function F__ID(){
+            //-------------------------------------
+            VmInclude:'__COMPONENT__/f/form.01.js'
+            VmInclude:__CURRENT_PATH__/shared-form.js
+            //-------------------------------------
+        }
+    </script>
+    <style>
+        #D__ID .mt-95 {
+        max-width:600px;
+    }
+        VmInclude:__CURRENT_PATH__/wappsystem-form.css
+    </style>
+</div>

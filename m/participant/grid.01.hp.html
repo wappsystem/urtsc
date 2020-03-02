@@ -1,0 +1,424 @@
+<section>
+        <div id=toolbar__ID class="navbar navbar-default">
+            <div id=row_1__ID class="col-sm _col-lg-3 form-inline">
+                <a class="col-"><button type="button" class='btn btn-info btn-sm ' data-toggle="collapse" data-target="#help__ID" title="Help - Intructions" ><i class="fa fa-info"></i></button></a>
+                <button id=new__ID  type=button class='btn btn-secondary btn-sm' title='Add New'><i class="fa fa-plus"></i></button>
+                <div id=add_search__ID><input id=keyword__ID type="text" placeholder="keyword" class="form-control form-control-sm" style="width: 150px; display:inline-block;"></div>
+                <button id=query__ID type=button class="btn btn-secondary btn-sm" title='Search for keyword'><i class="fa fa-search" ></i></button>
+            </div>
+            <div class="col-sm _col-lg-3 form-inline">
+                    Page Size:
+                    <select id=page_size__ID class="form-control form-control-sm" style='margin-right:20px;display:inline-block;width:auto;'><option>30</option><option>50</option><option>100</option><option>200</option></select>
+                    <span id=I__ID style="display:none">0</span><span id=A__ID></span> <span id=B__ID></span>
+                    <button id=p__ID type=button class="btn btn-secondary btn-sm" title="Previous page"><i class="fa fa-arrow-left"></i></button>
+                    <button id=n__ID type=button class="btn btn-secondary btn-sm" title="Next page"><i class="fa fa-arrow-right"></i></button>
+            </div>
+            <div id=import_export_section__ID class="col-sm _col-lg-3 form-inline">
+                <button id=export__ID type=button class="btn btn-secondary btn-sm" title=Export><i class="fa fa-download" ></i></button>
+                <button id=import__ID type=button class="btn btn-secondary btn-sm" title=Import><i class="fa fa-upload" ></i></button>
+                <input id=Import_f__ID type=file style='display:none' />
+        </div>
+        <span id=elapsed__ID style='float:right;display:none' ></span>
+        </div>
+        <div class="text-left form-group"><label id=title__ID></label></div><div class="text-left form-group"><label id=title_2__ID style="display:none"></label></div>
+        <div id=help__ID class="collapse">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2 text-content text-left ">
+                        <h4>Symbols</h4>
+                        <label><i class="fa fa-pencil-square-o"></i> Open form for modification</label><br>
+                        <label><i class="fa fa-trash-o"></i> Delete entry for selected row</label>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-content text-left">
+                        <h4><i class="fa fa-plus"></i> = Add a Record</h4>
+                        <label>Will open an empty form for data entry</label>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-content text-left">
+                        <h4><i class="fa fa-search"></i> = Search </h4>
+                        <label>If Keyword is empty a reloading of the list.<br>
+                        Search for full words in Keyword from the list.</label>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-content text-left">
+                        <h4><i class="fa fa-arrow-left"></i> = Previous</h4>
+                        <h4><i class="fa fa-arrow-right"></i> = Next Page</h4>
+                        <label>If all entries don&apos;t fit into one page, these arrows can be used for paging </label>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-content text-left">
+                        <h4><i class="fa fa-download"></i> = Export</h4>
+                        <label>Exporting the list to excel format (.csv)</label>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-content text-left">
+                        <h4><i class="fa fa-upload"></i> = Import</h4>
+                        <label>Import data from tab or comma delimited files. (.txt or .csv)<br>
+                            To get the correct header - do an export.
+                        </label>
+                        <br>
+                    </div>
+                </div> 
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2 text-content text-left ">
+                        <h4>Participant ID</h4>
+                        <label>System ID - Automatically assigned. Can't be changed</label>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-content text-left">
+                        <h4>Subject ID .. DOB</h4>
+                        <label>Customisable fields for your project. </label>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-content text-left">
+                        <h4>Data Entry</h4>
+                        <label>Enter data for select participant.<br>Will take you to the navigation page for all data entries.</label>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-content text-left">
+                        <h4>Setup </h4>
+                        <label>Enable questionnaire for participant to answer next time they login on Questionnaire Portal <br>
+                        </label>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-content text-left">
+                        <h4>Questionnaire</h4>
+                        <label>Check what the participant will see. Takes you to Questionnaire Portal</label>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-content text-left">
+                        <h4>Login ID and Password</h4>
+                        <label>Login and password for the Questionnaire Portal</label>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id=table__ID>
+            <table id=grid__ID></table>
+        </div>
+    </section>
+    <style>
+        #toolbar__ID{
+            background-color:#ccc;
+            padding:5px 0px;
+            margin-bottom:0px;
+            overflow:hidden;
+            font-family: 'Nunito Sans';
+            font-weight:600;
+            font-size: 14px;
+    
+        }
+        #toolbar__ID *{
+            margin-right:3px;
+        }
+        #table__ID{
+            overflow:auto;
+        }
+        #D__ID .formbox h3 {
+            font-family: 'Roboto Slab';
+            font-size: 24px;
+            color: #FCFBF5;
+            letter-spacing: 0;
+            display: block;
+            background-color: #00263A;
+            padding: 15px;
+            border-radius: 3px 3px 0 0;
+            margin-top: -5px
+        }
+        #D__ID .formbox h7 {
+            font-family: 'Roboto Slab';
+            font-size: 16px;
+            color: #FCFBF5;
+            letter-spacing: 0;
+            display: block;
+            background-color: #00263A;
+            padding: 5px 15px;
+            border-radius: 3px 3px 0 0;
+            margin-top: -5px
+        }
+        /* TOP OF FORM MARGIN */
+        #D__ID .mt-95 {
+            margin-top: 15px !important
+        }
+        #D__ID .form-group {
+            display: block !important;
+            border-bottom: 1px solid #E5EEF0 !important 
+        }
+        #D__ID .form-group h4 {
+            font-family: 'Roboto Slab';
+            font-size: 16px;
+            color: #00263A;
+            letter-spacing: 0;
+            line-height: 28px;
+        }
+        #D__ID .form-group h6 {
+            font-family: 'Roboto Slab';
+            font-size: 14px;
+            color: #00263A;
+            letter-spacing: 0;
+            line-height: 28px;
+        }
+        #D__ID .small-label {
+            font-family: 'Nunito Sans';
+            font-weight:600;
+            font-size: 14px;
+            color: #444645;
+        }
+        #D__ID label {
+            font-family: 'Nunito Sans';
+            font-weight:600;
+            font-size: 14px;
+            color: #444645;
+            line-height: 21px;
+        }
+        #D__ID input[type="radio"] {
+            margin-right: 5px !important
+        }
+        #D__ID .form-control::-webkit-input-placeholder{color:#ccc;}
+        #D__ID .form-control:-ms-input-placeholder{color:#ccc;}
+        #D__ID .form-control::-moz-placeholder{color:#ccc;opacity: 1;}
+        #D__ID .formbox {
+            background-color: white;
+            padding: 0px !important;
+            border-radius: 3px 3px 3px 3px !important
+        }
+        #D__ID .form-group {
+            padding: 5px 15px !important;
+            margin-bottom: 0px !important
+        }
+        #D__ID .form-group:hover {
+            background-color: #FCFBF5
+        }
+        /* SUBMIT BUTTON */
+        #D__ID .btn-primary, #D__ID .btn-primary:active, #D__ID .btn-primary:visited, #D__ID .btn-primary:focus {
+            background-color: #00263A;
+            border-color: #00263A;
+            font-family: 'Nunito Sans';
+            font-weight: lighter;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 18px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            padding: 16px 35px;
+            margin: 15px;
+        }
+        #D__ID .btn-primary:hover {
+            background-color: #506A88;
+            border-color: #506A88;
+            font-family: 'Nunito Sans';
+            font-weight: lighter;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 18px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            padding: 16px 35px;
+            margin: 15px;
+        }
+        #D__ID .btn-outline-light {
+            font-family: 'Nunito Sans';
+            font-weight: lighter;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 18px;
+            text-transform: uppercase;
+            border-radius: 15px;
+            border-width: 2px;
+            padding-left: 25px;
+            padding-right: 25px
+        }
+        #D__ID .btn-outline-light:hover {
+            color: #EA7859;
+        }
+        #D__ID p.note {
+            font-family: 'Nunito Sans';
+            font-weight: lighter;
+            font-size: 16px;
+            color: #939597;
+            margin-left: 15px;
+        }
+        /* RADIO BUTTONS */
+        #D__ID .radiobuttons {
+            text-align:center;
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            padding-left: 30px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        #D__ID .radiobuttons input {
+            position: absolute !important;
+            opacity: 0 !important;
+            cursor: pointer;
+        }
+        #D__ID .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 22px;
+            width: 22px;
+            background-color: #C9C9C9;
+            border-radius: 50%;
+            color:#fff;
+        }
+        #D__ID .radiobuttons:hover input ~ .checkmark {
+            background-color: #506A88;
+        }
+        #D__ID .radiobuttons input:checked ~ .checkmark {
+            background-color: #EA7859;
+        }
+        #D__ID .checkmark:after {
+            content: "";
+            position: absolute !important;
+            display: none;
+        }
+        /* Show the indicator (dot/circle) when checked */
+        #D__ID .radiobuttons input:checked ~ .checkmark:after {
+            display: block !important;
+        }
+        /* Style the indicator (dot/circle) */
+        #D__ID .container .checkmark:after {
+            top: 7px;
+            left: 7px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white !important;
+        }
+        #D__ID .container .checkmark.no-dot:after {
+            width: 0;
+            height: 0;
+        }
+        /* CHECK BOX */
+        #D__ID .checkboxes {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            padding-left: 30px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        #D__ID .checkboxes input {
+            position: absolute !important;
+            opacity: 0 !important;
+            cursor: pointer;
+        }
+        #D__ID .check_checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 22px;
+            width: 22px;
+            background-color: #C9C9C9;
+            border-radius: 0%;
+        }
+        #D__ID .checkboxes:hover input ~ .check_checkmark {
+            background-color: #506A88;
+        }
+        #D__ID .checkboxes input:checked ~ .check_checkmark {
+            background-color: #EA7859;
+        }
+        #D__ID .check_checkmark:after {
+            content: "";
+            position: absolute !important;
+            display: none;
+        }
+        /* Show the indicator (dot/circle) when checked */
+        #D__ID .checkboxes input:checked ~ .check_checkmark:after {
+            display: block !important;
+        }
+        /* Style the indicator (dot/circle) */
+        #D__ID .container .check_checkmark:after {
+            top: 0px;
+            left: 6px;
+            color:white;
+            content:"✔";
+        }
+        #D__ID .form-group input[type=text] {
+            font-family: 'Nunito Sans';
+            font-size: 16px;
+            color: #6D6F72;
+        }
+        #D__ID .form-group input[type=tel] {
+            font-family: 'Nunito Sans';
+            font-size: 16px;
+            color: #6D6F72;
+        }
+        #D__ID .form-group input[type=email] {
+            font-family: 'Nunito Sans';
+            font-size: 16px;
+            color: #6D6F72;
+        }
+        #D__ID .form-group input[type=number] {
+            font-family: 'Nunito Sans';
+            font-size: 16px;
+            color: #6D6F72;
+        }
+        #D__ID .form-group select {
+            font-family: 'Nunito Sans';
+            font-size: 16px;
+            color: #6D6F72;
+        }
+        #D__ID .form-group textarea {
+            font-family: 'Nunito Sans';
+            font-size: 16px;
+            color: #6D6F72;
+        }
+        #D__ID fieldset.subquestions legend {
+            font-family: 'Nunito Sans';
+            font-size: 16px;
+            color: #00263A;
+            line-height: 21px;
+            padding-top: 20px;
+        }
+        #D__ID .form-group .questiongroup {
+            margin-left: 15px;
+        }
+        #D__ID .form-group .questiongroup label.radiobuttons {
+            margin-right: 10px;
+        }
+        #D__ID .labelleft {
+            margin-left:-15px;
+        }
+        #D__ID .labelright {
+            margin-left:-15px;
+        }
+        @media (min-width: 576px) {
+            #D__ID  fieldset.subquestions br { display: none; }
+            #D__ID label {
+                margin-left:0;
+            }
+            #D__ID .labelleft {
+                margin-left:0;
+            }
+        }
+        @media (min-width: 1200px) {
+            .container {max-width:900px}
+        }
+        @media (min-width: 992px) {
+            .container {max-width:900px}
+        }
+        @media (min-width: 768px) {
+            .container {max-width:900px}
+        }
+        @media (min-width: 576px) {
+            .container {max-width:900px}
+        }
+    </style>
+    VmInclude:__COMPONENT__/m/modal.01.html

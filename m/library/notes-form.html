@@ -1,0 +1,84 @@
+<div id=D__ID>
+    <section id=form_container__ID>
+    	<div id=header__ID>
+    		Note
+    	</div>
+    	<form id=F__ID>
+    		<div class="container">
+    			<div class="row row__ID">
+    				<div class=col>
+    					<span>Participant ID</span>
+    					<input type="text" class="form-control" name=Participant_ID readonly />
+    				</div>
+    			</div>
+    			<div class="row row__ID">
+    				<div class=col>
+    					<span>Task name</span>
+    					<input type="text" class="form-control" name=Task_name readonly />
+    				</div>
+    			</div>
+    			<div class="row row__ID">
+    				<div class=col>
+    					<span>Title</span>
+    					<input type="text" class="form-control" name=Title />
+    				</div>
+    			</div>
+    			<div class="row row__ID">
+    				<div class=col>
+    					<span>Color</span>
+    					<input type="color" style='width:60px;height:30px' name=Color value='#888888' />
+    				</div>
+    			</div>
+    			<div class="row row__ID">
+    				<div class=col>
+    					<span>Details</span>
+    					<textarea class="form-control" name=Details ></textarea>
+    				</div>
+    			</div>
+    			<br>
+    			<div class="row c_print">
+    				<div class=col>
+    					<button id=submit__ID type="submit" class="btn btn-secondary">Submit</button>
+    				</div>
+    			</div>
+    		</div>
+    	</form>
+    </section>
+    <script>
+    	function F__ID(){
+    		//-------------------------------------
+            VmInclude:__COMPONENT__/f/form.01.js
+			//-------------------------------------
+			var task_name;
+			var task_uid;
+			var part_uid;
+			//-------------------------------------
+			var old_load=m.load;
+			m.load=function(){
+				old_load();
+				//get task name and uid from the input and put the task name to the form
+				task_name=m.input.task_name;
+				task_uid=m.input.task_uid;
+				part_uid=m.input.participant_uid;
+				if(m.input.task_name!=undefined) $('#F__ID input[name=Task_name]').val(task_name);
+				if(m.input.participant_uid!=undefined) $('#F__ID input[name=Participant_ID]').val(part_uid);
+			}
+			//-------------------------------------
+            m.before_submit=function(data,index){
+				//set up relation
+				//do not use I1, I1 is reserved for record partial permission
+				index.I2=task_name;
+				index.I3=task_uid;
+				index.I4=part_uid;
+                return true;
+            }
+            //--------------------------------------------------------
+    	}
+    </script>
+    <style>
+        #form_container__ID{
+            max-width:700px;
+        }
+        VmInclude:__COMPONENT__/f/form.01.css
+    </style>
+</div>

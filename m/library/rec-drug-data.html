@@ -1,0 +1,26 @@
+<section>
+    VmInclude:__CURRENT_PATH__/grid.v1h.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+        VmInclude:__COMPONENT__/g/grid.01.js
+        VmInclude:__CURRENT_PATH__/shared-data.js
+        //-------------------------------------
+        $('#title__ID').text('Recreational Drugs')
+        //-------------------------------------
+        var fields="rec_drugs"
+      fields+=",marijuana_used,marijuana_how_often,marijuana_latest_use";
+      fields+=",cocaine_used,cocaine_how_often,cocaine_latest_use";
+      fields+=",amphetamines_used,amphetamines_how_often,amphetamines_latest_use";
+      fields+=",hallucinogens_used,hallucinogens_how_often,hallucinogens_latest_use";
+      fields+=",heroin_used,heroin_how_often,heroin_latest_use";
+      fields+=",opiates_used,opiates_how_often,opiates_latest_use";
+      fields+=",inhalants_used,inhalants_how_often,inhalants_latest_use";
+        m.fields="_Form,_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+        //-------------------------------------
+    }
+</script>
+<style>
+    VmInclude:__CURRENT_PATH__/wappsystem-data.css
+</style>

@@ -1,0 +1,55 @@
+<div id=D__ID>
+    <div class=row>
+        <div class="col">
+            <div style="display:table;height:100%;width:100%;">
+                <div style='display:table-cell;vertical-align:middle'><a id=c_footer target="_blank" style="color:#fff" href="https://wappsystem.com.au"></a></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //------------------------------------
+        var txt="Copyright © "+(new Date()).getFullYear()+", Woolcock IMR ";
+        $('#c_footer').html(txt);
+        //------------------------------------
+        $vm.footer_ready=1;
+        //------------------------------------
+    </script>
+    <style>
+        #D__ID{
+            overflow: hidden;
+        }
+        #footer a{
+            color: #fff;
+            font-size:100%;
+            margin-right:10px;
+        }
+        #footer{
+            /*position: fixed;*/
+            bottom: 0;
+            width: 100%;
+            height:24px;
+            overflow: hidden;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            font-size:90%;
+            text-align: center;
+        }
+        #footer .fa-stack-1x {
+            color:white;
+        }
+        #footer .icon-facebook {
+        color:#3b5998;
+        }
+
+        #footer .icon-twitter {
+            color:#00aced;
+        }
+
+        #footer .icon-gplus{
+            color:#dd4b39;
+        }
+        @media screen and (max-width: 1200px){
+            /*#footer{ height:110px; }*/
+        }
+    </style>
+</div>

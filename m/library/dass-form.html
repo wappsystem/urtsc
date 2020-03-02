@@ -1,0 +1,603 @@
+<div id=D__ID>
+
+    <!--third html start -->
+    <div class="container mt-95 mb-3">
+      <div class="row" >
+        <!-- form container start -->
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+          <div class="row">
+            <div class="col-12">
+              <!-- form start -->
+              <form id="F__ID">
+                  <h3>DASS - 21</h3>
+                  <!-- participant name and study id -->
+                  <div id="participant_div__ID">
+                      <div class="form-group">
+                         <fieldset class="subquestions">
+                             <label ><span class="">Participant</span>
+                                 <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant"/>
+                             </label><br>
+                             <label ><span class="">Participant ID</span>
+                                 <input type=text name="Participant_uid" class=form-control readonly />
+                             </label>
+                          </fieldset>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <fieldset class="subquestions">
+                          <h4>Please read each statement and click on a number 0, 1, 2 or 3 which indicates how much the statement applied to you <i>over the past week</i>.  There are no right or wrong answers.  Do not spend too much time on any statement.</h4>
+                      </fieldset>
+                  </div>
+                  <div class="form-group sticky-top shadow-sm bg-light">
+                      <div id=legend__ID class="questiongroup " >
+                          <fieldset class="">
+                              <label class="radiobuttons" style='cursor:default!important'>
+                                  <span class="checkmark no-dot">0</span>= Did not apply to me at all
+                              </label><br>
+                              <label class="radiobuttons" style='cursor:default!important'>
+                                  <span class="checkmark no-dot">1</span>= Applied to me to some degree, or some of the time
+                              </label><br>
+                              <label class="radiobuttons" style='cursor:default!important'>
+                                  <span class="checkmark no-dot">2</span>= Applied to me to a considerable degree, or a good part of time
+                              </label><br>
+                              <label class="radiobuttons" style='cursor:default!important'>
+                                  <span class="checkmark no-dot">3</span>= Applied to me very much, or most of the time
+                              </label><br>
+                           </fieldset>
+                       </div>
+                       <button type="button" id="btn_legend__ID" class="btn btn-primary mb-1 mt-0 mx-0 p-1">Hide legend</button>
+                  </div>
+                  <div class="form-group">
+                      <h4>1. I found it hard to wind down</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_1" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_1" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_1" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_1" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_1>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>2. I was aware of dryness of my mouth</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_2" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_2" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_2" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_2" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_2>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>3. I couldn't seem to experience any positive feeling at all</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_3" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_3" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_3" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_3" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_3>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>4. I experienced breathing difficulty (eg, excessively rapid breathing, breathlessness in the absence of physical exertion)</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_4" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_4" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_4" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_4" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_4>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>5.	I found it difficult to work up the initiative to do things</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_5" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_5" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_5" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_5" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_5>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>6.	I tended to over-react to situations	</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_6" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_6" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_6" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_6" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_6>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>7.	I experienced trembling (eg, in the hands)</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_7" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_7" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_7" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_7" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_7>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>8.	I felt that I was using a lot of nervous energy</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_8" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_8" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_8" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_8" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_8>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>9.	I was worried about situations in which I might panic and make a fool of myself</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_9" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_9" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_9" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_9" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_9>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>10.	I felt that I had nothing to look forward to</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_10" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_10" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_10" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_10" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_10>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>11.	I found myself getting agitated</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_11" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_11" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_11" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_11" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_11>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>12.	I found it difficult to relax</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_12" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_12" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_12" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_12" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_12>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>13.	I felt down-hearted and blue</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_13" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_13" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_13" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_13" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_13>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>14.	I was intolerant of anything that kept me from getting on with what I was doing</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_14" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_14" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_14" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_14" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_14>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>15.	I felt I was close to panic</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_15" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_15" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_15" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_15" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_15>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>16.	I was unable to become enthusiastic about anything</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_16" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_16" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_16" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_16" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_16>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>17.	I felt I wasn't worth much as a person</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_17" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_17" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_17" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_17" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_17>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>18.	I felt that I was rather touchy</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_18" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_18" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_18" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_18" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_18>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>19.	I was aware of the action of my heart in the absence of physical exertion (eg, sense of heart rate increase, heart missing a beat)</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_19" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_19" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_19" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_19" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_19>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>20.	I felt scared without any good reason</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_20" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_20" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_20" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_20" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_20>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <div class="form-group">
+                      <h4>21.	I felt that life was meaningless</h4>
+      				  <div class="questiongroup">
+                          <fieldset class="subquestions">
+                              <label class="radiobuttons" title="Did not apply to me at all">
+                                <input type="radio" name="DASS_21" value="0" required>
+                                <span class="checkmark no-dot">0</span></label>
+                              <label class="radiobuttons" title="Applied to me to some degree, or some of the time">
+                                <input type="radio" name="DASS_21" value="1">
+                                <span class="checkmark no-dot">1</span></label>
+                              <label class="radiobuttons" title="Applied to me to a considerable degree, or a good part of time">
+                                <input type="radio" name="DASS_21" value="2">
+                                <span class="checkmark no-dot">2</span></label>
+                              <label class="radiobuttons" title="Applied to me very much, or most of the time">
+                                <input type="radio" name="DASS_21" value="3">
+                                <span class="checkmark no-dot">3</span></label>
+                          </fieldset>
+                          <label id=dass_sel_21>&nbsp;</label>
+                     </div>
+      		      </div>
+                  <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+              </form>
+            </div>
+         </div>
+        </div>
+      </div>
+  </div>
+  <script>
+      function F__ID(){
+          //-------------------------------------
+          VmInclude:__COMPONENT__/f/form.01.js
+          VmInclude:__CURRENT_PATH__/shared-form.js
+          //-------------------------------------
+          $('#btn_legend__ID').on('click',function(){
+              if($('#btn_legend__ID').text()=='Hide legend'){
+                $('#btn_legend__ID').text('Show legend');
+                $('#legend__ID').hide();
+            }
+            else {
+                $('#btn_legend__ID').text('Hide legend');
+                $('#legend__ID').show();
+            }
+          });
+          $("#D__ID input[name=DASS_1]").on('click',function(){
+              set_selected_text(1)
+          })
+          $("#D__ID input[name=DASS_2]").on('click',function(){
+              set_selected_text(2)
+          })
+          $("#D__ID input[name=DASS_3]").on('click',function(){
+              set_selected_text(3)
+          })
+          $("#D__ID input[name=DASS_4]").on('click',function(){
+              set_selected_text(4)
+          })
+          $("#D__ID input[name=DASS_5]").on('click',function(){
+              set_selected_text(5)
+          })
+          $("#D__ID input[name=DASS_6]").on('click',function(){
+              set_selected_text(6)
+          })
+          $("#D__ID input[name=DASS_7]").on('click',function(){
+              set_selected_text(7)
+          })
+          $("#D__ID input[name=DASS_8]").on('click',function(){
+              set_selected_text(8)
+          })
+          $("#D__ID input[name=DASS_9]").on('click',function(){
+              set_selected_text(9)
+          })
+          $("#D__ID input[name=DASS_10]").on('click',function(){
+              set_selected_text(10)
+          })
+          $("#D__ID input[name=DASS_11]").on('click',function(){
+              set_selected_text(11)
+          })
+          $("#D__ID input[name=DASS_12]").on('click',function(){
+              set_selected_text(12)
+          })
+          $("#D__ID input[name=DASS_13]").on('click',function(){
+              set_selected_text(13)
+          })
+          $("#D__ID input[name=DASS_14]").on('click',function(){
+              set_selected_text(14)
+          })
+          $("#D__ID input[name=DASS_15]").on('click',function(){
+              set_selected_text(15)
+          })
+          $("#D__ID input[name=DASS_16]").on('click',function(){
+              set_selected_text(16)
+          })
+          $("#D__ID input[name=DASS_17]").on('click',function(){
+              set_selected_text(17)
+          })
+          $("#D__ID input[name=DASS_18]").on('click',function(){
+              set_selected_text(18)
+          })
+          $("#D__ID input[name=DASS_19]").on('click',function(){
+              set_selected_text(19)
+          })
+          $("#D__ID input[name=DASS_20]").on('click',function(){
+              set_selected_text(20)
+          })
+          $("#D__ID input[name=DASS_21]").on('click',function(){
+              set_selected_text(21)
+          })
+          //-------------------------------------
+          var load2=m.load;
+          m.load=function(){
+            load2();
+            for(var i=0;i<21;i++){
+                set_selected_text(i+1)
+            }
+            $('#D__ID').css('overflow','visible');                          
+          }
+          //-------------------------------------
+         var set_selected_text=function(i){
+             $("#dass_sel_"+i+"").css('padding-top','10px').css('color','#EA7859');
+             switch ($("#D__ID input[name=DASS_"+i+"]:checked").val()) {
+                 case '0':
+                     $("#dass_sel_"+i+"").text("Did not apply to me at all");
+                 break;
+                 case '1':
+                     $("#dass_sel_"+i+"").text("Applied to me to some degree, or some of the time");
+                 break;
+                 case '2':
+                     $("#dass_sel_"+i+"").text("Applied to me to a considerable degree, or a good part of time");
+                 break;
+                 case '3':
+                     $("#dass_sel_"+i+"").text("Applied to me very much, or most of the time");
+                 break;
+                 default:
+                    /*$("#dass_sel_"+i+"").text(" ");*/
+                break;
+             }
+         }
+         //-------------------------------------
+         var before_submit=m.before_submit;
+            m.before_submit=function(data,index){
+              data.DASS_D=((parseInt(data.DASS_3)+parseInt(data.DASS_5)+parseInt(data.DASS_10)+parseInt(data.DASS_13)+parseInt(data.DASS_16)+parseInt(data.DASS_17)+parseInt(data.DASS_21))*2).toString();
+              data.DASS_A=((parseInt(data.DASS_2)+parseInt(data.DASS_4)+parseInt(data.DASS_7)+parseInt(data.DASS_9)+parseInt(data.DASS_15)+parseInt(data.DASS_19)+parseInt(data.DASS_20))*2).toString();
+              data.DASS_S=((parseInt(data.DASS_1)+parseInt(data.DASS_6)+parseInt(data.DASS_8)+parseInt(data.DASS_11)+parseInt(data.DASS_12)+parseInt(data.DASS_14)+parseInt(data.DASS_18))*2).toString();
+              return before_submit(data,index);
+          }
+          //-------------------------------------
+      }
+  </script>
+  <style>
+    #D__ID .mt-95 {
+      max-width:600px;
+    }
+    VmInclude:__CURRENT_PATH__/wappsystem-form.css
+  </style>
+</div>

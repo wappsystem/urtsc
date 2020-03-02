@@ -1,0 +1,110 @@
+<div id=D__ID>
+    <!--third html start -->
+    <div class="container mt-95 mb-3">
+      <div class="row" >
+        <!-- form container start -->
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+          <div class="row">
+            <div class="col-12">
+              <!-- form start -->
+              <form id="F__ID">
+                 <h3>Anthropometry, Age, Sex</h3>
+                 <!-- participant part for all tsak forms -------------------->
+                 <div id="participant_div__ID">
+                     <div class="form-group">
+                        <fieldset class="subquestions">
+                            <label ><span class="">Participant</span>
+                                <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant" />
+                            </label><br>
+                            <label ><span class="">Participant ID</span>
+                                <input type=text name="Participant_uid" class=form-control readonly />
+                            </label>
+                         </fieldset>
+                     </div>
+                 </div>
+                 <!-- form group -->
+                 <div class="form-group">
+     				 <div class="questiongroup ">
+                        <fieldset class="">
+                         </fieldset>
+                     </div>
+                 </div>
+
+                 <div class="form-group">
+                     <div class="questiongroup ">
+                         <fieldset class="">
+                             <h4>Demographics</h4>
+                             <label ><span class="">Age (years)</span>
+                                 <input class="form-control" type="number" min=15 max=100 name="age" placeholder="" >
+                             </label>
+                         </fieldset>
+                         <label ><span class="">Sex</span>
+                         </label><br>
+                          <label class="radiobuttons">
+                           <input type="radio" name="sex" value="Male" required >
+                           <span class="checkmark"></span> Male</label>
+                           <label class="radiobuttons">
+                                <input type="radio" name="sex" value="Female">
+                                <span class="checkmark"></span> Female</label>
+                        <label class="radiobuttons">
+                                <input type="radio" name="sex" value="Non-binary">
+                                <span class="checkmark"></span> Non-binary</label>
+                                </div>
+                 </div>
+                 <div class="form-group">
+     				 <div class="questiongroup ">
+                        <fieldset class="subquestions">
+                           <label ><span class="">Weight (kg)</span>
+                               <input class="form-control" type="number" min=30 max=250 name="Weight" id=weight__ID placeholder="" >
+                           </label><br>
+                           <label ><span class="">Height (cm)</span>
+                               <input class="form-control" type="number" name="Height" id=height__ID min=100 max=250 placeholder="" >
+                           </label><br>
+                           <label ><span class="">BMI</span>
+                               <input class="form-control" type="text" name="BMI" id=bmi__ID readonly >
+                           </label><br>
+                         </fieldset>
+                     </div>
+                 </div>
+                 <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+              </form>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        function F__ID(){
+            //-------------------------------------
+            VmInclude:__COMPONENT__/f/form.01.js
+          VmInclude:__CURRENT_PATH__/shared-form.js
+            //-------------------------------------
+            $('#weight__ID').on('keyup',function(){
+                if($('#height__ID').val()!=='' || $('#height__ID').val()!==undefined || $('#weight__ID').val()!=='' || $('#weight__ID').val()!==undefined){
+                    $('#bmi__ID').val((parseFloat($('#weight__ID').val())/(parseFloat($('#height__ID').val())*parseFloat($('#height__ID').val()))*10000).toFixed(1))
+                }
+            })
+            $('#weight__ID').on('change',function(){
+                if($('#height__ID').val()!=='' || $('#height__ID').val()!==undefined || $('#weight__ID').val()!=='' || $('#weight__ID').val()!==undefined){
+                    $('#bmi__ID').val((parseFloat($('#weight__ID').val())/(parseFloat($('#height__ID').val())*parseFloat($('#height__ID').val()))*10000).toFixed(1))
+                }
+            })
+            $('#height__ID').on('keyup',function(){
+                if($('#height__ID').val()!=='' || $('#height__ID').val()!==undefined || $('#weight__ID').val()!=='' || $('#weight__ID').val()!==undefined){
+                    $('#bmi__ID').val((parseFloat($('#weight__ID').val())/(parseFloat($('#height__ID').val())*parseFloat($('#height__ID').val()))*10000).toFixed(1))
+                }
+            })
+            $('#height__ID').on('change',function(){
+                if($('#height__ID').val()!=='' || $('#height__ID').val()!==undefined || $('#weight__ID').val()!=='' || $('#weight__ID').val()!==undefined){
+                    $('#bmi__ID').val((parseFloat($('#weight__ID').val())/(parseFloat($('#height__ID').val())*parseFloat($('#height__ID').val()))*10000).toFixed(1))
+                }
+            })
+        }
+    </script>
+    <style>
+        #D__ID .mt-95 {
+        max-width:600px;
+        }
+        VmInclude:__CURRENT_PATH__/wappsystem-form.css
+    </style>
+</div>
