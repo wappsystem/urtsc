@@ -53,8 +53,8 @@
         "urtsc-moca-data":		            {url:"$H/m/library/moca-data.html",Table:"urtsc-moca",form_module:"urtsc-moca-form",task_name:"Montreal Cognitive Assessment (MoCA)"},
         "urtsc-moca-form":		            {url:"$H/m/library/moca-form.html",Table:"urtsc-moca"},
 
-        "urtsc-psg300-data":		        {url:"$H/m/library/psg300-data.html",Table:"urtsc-psg300",form_module:"urtsc-psg300-form",task_name:"PSG Research Report"},
-        "urtsc-psg300-form":		        {url:"$H/m/library/psg300-form.html",Table:"urtsc-psg300"},
+        "urtsc-psggrr-data":		        {url:"$H/m/library/psggrr-data.html",Table:"urtsc-psggrr",form_module:"urtsc-psggrr-form",task_name:"Grael Research PSG Report"},
+        "urtsc-psggrr-form":		        {url:"$H/m/library/psggrr-form.html",Table:"urtsc-psggrr",task_name:"Grael Research PSG Report"},
         "urtsc-actigraphy-data":		    {url:"$H/m/library/actigraphy-data.html",Table:"urtsc-actigraphy",form_module:"urtsc-actigraphy-form",task_name:"Actigraphy"},
         "urtsc-actigraphy-form":		    {url:"$H/m/library/actigraphy-form.html",Table:"urtsc-actigraphy"},
         "urtsc-earlysense-data":		    {url:"$H/m/library/earlysense-data.html",Table:"urtsc-earlysense",form_module:"urtsc-earlysense-form",task_name:"EarlySense"},

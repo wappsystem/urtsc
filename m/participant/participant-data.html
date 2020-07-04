@@ -39,7 +39,7 @@
                         //MongoDB
                         td.html("<u style='cursor:pointer'>Online Questionnaire</u>");
                         td.find('u').on('click',function(){
-                            var db=""; if(window.location.toString().indexOf('db=dev')!=-1) db="&db=dev";
+                            var db=""; if(window.location.toString().indexOf('tb=demo')!=-1) db="&tb=demo";
                             var d="";  if(window.location.toString().indexOf('_d=1')!=-1) d="&_d=1";
                             var p="";  if(window.location.toString().indexOf('_p=1')!=-1) p="&_p=1";
                             var u="?username="+records[I].UID+"-"+records[I].Data.Subject_Initials+"&password="+records[I].Data._Password;
