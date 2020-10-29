@@ -2,6 +2,7 @@
     var modules={
         "panel-main-urtsc":    	            {url:"$H/m/panel-main.html",router:1},
         "panel-child-urtsc":                {url:"$H/m/panel-child.html"},
+        "panel-export":                     {url:"$H/m/export/panel-export.html",router:1},
         
         "participant-data":   		        {url:"$H/m/participant/participant-data.html",Table:"urtsc-participant",form_module:"participant-form",router:1,
                                                 child_panel:"panel-child-urtsc",

@@ -1,0 +1,104 @@
+<div id=D__ID>
+	<div class="container mt-95 mb-3">
+		<div class="row">
+			<!-- form container start -->
+			<div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+				<div class="row">
+					<div class="col-12">
+						<!-- form start -->
+						<form id=F__ID>
+							<p class=p-2 style="margin-bottom:0!important;background-color:#00263A;color: #fff;">Export fields for:</p>
+							<h3 id=title__ID></h3>
+							<div class='row px-4'>
+								<div class="col-sm-12 col-lg-6 row_participant__ID">
+									<label class='' style="width:100%"><span class=''>Database table name</span>
+										<input type=text class=form-control name=Table_name readonly> 
+									</label>
+								</div>
+								<div class="col-sm-12 col-lg-6">
+									<label class='' style="width:100%"><span class=''>Export Fields List</span>
+										<textarea  style="height:300px" type=text class=form-control name=Export_Fields></textarea>
+									</label>
+									<button type="button" style='cursor: pointer;' id=load_all__ID>Load all field names</button>
+									<p id=export_no_fields_found__ID class="small font-italic text-muted mt-1">At lease one record must be saved before field names can be extracted.</p>
+								</div>
+							</div>
+							<button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+							<button type="submit" id="delete__ID" class="btn btn-primary btn-lg">Delete</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function F__ID() {
+			//-------------------------------------
+			VmInclude: __COMPONENT__/f/form.01.js
+			//-------------------------------------
+			var load = m.load;
+			var export_res;
+			m.load = function () {
+				load();
+				$('#delete__ID').hide();
+				$('#export_no_fields_found__ID').text("");
+				m.Table=$vm.module_list['export-form'].Table;
+				if(m.input!=undefined){
+					$('#title__ID').html(m.input.name)
+					$('#F__ID input[name=Table_name').val($vm.module_list[m.input.link].Table)
+					var tbname=$vm.module_list[m.input.link].Table;
+					m.query={'Data.Table_name':tbname}
+					m.request_data()
+				}
+			}
+			//-------------------------------------
+			m.request_data=function(){
+				$vm.request({cmd:'find',table:m.Table,query:m.query},function(res){
+					if(res.status=='np'){
+						$vm.alert("No access permissions")
+					}
+					if(res.result.length==1){
+						m.input.record=res.result[0];
+						$('#delete__ID').show();
+						//console.log(JSON.stringify(m.input.record))
+						//console.log(JSON.stringify(res.result[0].Data))
+						$('#F__ID textarea[name=Export_Fields').val(res.result[0].Data.Export_Fields);
+					}
+				});
+			}
+			//-------------------------------------
+			$('#load_all__ID').on('click',function(){
+				var table=$vm.module_list[m.input.link].Table;
+				$vm.request({cmd:'find',table:table,sort:{UID:-1},skip:0,limit:1},function(res){
+					if(res.status=='np'){
+						$vm.alert("No access permissions")
+					}
+					if(res.result.length>0){
+						var keys = Object.keys(res.result[0].Data);
+						var str_keys=JSON.stringify(keys)
+						str_keys=str_keys.replace(/"/g,"").replace(/\[/,"").replace(/]/,"");
+						str_keys=str_keys.replace(",sysStatus","").replace(",_status","")
+						//console.log(JSON.stringify(m.input.record))
+						//console.log(JSON.stringify(res.result[0].Data))
+						$('#F__ID textarea[name=Export_Fields').val(str_keys);
+					}
+					else {
+						$('#export_no_fields_found__ID').text("At lease one record must be saved before field names can be extracted.");
+						$('#submit__ID').hide();
+					}		
+				});
+			});
+			//-------------------------------------			
+			m.before_submit = function (data, index) {
+			}
+			//-------------------------------------
+		}
+	</script>
+	<style>
+		#D__ID .mt-95 {
+			max-width: 800px;
+		}
+
+		VmInclude:__CURRENT_PATH__/../../library/wappsystem-form.css
+	</style>
+</div>

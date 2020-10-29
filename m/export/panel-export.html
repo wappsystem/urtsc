@@ -1,0 +1,93 @@
+<div id=D__ID>
+    <div>
+        <div id=toolbar__ID class="navbar navbar-default">
+        	<form class="form-inline">
+        		<button type=button id=count__ID class='btn btn-secondary'>Export All</button> <a class="small font-italic text-muted mt-1"><br>Exports all data based on the setup below into a combind cvs file</a>
+        	</form>
+        	<span id=elapsed__ID style='float:right'></span>
+		</div>
+        <section id=panel__ID>
+			<h3>Export</h3>
+			<span>Select the fields to export by clicking on each form links.</span><br>
+        	<div class='nav__ID'>
+        		<ul>
+					<li title="Manage participant - Add new. Data entry for single participant. Setup questionnaires."><a href=?/participant-data>Participants</a></li>
+					<p id=participant-data__ID class="small font-italic text-muted mt-1">No setup found. All fields exported.</p>
+				</ul>
+        	VmInclude:__CURRENT_PATH__/panel-export-task.html
+        </section>
+	</div>
+	VmInclude:__COMPONENT__/m/model.01.html
+    <script>
+        function F__ID(){
+			//-------------------------------------
+			var output_file_name="URTSC Export";
+			var enrolled_only=false;
+			VmInclude: __CURRENT_PATH__/export.js
+			//-------------------------------------
+		}
+    </script>
+    <style>
+        #toolbar__ID{
+			font-family: 'Roboto Slab';
+    		background-color:#ccc;
+    		margin-bottom:0px;
+    		overflow:hidden;
+            padding: 5px 0 5px 10px;
+    	}
+        #toolbar__ID .form-inline > * {
+            margin-right:5px;
+        }
+    	@media screen and (max-width:768px){
+    		#toolbar__ID{
+    			padding: 3px 10px;
+    		}
+    		#toolbar__ID div{
+    			padding-left:3px;
+    		}
+    	}
+        #D__ID{
+    		background-color:#fff;
+    		height:100%;
+    		overflow: auto;
+    		animation: vm_module_fadein 1.0s;
+    	}
+        #panel__ID{
+            font-family: 'Roboto Slab';
+    		padding:20px 0 0 20px;
+    	}
+    	#panel__ID a {
+    		text-decoration: none;
+    	}
+    	#panel__ID a:link {
+    		color:#555;
+    	}
+    	#panel__ID a:visited {
+    		color:#555;
+    	}
+    	#panel__ID a:hover {
+    		color:red;
+    	}
+    	#panel__ID a:active {
+    		color:#555;
+    	}
+        .nav__ID{
+	        padding:6px 26px 6px 6px;
+	        float:left;
+	    }
+	    .nav__ID span{
+			color:#283f55;
+			font-weight: bold;
+			margin:3px 10px;
+	    }
+		.count_marker__ID{
+			background-color:#fff;
+			font-size:12px;
+		}
+    	@media screen and (max-width:768px){
+    		#panel__ID{
+    			padding:10px 0 0 10px;
+    		}
+    	}
+    </style>
+</div>
